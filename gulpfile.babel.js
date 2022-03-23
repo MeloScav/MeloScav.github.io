@@ -1,4 +1,10 @@
-import { watch, task, src, dest, series } from "gulp";
+import {
+    watch,
+    task,
+    src,
+    dest,
+    series
+} from "gulp";
 
 import prettyHtml from "gulp-pretty-html";
 
@@ -9,55 +15,49 @@ import babel from "gulp-babel";
 
 import plumber from "gulp-plumber";
 const php2html = require("gulp-php2html");
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass')(require('sass'));
+const browserSync = require("browser-sync").create();
+const sass = require("gulp-sass")(require("sass"));
 
 browserSync.init({
     open: false,
-    port: "1234",
+    port: 1234,
     notify: false,
     server: {
-        baseDir: "dist"
-    }
+        baseDir: "dist",
+    },
 });
 
-task("compile-php", done => {
-    src([
-        "./src/**/*.php",
-        "!./src/**/_*.php"
-    ])
+task("compile-php", (done) => {
+    src(["./src/**/*.php", "!./src/**/_*.php"])
         .pipe(php2html())
-        .pipe(dest("./dist/"))
+        .pipe(dest("./dist/"));
     done();
 });
 
-task("pretty-html", done => {
-    src("./dist/**/*.html")
-        .pipe(prettyHtml())
-        .pipe(dest("./dist/"))
+task("pretty-html", (done) => {
+    src("./dist/**/*.html").pipe(prettyHtml()).pipe(dest("./dist/"));
     done();
 });
 
-task("copy-static-files", done => {
+task("copy-static-files", (done) => {
     src(
-        [
-            "./src/!(scss|css|js)**/*",
-            "./src/!(scss|css|js)**/**",
-            "./src/!(scss|css|js)**",
-            "!./src/views",
-            "!./src/**/*.php"
-        ],
-        {
-            base: "./src",
-        },
-    )
+            [
+                "./src/!(scss|css|js)**/*",
+                "./src/!(scss|css|js)**/**",
+                "./src/!(scss|css|js)**",
+                "!./src/views",
+                "!./src/**/*.php",
+            ], {
+                base: "./src",
+            }
+        )
         .pipe(plumber())
         .pipe(dest("./dist/"));
     done();
 });
 
-task("compile-sass", done => {
-    src("./src/scss/**/!(_s(a|c)css)")
+task("compile-sass", (done) => {
+    src(["./src/scss/**/*.scss", "./src/sass/**/*.scss", "!./src/scss/**/_*"])
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(
@@ -66,25 +66,27 @@ task("compile-sass", done => {
                 precision: 10,
                 includePaths: ["."],
                 onError: console.error.bind(console, "Sass error:"),
-            }),
+            })
         )
         .pipe(autoprefixer())
         .pipe(sourcemaps.write("."))
         .pipe(dest("./dist/css/"))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
     done();
 });
 
-task("minify-js", done => {
-    src("./src/**/*.js", { base: "./src/" })
+task("minify-js", (done) => {
+    src("./src/**/*.js", {
+            base: "./src/"
+        })
         .pipe(babel())
         .pipe(uglify())
-        .pipe(dest("./dist/"))
+        .pipe(dest("./dist/"));
     done();
 });
 
-task("reload-browser", done => {
-    browserSync.reload()
+task("reload-browser", (done) => {
+    browserSync.reload();
     done();
 });
 
@@ -93,18 +95,15 @@ const buildSeries = series(
     "compile-php",
     "pretty-html",
     "compile-sass",
-    "minify-js",
+    "minify-js"
 );
 
-exports.default = done => {
-    watch("./src/**/*", task("copy-static-files"))
-    watch("./src/**/*.php", series("compile-php", "pretty-html"))
-    watch("./src/scss/**/*.s(a|c)ss", task("compile-sass"))
-    watch("./src/**/*.js", task("minify-js"))
-    watch([
-        './src/**/*',
-        '!./src/**/*.s(a|c)ss'
-    ], task("reload-browser"))
+exports.default = (done) => {
+    watch("./src/**/*", task("copy-static-files"));
+    watch("./src/**/*.php", series("compile-php", "pretty-html"));
+    watch("./src/scss/**/*", task("compile-sass"));
+    watch("./src/**/*.js", task("minify-js"));
+    watch(["./src/**/*", "!./src/**/*.s(a|c)ss"], task("reload-browser"));
 
     done();
 };
