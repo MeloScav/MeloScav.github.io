@@ -48,5 +48,8 @@
     ">0.2%",
     "not-dead",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
