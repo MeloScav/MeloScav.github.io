@@ -22,7 +22,10 @@ browserSync.init({
 });
 
 task("compile-php", done => {
-    src("./src/**/*.php")
+    src([
+        "./src/**/*.php",
+        "!./src/**/_*.php"
+    ])
         .pipe(php2html())
         .pipe(dest("./dist/"))
     done();
@@ -41,6 +44,7 @@ task("copy-static-files", done => {
             "./src/!(scss|css|js)**/*",
             "./src/!(scss|css|js)**/**",
             "./src/!(scss|css|js)**",
+            "!./src/views",
             "!./src/**/*.php"
         ],
         {
@@ -53,7 +57,7 @@ task("copy-static-files", done => {
 });
 
 task("compile-sass", done => {
-    src("./src/scss/**/!(_s(a|c)css")
+    src("./src/scss/**/!(_s(a|c)css)")
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(
