@@ -1,7 +1,10 @@
 @import "./helpers/variables";
+@import "./helpers/mixins";
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./libs/bootstrap";
+
 
 @import "./global/common";
 
 @import "./components/header";
+@import "./components/banner";
