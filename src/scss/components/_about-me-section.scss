@@ -1,26 +1,40 @@
 .about-me {
     display: grid;
 
-    grid-template-columns: repeat(12, 1fr);
     gap: 40px;
     row-gap: 40px;
     column-gap: 40px;
 
-    &-img {
-        max-width: 100%;
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(12, 1fr);
+    }
 
-        grid-column: 1 / 5;
+    &-img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(md) {
+            max-width: 100%;
+            margin: 0;
+
+            grid-column: 1 / 5;
+        }
+
         object-fit: contain;
     }
 
     &-content {
         display: grid;
 
-        grid-column: 5 / 13;
         grid-template-columns: repeat(8, 1fr);
         gap: 40px;
         row-gap: 40px;
         column-gap: 40px;
+
+        @include media-breakpoint-up(md) {
+            grid-column: 5 / 13;
+        }
 
         &-title {
             justify-self: center;
