@@ -1,0 +1,42 @@
+.mb-sm {
+    margin-bottom: .5rem;
+}
+
+.mb-md {
+    margin-bottom: 2rem;
+
+    @media(max-width: 1199px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.mb-lg {
+    margin-bottom: 2.5rem;
+
+    @media(max-width: 1199px) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.mb-xl {
+    margin-bottom: 6rem;
+
+    @media(max-width: 1199px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.section-stack {
+    > * {
+        padding-top: var(--section-stack-gutter);
+        padding-bottom: var(--section-stack-gutter);
+    }
+
+    &-sm {
+        --section-stack-gutter: 80px;
+
+        > * + * {
+            padding-top: var(--section-stack-gutter);
+        }
+    }
+}
