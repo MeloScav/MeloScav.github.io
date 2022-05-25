@@ -1,3 +1,7 @@
+<?php
+$activePage = basename($_SERVER['PHP_SELF'], ".php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
