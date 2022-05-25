@@ -29,4 +29,21 @@ ready(() => {
     navbarToggler.addEventListener("click", function () {
         document.querySelector("body").classList.toggle("nav-open")
     })
+
+    // WAVES ANIMATION
+    const waves = document.querySelectorAll(".main-banner-wave");
+    const wavesAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--main-banner-wave-animation-duration')) * 1000;
+
+    function addAnimateClass() {
+
+        waves.forEach((wave) => {
+            wave.classList.toggle("animate")
+        })
+    }
+
+    addAnimateClass()
+
+    setInterval(() => {
+        addAnimateClass()
+    }, wavesAnimationDuration);
 })
