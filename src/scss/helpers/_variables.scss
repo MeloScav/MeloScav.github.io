@@ -1,3 +1,34 @@
+$primary: #ab2bc0;
+$light-primary: #f2dff6;
+$secondary: #1e73e4;
+$light-secondary: #DCE8FB;
 $text: #282229;
+$nav-link-active: #741d83;
+$white: #fffdff;
+$grey-100: #FCF9FD;
 
-$navLinkActive: #741D83;
+// $font-family-sans-serif: 'Almarai',
+// sans-serif;
+
+$theme-colors: ("primary": $primary, "secondary": $secondary);
+
+// BUTTONS
+$btn-border-width: 2px;
+$btn-font-weight: 700;
+$btn-line-height: 1;
+$btn-padding-y: 15px;
+$btn-padding-x: 20px;
+$btn-border-radius: var(--common-border-radius);
+
+// TYPE
+$headings-font-family: "Merienda", cursive;
+$headings-font-weight: 700;
+$headings-line-height: 1.2;
+
+$h1-font-size: 64px;
+$h2-font-size: 48px;
+$h3-font-size: 32px;
+$h4-font-size: 24px;
+
+// CONTAINER
+$container-full-max-width: 2010px
