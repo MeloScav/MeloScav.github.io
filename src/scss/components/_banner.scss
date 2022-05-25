@@ -1,0 +1,125 @@
+// .container-content {
+// display: flex;
+// flex-direction: row;
+// align-items: center;
+// height: calc(100vh - 90px);
+// }
+
+.main-banner-wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+
+  min-height: calc(100vh - var( --main-nav-height) );
+
+  &-content {
+    position: relative;
+    z-index: 40;
+
+    // background-image: url("../../assets/me-cartoon-illustration.svg");
+    // background-repeat: no-repeat;
+    // background-position: bottom right;
+    // background-size: contain;
+
+    .icons-container {
+      // margin-top: 40px;
+
+      margin-top: 3.704vh;
+    }
+  }
+
+  &-sub-title {
+    // margin-bottom: 8px;
+
+    margin-bottom: 0.741vh;
+  }
+
+  &-title {
+    margin-bottom: 8.8889vh;
+  }
+
+  &-description {
+    // margin-bottom: 24px;
+
+    margin-bottom: 2.223vh;
+  }
+
+  &-illu {
+    position: relative;
+    z-index: 20;
+
+    max-width: 50%;
+    max-height: calc(100vh - var( --main-nav-height) );
+    margin-top: auto;
+    margin-left: auto;
+
+    object-fit: contain;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  &-wave {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+
+    width: $container-full-max-width;
+    min-width: 100%;
+    height: auto;
+
+    user-select: none;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    @include media-breakpoint-down(lg) {
+      width: #{$container-full-max-width} / 2;
+    }
+
+    // animation-duration: 5s;
+    // animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+
+    path {
+      transition: d linear var(--main-banner-wave-animation-duration);
+    }
+
+    animation-fill-mode: forwards;
+
+    &.wave-1 {
+      z-index: 30;
+
+      &.animate {
+        path {
+          d: path(
+          "M1920.41 46.1643C1612.5 64.5 1223 20 989 3.00003C754.999 -13.9999 198.499 70 0.0293838 46.7268C0.0392091 80.2706 0.0197209 85.0017 0.0197209 85.0017L969.63 84.8705L1920.4 84.7418C1920.4 84.7418 1920.4 63.1109 1920.41 46.1643Z")
+        }
+      }
+
+      // path {
+      // animation-name: wave-1;
+      // }
+    }
+
+    &.wave-2 {
+      z-index: 10;
+
+      &.animate {
+        path {
+          d: path(
+          "M-6.10352e-05 62.764C352 -78 643.5 63.339 960.5 62.764C1277.5 62.189 1488 -72 1920 62.764V101H-6.10352e-05V62.764Z")
+        }
+      }
+
+      // path {
+      // animation-name: wave-2;
+      // }
+    }
+  }
+}
