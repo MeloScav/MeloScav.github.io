@@ -1,11 +1,11 @@
 .mb-sm {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .mb-md {
     margin-bottom: 2rem;
 
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
         margin-bottom: 1rem;
     }
 }
@@ -13,7 +13,7 @@
 .mb-lg {
     margin-bottom: 2.5rem;
 
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
         margin-bottom: 1.5rem;
     }
 }
@@ -21,12 +21,20 @@
 .mb-xl {
     margin-bottom: 6rem;
 
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
         margin-bottom: 2rem;
     }
 }
 
 .section-stack {
+    @media (max-width: 991px) {
+        --section-stack-gutter: 96px;
+    }
+
+    @media (max-width: 425px) {
+        --section-stack-gutter: 72px;
+    }
+
     > * {
         padding-top: var(--section-stack-gutter);
         padding-bottom: var(--section-stack-gutter);
@@ -35,8 +43,16 @@
     &-sm {
         --section-stack-gutter: 80px;
 
+        @media (max-width: 425px) {
+            --section-stack-gutter: 24px;
+        }
+
         > * + * {
             padding-top: var(--section-stack-gutter);
         }
     }
+}
+
+.pt-main-nav-height {
+    padding-top: var(--main-nav-height);
 }
