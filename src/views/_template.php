@@ -13,14 +13,19 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide-core.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+
     <title><?= $title ?></title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
 </head>
 
 <body>
     <?php include("_navbar.php"); ?>
     <?= $content ?>
-    <script src="./index.js"></script>
+    <?php include("_footer.php"); ?>
+    <script src="/index.js"></script>
 </body>
 
 </html>
