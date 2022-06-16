@@ -11,7 +11,7 @@
             margin-bottom: 40px;
         }
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             grid-template-columns: repeat(12, 1fr);
 
             gap: 40px;
@@ -30,7 +30,7 @@
         &-image {
             max-width: 472px;
             height: auto;
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(md) {
                 grid-row-start: 1;
             }
 
@@ -49,22 +49,20 @@
     .img-right {
         .design {
             &-text {
-                @include media-breakpoint-up(sm) {
+                @include media-breakpoint-up(md) {
                     grid-column: 1/7;
                 }
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(xl) {
                     grid-column: 1/5;
                 }
             }
 
             &-image {
-                @include media-breakpoint-up(sm) {
+                @include media-breakpoint-up(md) {
                     grid-column: 7/13;
-                    margin-left: auto;
-                    margin-right: auto;
                 }
-                @include media-breakpoint-up(lg) {
-                    grid-column: 5/13;
+                @include media-breakpoint-up(xl) {
+                    grid-column: 7/12;
                 }
             }
         }
@@ -73,21 +71,20 @@
     .img-left {
         .design {
             &-text {
-                // @include media-breakpoint-up(sm) {
-                //     grid-column: 1/7;
-                // }
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(md) {
+                    grid-column: 7/13;
+                }
+                @include media-breakpoint-up(xl) {
                     grid-column: 7/11;
                 }
             }
 
             &-image {
-                // @include media-breakpoint-up(sm) {
-                //     grid-column: 7/13;
-                //     justify-self: center;
-                // }
-                @include media-breakpoint-up(lg) {
-                    grid-column: 1/5;
+                @include media-breakpoint-up(md) {
+                    grid-column: 1/7;
+                }
+                @include media-breakpoint-up(xl) {
+                    grid-column: 1/6;
                 }
             }
         }
