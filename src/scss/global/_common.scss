@@ -18,3 +18,18 @@ body {
     transition: none !important;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $light-primary;
+  border-left: 1px solid $darker-light-primary;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 6px;
+}
