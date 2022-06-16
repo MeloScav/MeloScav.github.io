@@ -1,34 +1,31 @@
-<header class="header-nav bg-transparent">
+<header class="header-nav<?= (isset($transparentMainNav) && $transparentMainNav) ? " bg-transparent" : " bg-white" ?>">
     <div class="container d-flex justify-centent-center">
         <div class="logo-container">
-            <a class="navbar-brand" href="javascript:;">
+            <a href="/">
                 <svg>
-                    <use class="icon-anim" href="../assets/sprite.svg#logo"></use>
+                    <use href="/assets/sprite.svg#logo"></use>
                 </svg>
             </a>
         </div>
         <nav class="main-navbar ms-auto remove-transition-md">
             <ul>
-                <!-- <li>
-                    <a class="nav-links active" aria-current="page" href="javascript:;">Design</a>
-                </li> -->
                 <li class="<?= ($activePage == 'design') ? 'active' : ''; ?>">
-                    <a href="javascript:;">
+                    <a href="/design.php">
                         <span>Design</span>
                     </a>
                 </li>
                 <li class="<?= ($activePage == 'development') ? 'active' : ''; ?>">
-                    <a href="javascript:;">
+                    <a href="/development.php">
                         <span>Développement</span>
                     </a>
                 </li>
                 <li class="<?= ($activePage == 'illustration') ? 'active' : ''; ?>">
-                    <a href="javascript:;">
+                    <a href="/illustration.php">
                         <span>Illustration</span>
                     </a>
                 </li>
             </ul>
-            <a class="btn btn-primary" href="javascript:;">Contactez-moi</a>
+            <a class="btn btn-primary" href="mailto:meloscavezzoni@gmail.com">Contactez-moi</a>
         </nav>
         <div class="navbar-toggle-wrapper ms-auto">
             <div class="hamburger">
