@@ -11,7 +11,7 @@
                 <div class="card-content text-lg">
                     <p>Design</p>
                 </div>
-                <a href="javascript:;" class="stretched-link"></a>
+                <a href="design.php" class="stretched-link"></a>
             </div>
             <div class="card card-devlpment">
                 <div class="card-thumb">
@@ -22,7 +22,7 @@
                 <div class="card-content text-lg">
                     <p>Développement</p>
                 </div>
-                <a href="javascript:;" class="stretched-link"></a>
+                <a href="development.php" class="stretched-link"></a>
             </div>
             <div class="card card-illu">
                 <div class="card-thumb">
@@ -33,7 +33,7 @@
                 <div class="card-content text-lg">
                     <p>Illustration</p>
                 </div>
-                <a href="javascript:;" class="stretched-link"></a>
+                <a href="illustration.php" class="stretched-link"></a>
             </div>
         </div>
     </div>
