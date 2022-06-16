@@ -1,14 +1,20 @@
 .header-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: var(--main-nav-height);
+  z-index: 100;
 
   .logo-container {
-    width: 146px;
-    height: 90px;
-    padding: 16px 0 16px 0;
+    a {
+      display: block;
 
-    svg {
-      width: 100%;
-      height: 100%;
+      svg {
+        width: 146px;
+        height: var(--main-nav-height);
+        padding: 16px 0 16px 0;
+      }
     }
   }
 
@@ -46,7 +52,7 @@
       height: 100vh;
       padding: var(--main-nav-height) 32px;
 
-      transition: all ease-in-out .35s;
+      transition: all ease-in-out 0.35s;
       transition-property: transform;
       transform: translateX(120vw);
 
@@ -78,7 +84,7 @@
 
           text-decoration: none;
 
-          color: $text;
+          color: $black;
 
           @include media-breakpoint-down(lg) {
             display: block;
@@ -89,9 +95,10 @@
 
             display: block;
 
-            padding: 16px;
+            margin: 0 6px;
+            padding: 16px 10px;
 
-            transition: color ease-in-out .35s;
+            transition: color ease-in-out 0.35s;
 
             @include media-breakpoint-down(lg) {
               display: inline-block;
@@ -108,7 +115,7 @@
               height: 3px;
 
               content: "";
-              transition: all ease-in-out .35s;
+              transition: all ease-in-out 0.35s;
               transition-property: opacity, width;
 
               opacity: 0;
@@ -172,7 +179,7 @@
         // transition-property: opacity;
 
         cursor: pointer;
-        transition: all ease-in-out .35s;
+        transition: all ease-in-out 0.35s;
         pointer-events: all;
 
         opacity: 0;
@@ -197,7 +204,7 @@
       width: 40px;
       height: 3px;
 
-      transition: all ease-in-out .35s;
+      transition: all ease-in-out 0.35s;
 
       background-color: rgb(0 0 0 / 90%);
 
@@ -233,14 +240,14 @@ body.nav-open {
         &::after {
           visibility: visible;
 
-          opacity: .8;
+          opacity: 0.8;
         }
       }
 
       .hamburger {
         .line {
           &:first-child {
-            transform: rotate(45deg) translate( 6px, 6px);
+            transform: rotate(45deg) translate(6px, 6px);
             transform-origin: bottom;
           }
 
@@ -250,7 +257,7 @@ body.nav-open {
           }
 
           &:nth-child(3) {
-            transform: translateY(-9px) rotate( 45deg);
+            transform: translateY(-9px) rotate(45deg);
             transform-origin: bottom;
 
             opacity: 0;
