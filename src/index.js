@@ -1,8 +1,8 @@
 function ready(fn) {
-    if (document.readyState != 'loading') {
+    if (document.readyState != "loading") {
         fn();
     } else {
-        document.addEventListener('DOMContentLoaded', fn);
+        document.addEventListener("DOMContentLoaded", fn);
     }
 }
 
@@ -23,7 +23,7 @@ ready(() => {
 
     removeTransitionMdClass();
 
-    window.addEventListener('resize', removeTransitionMdClass);
+    window.addEventListener("resize", removeTransitionMdClass);
 
     const navbarToggler = document.querySelector(".header-nav .navbar-toggle-wrapper");
     navbarToggler.addEventListener("click", function () {
@@ -31,8 +31,8 @@ ready(() => {
     })
 
     // WAVES ANIMATION
-    const waves = document.querySelectorAll(".main-banner-wave");
-    const wavesAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--main-banner-wave-animation-duration')) * 1000;
+    const waves = document.querySelectorAll("[data-animate-wave]");
+    const wavesAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--wave-animation-duration')) * 1000;
 
     function addAnimateClass() {
 
@@ -46,4 +46,27 @@ ready(() => {
     setInterval(() => {
         addAnimateClass()
     }, wavesAnimationDuration);
+
+    if (document.querySelectorAll(".splide").length > 0) {
+        const splideSlider = new Splide('.splide', {
+            updateOnMove: true,
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            trimSpace: 'move',
+            focus: 'center',
+            drag: true,
+            breakpoints: {
+                1199: {
+                    perPage: 2
+                },
+                991: {
+                    perPage: 1,
+                    focus: 0
+                },
+            }
+        });
+        splideSlider.mount();
+    }
+
 })
