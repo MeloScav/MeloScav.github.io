@@ -1,38 +1,56 @@
 <section class="bg-light-secondary">
     <div class="container section-stack-sm">
         <h2>Mes projets récents</h2>
-        <div class="project project-left project-beer-lovers">
+
+        <?php
+        $projectsLimit = 3;
+        $lastProjects = array_slice($PROJECTS, -$projectsLimit, $projectsLimit, false);
+
+        // $lastProjects = array();
+
+        // foreach ($PROJECTS as $index => $project) {
+        //     if ($index === 3 || $index === 2 || $index === 1) {
+        //         $lastProjects[] = $project;
+        //     }
+        // }
+        ?>
+
+        <?php foreach ($lastProjects as $index => $project) : ?>
+        <?php
+            $projectCSSClass = "";
+
+            if ($index % 2 == 0) {
+                $projectCSSClass .= " project-left";
+            } else {
+                $projectCSSClass .= " project-right";
+            }
+
+            if (isset($project['cssClass']) && !empty($project['cssClass'])) {
+                $projectCSSClass .= " " . $project['cssClass'];
+            }
+            ?>
+        <div class="project<?= $projectCSSClass; ?>">
             <div class="box-image">
-                <img src="./../assets/beer-lovers-festival.jpg" alt="Beer Lovers Festival">
+                <?php if (isset($project['introductionBanner']) && !empty($project['introductionBanner'])) : ?>
+                <img src="<?= $project['introductionBanner']; ?>" alt="<?= $project['title']; ?>" />
+                <?php endif; ?>
+
                 <div class="overlay"></div>
             </div>
             <div class="project-info">
-                <h3 class="h4">Beer lovers’ Festival</h3>
-                <p>Création du design pour le Summer Beer Lovers’ Festival.</p>
-                <a href="javascript:;" class="btn btn-outline-primary">En savoir plus</a>
+                <?php if (isset($project['title']) && !empty($project['title'])) : ?>
+                <h3 class="h4"><?= $project['title']; ?></h3>
+                <?php endif; ?>
+
+                <?php if (isset($project['shortDescription']) && !empty($project['shortDescription'])) : ?>
+                <p><?= $project['shortDescription']; ?></p>
+                <?php endif; ?>
+
+                <?php if (isset($project['link']) && !empty($project['link'])) : ?>
+                <a href="<?= $project['link']; ?>" class="btn btn-outline-primary">En savoir plus</a>
+                <?php endif; ?>
             </div>
         </div>
-        <div class="project project-right project-family-icons">
-            <div class="box-image">
-                <img src="./../assets/image-icons-family.jpg" alt="Family icons">
-                <div class="overlay"></div>
-            </div>
-            <div class="project-info">
-                <h3 class="h4">Ensemble d’icônes</h3>
-                <p>Création de 4 icônes de transport.</p>
-                <a href="javascript:;" class="btn btn-outline-primary">En savoir plus</a>
-            </div>
-        </div>
-        <div class="project project-left project-illu-car">
-            <div class="box-image">
-                <img src="./../assets/image-illustration-car.jpg" alt="Illustration of a car with gifts">
-                <div class="overlay"></div>
-            </div>
-            <div class="project-info">
-                <h3 class="h4">Illustration vectorielle</h3>
-                <p>Création d’une voiture dans un paysage d’été.</p>
-                <a href="javascript:;" class="btn btn-outline-primary">En savoir plus</a>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </section>
