@@ -1,8 +1,11 @@
 .call-to-action-section {
-    h3 {
-        text-align: center;
-    }
+    text-align: center;
+
     a {
-        text-decoration: none;
+        margin-top: 56px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 28px;
+        }
     }
 }
