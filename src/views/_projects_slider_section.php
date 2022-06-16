@@ -1,18 +1,26 @@
 <?php
-$projectsSliderByType = array();
+$projectsToShow = array();
 
-foreach ($PROJECTS as $project) {
-    if (isset($project['type']) && count($project['type']) > 0) {
-        foreach ($project['type'] as $projectType) {
-            if ($projectType !== $projectsType) {
-                $projectsSliderByType[] = $project;
+if (isset($isDetails) && !empty($isDetails) && $isDetails) {
+    foreach ($PROJECTS as $project) {
+        if (array_search($project, $PROJECTS) !== array_search($currentProject, $PROJECTS)) {
+            $projectsToShow[] = $project;
+        }
+    }
+} else {
+    foreach ($PROJECTS as $project) {
+        if (isset($project['type']) && count($project['type']) > 0) {
+            foreach ($project['type'] as $projectType) {
+                if ($projectType !== $projectsType) {
+                    $projectsToShow[] = $project;
+                }
             }
         }
     }
 }
 ?>
 
-<section>
+<section class="<?= (isset($isDetails) && !empty($isDetails) && $isDetails) ? "bg-light-secondary" : ""; ?>">
     <div class="container section-stack-sm">
         <h2 class="text-center">Voir plus de projets</h2>
 
@@ -20,12 +28,12 @@ foreach ($PROJECTS as $project) {
             <div class="splide__arrows">
                 <button class="splide__arrow splide__arrow--prev">
                     <svg>
-                        <use href="../assets/sprite.svg#slider-arrow-icon"></use>
+                        <use href="/assets/sprite.svg#slider-arrow-icon"></use>
                     </svg>
                 </button>
                 <button class="splide__arrow splide__arrow--next">
                     <svg>
-                        <use href="../assets/sprite.svg#slider-arrow-icon"></use>
+                        <use href="/assets/sprite.svg#slider-arrow-icon"></use>
                     </svg>
                 </button>
             </div>
@@ -33,7 +41,7 @@ foreach ($PROJECTS as $project) {
             <div class="splide__track--wrapper">
                 <div class="splide__track">
                     <div class="splide__list">
-                        <?php foreach ($projectsSliderByType as $project) : ?>
+                        <?php foreach ($projectsToShow as $project) : ?>
                         <?php if (isset($project['slideBanner']) && !empty($project['slideBanner'])) : ?>
                         <div class="splide__slide project-card-wrapper">
                             <div class="project-card">
