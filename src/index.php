@@ -1,10 +1,10 @@
-<?php $title = 'Accueil'; ?>
-<?php ob_start(); ?>
-
 <?php
-// $test = "<h1>test</h1><p>test</p>";
-// echo $test;
+$title = 'Accueil';
+$transparentMainNav = false;
+require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
 ?>
+
+<?php ob_start(); ?>
 
 <?php include("./views/_banner.php"); ?>
 <div class="section-stack section-py">
