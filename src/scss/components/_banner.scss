@@ -33,6 +33,9 @@
     @media (min-width: $container-full-max-width) {
       margin-bottom: 8px;
     }
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
   }
 
   &-title {
@@ -41,6 +44,11 @@
     @media (min-width: $container-full-max-width) {
       margin-bottom: 72px;
     }
+
+    @media (max-width: 400px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   &-description {
@@ -48,6 +56,10 @@
 
     @media (min-width: $container-full-max-width) {
       margin-bottom: 24px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 18px;
     }
   }
 
