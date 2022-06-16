@@ -3,7 +3,8 @@ import {
     task,
     src,
     dest,
-    series
+    series,
+    parallel
 } from "gulp";
 
 import prettyHtml from "gulp-pretty-html";
@@ -98,14 +99,23 @@ const buildSeries = series(
     "minify-js"
 );
 
-exports.default = (done) => {
+const devWatch = () => {
     watch("./src/**/*", task("copy-static-files"));
     watch("./src/**/*.php", series("compile-php", "pretty-html"));
     watch("./src/scss/**/*", task("compile-sass"));
     watch("./src/**/*.js", task("minify-js"));
     watch(["./src/**/*", "!./src/**/*.s(a|c)ss"], task("reload-browser"));
+}
 
-    done();
-};
+const dev = series(
+    parallel("copy-static-files",
+        "compile-php",
+        "pretty-html",
+        "compile-sass",
+        "minify-js"),
+    devWatch
+);
+
+exports.default = dev
 
 exports.build = buildSeries;
