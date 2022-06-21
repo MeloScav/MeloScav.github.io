@@ -38,6 +38,18 @@
         --project-theme-color: #9d673f;
     }
 
+    &-pomodoro {
+        --project-theme-color: #ac7b7d;
+    }
+
+    &-old-website {
+        --project-theme-color: #1497d4;
+    }
+
+    &-old-site-portfolio {
+        --project-theme-color: #c74db2;
+    }
+
     .box-image,
     img,
     &-info {
@@ -159,7 +171,9 @@
 
             &.animate {
                 path {
-                    d: path("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+                    d: path(
+                        "M1920 0H0V59.8127C354.26 96.7915 564.867 74.742 777.785 52.4505C1050.37 23.9118 1326.75 -5.02347 1913.2 89H1920V0Z"
+                    );
                 }
             }
         }
@@ -169,7 +183,9 @@
 
             &.animate {
                 path {
-                    d: path("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+                    d: path(
+                        "M-1 0H1922V69.2304C1512.53 122.317 1299.9 96.0089 1085.69 69.5049C834.644 38.4425 581.412 7.11042 6.55701 103H-1V0Z"
+                    );
                 }
             }
         }
