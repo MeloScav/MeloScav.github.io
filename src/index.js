@@ -7,6 +7,23 @@ function ready(fn) {
 }
 
 ready(() => {
+    const loadingAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--loading-animation-duration')) * 1000;
+
+    if (typeof sessionStorage.animatedOnce === "undefined") {
+        sessionStorage.setItem('animatedOnce', 'false');
+    }
+
+    let animatedOnce = sessionStorage.animatedOnce === "true";
+
+    if (!animatedOnce) {
+        sessionStorage.setItem('animatedOnce', 'true');
+
+        document.body.classList.add("loading");
+        setTimeout(() => {
+            document.body.classList.remove("loading");
+        }, loadingAnimationDuration + 500);
+    }
+
     const removeTransitionMd = document.querySelectorAll(".remove-transition-md");
     const removeTransitionMdClass = () => {
         let windowWidth = window.innerWidth;
