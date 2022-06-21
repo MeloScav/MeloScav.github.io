@@ -1,6 +1,8 @@
 <?php
-$title = 'Projects | Illu car';
+$title = 'Projets | Illustration voiture';
 $transparentMainNav = true;
+$projectsType = 'illustration';
+$isDetails = true;
 require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
 
 $currentProject = [];
@@ -21,6 +23,8 @@ foreach ($PROJECTS as $project) {
     <?php include("../../views/projects-details/_fonts_section.php"); ?>
     <?php include("../../views/projects-details/_icons_section.php"); ?>
     <?php include("../../views/projects-details/_design_section.php"); ?>
+    <?php include("../../views/_projects_slider_section.php"); ?>
+    <?php include("../../views/_call_to_action_section.php"); ?>
 </div>
 
 <?php $content = ob_get_clean(); ?>

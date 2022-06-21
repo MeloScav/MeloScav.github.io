@@ -1,6 +1,8 @@
 <?php
-$title = 'Projects | Family icons';
+$title = "Projets | Famille d'icônes";
 $transparentMainNav = true;
+$projectsType = 'illustration';
+$isDetails = true;
 require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
 
 $currentProject = [];
@@ -11,6 +13,7 @@ foreach ($PROJECTS as $project) {
     }
 }
 
+
 ?>
 <?php ob_start(); ?>
 
@@ -18,6 +21,11 @@ foreach ($PROJECTS as $project) {
 <div class="section-stack">
     <?php include("../../views/projects-details/_presentation_section.php"); ?>
     <?php include("../../views/projects-details/_colors_section.php"); ?>
+    <?php include("../../views/projects-details/_fonts_section.php"); ?>
+    <?php include("../../views/projects-details/_icons_section.php"); ?>
+    <?php include("../../views/projects-details/_design_section.php"); ?>
+    <?php include("../../views/_projects_slider_section.php"); ?>
+    <?php include("../../views/_call_to_action_section.php"); ?>
 </div>
 
 <?php $content = ob_get_clean(); ?>

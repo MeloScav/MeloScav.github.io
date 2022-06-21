@@ -1,6 +1,6 @@
 <?php
-$title = 'Projets | Beer Lovers Festival';
-$projectsType = 'design';
+$title = 'Projects | Pomodoro';
+$projectsType = 'Development';
 $isDetails = true;
 $transparentMainNav = true;
 require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
