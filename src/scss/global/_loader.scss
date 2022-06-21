@@ -12,7 +12,7 @@
     left: 0;
 
     background-color: $light-secondary;
-    z-index: 1000;
+    z-index: 10000;
     visibility: hidden;
     opacity: 0;
     transition: all 0.35s ease-in-out;
@@ -54,20 +54,28 @@
     }
 }
 
-body.loading {
-    overflow: hidden;
+body {
+    &.loading {
+        overflow: hidden;
 
-    .init-loader {
-        opacity: 1;
-        visibility: visible;
-
-        path {
-            animation-name: logo-path-draw;
-            fill: $primary;
+        > * {
+            opacity: 0;
         }
+    }
 
-        .logo-path-4 {
-            fill: $secondary;
+    &.init-loading {
+        .init-loader {
+            opacity: 1 !important;
+            visibility: visible;
+
+            path {
+                animation-name: logo-path-draw;
+                fill: $primary;
+            }
+
+            .logo-path-4 {
+                fill: $secondary;
+            }
         }
     }
 }

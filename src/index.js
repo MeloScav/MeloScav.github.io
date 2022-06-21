@@ -19,10 +19,12 @@ ready(() => {
     if (!animatedOnce) {
         sessionStorage.setItem("animatedOnce", "true");
 
-        document.body.classList.add("loading");
+        document.body.classList.add("init-loading");
         setTimeout(() => {
-            document.body.classList.remove("loading");
+            document.body.classList.remove("init-loading", "loading");
         }, loadingAnimationDuration + 500);
+    } else {
+        document.body.classList.remove("loading");
     }
 
     // Remove transition class on load
