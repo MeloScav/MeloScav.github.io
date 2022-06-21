@@ -24,18 +24,27 @@ ready(() => {
         }, loadingAnimationDuration + 500);
     }
 
-    const removeTransitionMd = document.querySelectorAll(".remove-transition-md");
-    const removeTransitionMdClass = () => {
+    const removeOnloadTransitionMd = document.querySelectorAll(".remove-onload-transition-md");
+    const removeOnloadTransitionMdClass = () => {
         let windowWidth = window.innerWidth;
         if (windowWidth < 992) {
-            removeTransitionMd.forEach(element => {
-                element.classList.remove("remove-transition-md");
+            removeOnloadTransitionMd.forEach(element => {
+                element.classList.remove("remove-onload-transition-md");
             });
         } else {
-            removeTransitionMd.forEach(element => {
-                element.classList.add("remove-transition-md");
+            removeOnloadTransitionMd.forEach(element => {
+                element.classList.add("remove-onload-transition-md");
             });
         }
+    }
+
+    removeOnloadTransitionMdClass();
+
+    const removeTransition = document.querySelectorAll(".remove-onload-transition");
+    const removeTransitionMdClass = () => {
+        removeTransition.forEach(element => {
+            element.classList.add("remove-onload-transition");
+        });
     }
 
     removeTransitionMdClass();
