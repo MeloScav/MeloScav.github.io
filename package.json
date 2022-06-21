@@ -50,6 +50,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@splidejs/splide": "^4.0.7",
     "bootstrap": "^5.1.3"
   }
 }
