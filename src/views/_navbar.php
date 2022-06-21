@@ -7,7 +7,7 @@
                 </svg>
             </a>
         </div>
-        <nav class="main-navbar ms-auto remove-onload-transition-md">
+        <nav class="main-navbar ms-auto remove-transition-md">
             <ul>
                 <li class="<?= ($activePage == 'design') ? 'active' : ''; ?>">
                     <a href="/design.php">

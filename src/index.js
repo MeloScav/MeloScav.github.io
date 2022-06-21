@@ -35,22 +35,22 @@ ready(() => {
 
     removeTransitionClass();
 
-    // Remove transition class on resize for hamburger menu
-    const removeOnloadTransitionMd = document.querySelectorAll(".remove-onload-transition-md");
-    const removeOnloadTransitionMdClass = () => {
+    // Remove transition class for hamburger menu on resize
+    const removeTransitionMd = document.querySelectorAll(".remove-transition-md");
+    const removeTransitionMdClass = () => {
         let windowWidth = window.innerWidth;
         if (windowWidth < 992) {
-            removeOnloadTransitionMd.forEach(element => {
-                element.classList.remove("remove-onload-transition-md");
+            removeTransitionMd.forEach(element => {
+                element.classList.remove("remove-transition-md");
             });
         } else {
-            removeOnloadTransitionMd.forEach(element => {
-                element.classList.add("remove-onload-transition-md");
+            removeTransitionMd.forEach(element => {
+                element.classList.add("remove-transition-md");
             });
         }
     }
 
-    removeOnloadTransitionMdClass();
+    removeTransitionMdClass();
 
     window.addEventListener("resize", removeTransitionMdClass);
 

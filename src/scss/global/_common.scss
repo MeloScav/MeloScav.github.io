@@ -15,11 +15,11 @@ body {
 
 .remove-onload-transition {
   transition: none !important;
+}
 
-  &-md {
-    @include media-breakpoint-down(lg) {
-      transition: none !important;
-    }
+.remove-transition-md {
+  @include media-breakpoint-down(lg) {
+    transition: none !important;
   }
 }
 
