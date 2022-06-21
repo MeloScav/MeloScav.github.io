@@ -91,10 +91,15 @@
 }
 
 .project-card-wrapper {
-    height: 400px;
+    // height: 400px;
+    height: 330px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include media-breakpoint-down(lg) {
+        height: 400px;
+    }
 
     &.is-active {
         .project-card {
@@ -127,7 +132,8 @@
         overflow: hidden;
 
         @include media-breakpoint-up(lg) {
-            height: 344px;
+            // height: 344px;
+            height: 280px;
             transform: scale(0.776);
             will-change: transform;
         }
