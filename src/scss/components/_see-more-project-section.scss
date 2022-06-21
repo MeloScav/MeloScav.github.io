@@ -85,7 +85,7 @@
 
         &-thumb {
             svg {
-                max-width: 100%;
+                width: 100%;
                 height: var(--project-icons-height);
 
                 @media (max-width: 1440px) {
