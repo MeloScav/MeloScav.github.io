@@ -1,9 +1,6 @@
-<?php
-$activePage = basename($_SERVER['PHP_SELF'], ".php");
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
+<?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
 
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
@@ -32,7 +29,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
 </head>
 
-<body>
+<body class="loading">
     <?php include("_navbar.php"); ?>
     <?= $content ?>
     <?php include("_footer.php"); ?>
