@@ -7,16 +7,17 @@ function ready(fn) {
 }
 
 ready(() => {
-    const loadingAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--loading-animation-duration')) * 1000;
+    // Loading animation
+    const loadingAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue("--loading-animation-duration")) * 1000;
 
     if (typeof sessionStorage.animatedOnce === "undefined") {
-        sessionStorage.setItem('animatedOnce', 'false');
+        sessionStorage.setItem("animatedOnce", "false");
     }
 
-    let animatedOnce = sessionStorage.animatedOnce === "true";
+    let animatedOnce = sessionStorage.getItem("animatedOnce") === "true";
 
     if (!animatedOnce) {
-        sessionStorage.setItem('animatedOnce', 'true');
+        sessionStorage.setItem("animatedOnce", "true");
 
         document.body.classList.add("loading");
         setTimeout(() => {
@@ -24,33 +25,36 @@ ready(() => {
         }, loadingAnimationDuration + 500);
     }
 
-    const removeOnloadTransitionMd = document.querySelectorAll(".remove-onload-transition-md");
-    const removeOnloadTransitionMdClass = () => {
-        let windowWidth = window.innerWidth;
-        if (windowWidth < 992) {
-            removeOnloadTransitionMd.forEach(element => {
-                element.classList.remove("remove-onload-transition-md");
-            });
-        } else {
-            removeOnloadTransitionMd.forEach(element => {
-                element.classList.add("remove-onload-transition-md");
-            });
-        }
+    // Remove transition class on load
+    const removeTransition = document.querySelectorAll(".remove-onload-transition");
+    const removeTransitionClass = () => {
+        removeTransition.forEach(element => {
+            element.classList.remove("remove-onload-transition");
+        });
     }
 
-    removeOnloadTransitionMdClass();
+    removeTransitionClass();
 
-    const removeTransition = document.querySelectorAll(".remove-onload-transition");
+    // Remove transition class for hamburger menu on resize
+    const removeTransitionMd = document.querySelectorAll(".remove-transition-md");
     const removeTransitionMdClass = () => {
-        removeTransition.forEach(element => {
-            element.classList.add("remove-onload-transition");
-        });
+        let windowWidth = window.innerWidth;
+        if (windowWidth < 992) {
+            removeTransitionMd.forEach(element => {
+                element.classList.remove("remove-transition-md");
+            });
+        } else {
+            removeTransitionMd.forEach(element => {
+                element.classList.add("remove-transition-md");
+            });
+        }
     }
 
     removeTransitionMdClass();
 
     window.addEventListener("resize", removeTransitionMdClass);
 
+    // Toggle hamburger menu
     const navbarToggler = document.querySelector(".header-nav .navbar-toggle-wrapper");
     navbarToggler.addEventListener("click", function () {
         document.querySelector("body").classList.toggle("nav-open")
@@ -58,7 +62,7 @@ ready(() => {
 
     // WAVES ANIMATION
     const waves = document.querySelectorAll("[data-animate-wave]");
-    const wavesAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue('--wave-animation-duration')) * 1000;
+    const wavesAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue("--wave-animation-duration")) * 1000;
 
     function addAnimateClass() {
 
@@ -73,6 +77,8 @@ ready(() => {
         addAnimateClass()
     }, wavesAnimationDuration);
 
+
+    // Slide JS init
     if (document.querySelectorAll(".splide").length > 0) {
         const splideSlider = new Splide('.splide', {
             updateOnMove: true,
