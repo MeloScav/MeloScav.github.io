@@ -1,6 +1,7 @@
 <?php
 $projectDetailsColors = (isset($currentProject['detailsColors']['colors']) && !empty($currentProject['detailsColors']['colors'])) ? $currentProject['detailsColors']['colors'] : null;
 $projectDetailsColorsImg = (isset($currentProject['detailsColors']['image']) && !empty($currentProject['detailsColors']['image'])) ? $currentProject['detailsColors']['image'] : null;
+$projectDetailsColorsClass = (isset($currentProject['detailsColors']['cssClass']) && !empty($currentProject['detailsColors']['cssClass'])) ? $currentProject['detailsColors']['cssClass'] : null;
 ?>
 
 <?php if ($projectDetailsColors) : ?>
@@ -14,7 +15,7 @@ $projectDetailsColorsImg = (isset($currentProject['detailsColors']['image']) && 
                 <?php foreach ($projectDetailsColors as $color) : ?>
                 <div class="color">
                     <?php if ($color['colorHex']) : ?>
-                    <div class="color-block beer-lovers-<?= $color['name'] ?>">
+                    <div class="color-block <?= $projectDetailsColorsClass . '-' . $color['name'] ?>">
                         <p><?= $color['colorHex'] ?></p>
                     </div>
                     <?php endif; ?>
