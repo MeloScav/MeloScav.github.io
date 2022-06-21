@@ -30,14 +30,14 @@
                 <div class="footer-content-links-social-network">
                     <h4 class="footer-title">Retrouvez-moi sur</h4>
                     <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
-                        <a href="https://github.com/MeloScav">
+                        <a class="footer-link" href="https://github.com/MeloScav">
                             <svg class="icon icon-md">
-                                <use href="/assets/sprite.svg#github-black"></use>
+                                <use href="/assets/sprite.svg#github"></use>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/meloe-scavezzoni/">
+                        <a class="footer-link" href="https://www.linkedin.com/in/meloe-scavezzoni/">
                             <svg class="icon icon-md">
-                                <use href="/assets/sprite.svg#linkedin-black"></use>
+                                <use href="/assets/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
                     </div>
