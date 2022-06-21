@@ -51,13 +51,15 @@
             display: flex;
             align-items: center;
 
-            @if (length($beer-lovers-colors) > 0) {
-                @each $color-name, $color-value in $beer-lovers-colors {
-                    .beer-lovers-#{$color-name} {
-                        background-color: $color-value;
-                        @if ($color-name == "black") {
-                            p {
-                                color: $white;
+            @if (length($projects-colors) > 0) {
+                @each $project-name, $project-colors in $projects-colors {
+                    @if (length($project-colors) > 0) {
+                        @each $color-name, $color-value in $project-colors {
+                            .#{$project-name}-#{$color-name} {
+                                background-color: $color-value;
+                                p {
+                                    color: color-contrast($color-value);
+                                }
                             }
                         }
                     }
