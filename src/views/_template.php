@@ -26,7 +26,6 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide-core.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css"> -->
     <link rel="stylesheet" href="/css/style.css">
 
     <title><?= $title ?></title>
@@ -38,8 +37,8 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
     <?= $content ?>
     <?php include("_footer.php"); ?>
 
-    <div class="init-loader">
-        <svg viewBox="0 0 192 77" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="">
+    <div class="init-loader remove-onload-transition">
+        <svg viewBox="0 0 192 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M10.04 76.5C14.7345 76.5 18.54 72.6944 18.54 68C18.54 63.3056 14.7345 59.5 10.04 59.5C5.34562 59.5 1.54004 63.3056 1.54004 68C1.54004 72.6944 5.34562 76.5 10.04 76.5Z"
                 stroke="#AB2BC0" stroke-miterlimit="10" class="logo-path-1" fill="none"></path>
