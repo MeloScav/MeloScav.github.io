@@ -65,12 +65,28 @@ $grey-200: #cbc3cc;
 $grey-300: #aea9af;
 $grey-400: #888089;
 
-$beer-lovers-colors: (
-    "yellow": #fcd673,
-    "blue": #01cee2,
-    "red": #ffb198,
-    "black": #171612,
-    "white": #fffdf6,
+$projects-colors: (
+    "beer-lovers": (
+        "yellow": #fcd673,
+        "blue": #01cee2,
+        "red": #ffb198,
+        "black": #171612,
+        "white": #fffdf6,
+    ),
+    "pomodoro": (
+        "dark-rose": #ac7b7d,
+        "dark-blue": #34435e,
+        "pure-white": #ffffff,
+    ),
+    "old-website": (
+        "blue": #1497d4,
+        "dark": #000000,
+    ),
+    "old-portfolio": (
+        "purple": #c74db2,
+        "dark-text": #141414,
+        "white": #f8f8f8,
+    ),
 );
 
 // CONTAINER
