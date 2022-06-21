@@ -39,7 +39,9 @@
                         </p>
                     </div>
                     <div class="d-flex flex-wrap align-items-center grid-gap gap-32">
-                        <a class="btn btn-outline-primary" href="javascript:;">Télécharger mon CV</a>
+                        <a class="btn btn-outline-primary" href="/SCAVEZZONI-Meloe-CV.pdf" download>
+                            Télécharger mon CV
+                        </a>
                         <a class="btn btn-primary" href="mailto:meloscavezzoni@gmail.com">Contactez-moi</a>
                     </div>
                 </div>
