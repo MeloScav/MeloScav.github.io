@@ -8,23 +8,49 @@ function ready(fn) {
 
 ready(() => {
     // Loading animation
-    const loadingAnimationDuration = parseFloat(getComputedStyle(document.body).getPropertyValue("--loading-animation-duration")) * 1000;
 
     if (typeof sessionStorage.animatedOnce === "undefined") {
         sessionStorage.setItem("animatedOnce", "false");
     }
 
-    let animatedOnce = sessionStorage.getItem("animatedOnce") === "true";
+    const initLoaderPaths = document.querySelectorAll(".init-loader path");
 
-    if (!animatedOnce) {
-        sessionStorage.setItem("animatedOnce", "true");
+    const launchInitLoader = () => {
+        // If document is visible, stop event listener
+        if (!document.hidden) {
+            document.removeEventListener("visibilitychange", launchInitLoader);
+        }
 
-        document.body.classList.add("init-loading");
-        setTimeout(() => {
-            document.body.classList.remove("init-loading", "loading");
-        }, loadingAnimationDuration + 500);
-    } else {
-        document.body.classList.remove("loading");
+        // Check if the animation had run once
+        if (sessionStorage.animatedOnce !== "true") {
+            document.body.classList.add("init-loading");
+            sessionStorage.setItem("animatedOnce", "true");
+
+            // Check if each Path has finished its animation
+            initLoaderPaths.forEach((path, index) => {
+                let initLoaderAnimationFinished = false;
+                path.addEventListener('animationend', () => {
+                    initLoaderAnimationFinished = true;
+                    if (index === initLoaderPaths.length - 1 && initLoaderAnimationFinished) {
+                        setTimeout(() => {
+                            document.body.classList.remove("init-loading", "loading");
+                        }, 500);
+                    }
+                });
+            });
+        } else {
+            // Remove loading class if animation had run once
+            document.body.classList.remove("loading");
+        }
+    };
+
+    // Check if page is visible by user
+    if (document.visibilityState === "visible") {
+        launchInitLoader();
+    }
+    // If not, add event listener to check the page visibility
+    else {
+        document.addEventListener("visibilitychange", launchInitLoader)
     }
 
     // Remove transition class on load
