@@ -56,6 +56,10 @@
             }
         }
 
+        &:hover::before {
+            background-color: $light-primary;
+        }
+
         &::before {
             position: absolute;
             z-index: 0;
@@ -69,6 +73,8 @@
 
             border-radius: 50% 50% 6% 6% / 100% 100% 6% 6%;
             background-color: $light-secondary;
+
+            transition: background-color 0.35s ease-in-out;
         }
 
         &-thumb,
@@ -82,19 +88,19 @@
                 max-width: 100%;
                 height: var(--project-icons-height);
 
-                @media(max-width: 1440px) {
+                @media (max-width: 1440px) {
                     --project-icons-height: 170px;
                 }
 
-                @media(max-width: 1200px) {
+                @media (max-width: 1200px) {
                     --project-icons-height: 130px;
                 }
 
-                @media(max-width: 768px) {
+                @media (max-width: 768px) {
                     --project-icons-height: 115px;
                 }
 
-                @media(max-width: 575px) {
+                @media (max-width: 575px) {
                     --project-icons-height: 165px;
                 }
             }
