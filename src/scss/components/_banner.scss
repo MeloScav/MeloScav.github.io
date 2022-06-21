@@ -20,6 +20,9 @@
 
     .icons-container {
       margin-top: 3.704vh;
+      a {
+        transition: color ease-in-out 0.35s;
+      }
 
       @media (min-width: $container-full-max-width) {
         margin-top: 40px;
@@ -67,7 +70,7 @@
     position: relative;
     z-index: 20;
 
-    max-width: 50%;
+    width: 50%;
     max-height: calc(100vh - var(--main-nav-height));
     margin-top: auto;
     margin-left: auto;
