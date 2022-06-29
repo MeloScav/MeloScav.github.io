@@ -26,7 +26,6 @@ ready(() => {
                     scrollTo(anchorTarget);
                 }
             });
-
         });
     }
 
@@ -60,6 +59,7 @@ ready(() => {
                 path.addEventListener('animationend', () => {
                     initLoaderAnimationFinished = true;
                     if (index === initLoaderPaths.length - 1 && initLoaderAnimationFinished) {
+                        window.scrollTo(0, 0);
                         setTimeout(() => {
                             document.body.classList.remove("init-loading", "loading");
                             // Smooth scroll to anchor target
@@ -78,6 +78,7 @@ ready(() => {
 
             // Smooth scroll to anchor target
             if (anchorTarget) {
+                window.scrollTo(0, 0);
                 scrollTo(anchorTarget);
             }
         }
