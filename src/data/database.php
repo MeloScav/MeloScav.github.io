@@ -262,7 +262,7 @@ $PROJECTS = [
         ],
         "icons" => [
             0 => [
-                "icon" => "/assets/family-icons-set.svg",
+                "icon" => "/assets/family-icons/family-icons-set.svg",
                 "iconAlt" => "Ensemble d'icones représentant des moyens de transport",
                 "text" => [
                     0 => "Les 4 icônes représentent des moyens de transports courant : la voiture, le bus, le train et la trottinette.",
