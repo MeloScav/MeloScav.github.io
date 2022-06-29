@@ -1,4 +1,4 @@
-<section class="bg-light-secondary">
+<section id="projects-section" class="bg-light-secondary">
     <div class="container section-stack-sm">
         <h2>Mes projets récents</h2>
 

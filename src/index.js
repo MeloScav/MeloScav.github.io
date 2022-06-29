@@ -7,6 +7,29 @@ function ready(fn) {
 }
 
 ready(() => {
+    // Anchor link scroll to section
+    const anchorLinks = document.querySelectorAll('a[href*="#"]');
+
+    const scrollTo = (element) => {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+
+    if (anchorLinks.length > 0) {
+        anchorLinks.forEach(anchorLink => {
+            anchorLink.addEventListener("click", () => {
+                const anchorTarget = document.querySelector(anchorLink.hash);
+                if (anchorTarget.length > 0) {
+                    scrollTo(anchorTarget);
+                }
+            });
+
+        });
+    }
+
     // Loading animation
 
     if (typeof sessionStorage.animatedOnce === "undefined") {
@@ -16,6 +39,11 @@ ready(() => {
     const initLoaderPaths = document.querySelectorAll(".init-loader path");
 
     const launchInitLoader = () => {
+        let anchorTarget;
+        if (window.location.hash) {
+            anchorTarget = document.querySelector(window.location.hash);
+        }
+
         // If document is visible, stop event listener
         if (!document.hidden) {
             document.removeEventListener("visibilitychange", launchInitLoader);
@@ -34,6 +62,12 @@ ready(() => {
                     if (index === initLoaderPaths.length - 1 && initLoaderAnimationFinished) {
                         setTimeout(() => {
                             document.body.classList.remove("init-loading", "loading");
+                            // Smooth scroll to anchor target
+                            if (anchorTarget) {
+                                setTimeout(() => {
+                                    scrollTo(anchorTarget);
+                                }, 250);
+                            }
                         }, 500);
                     }
                 });
@@ -41,6 +75,11 @@ ready(() => {
         } else {
             // Remove loading class if animation had run once
             document.body.classList.remove("loading");
+
+            // Smooth scroll to anchor target
+            if (anchorTarget) {
+                scrollTo(anchorTarget);
+            }
         }
     };
 
@@ -128,5 +167,4 @@ ready(() => {
         });
         splideSlider.mount();
     }
-
 })

@@ -10,7 +10,7 @@
                     Actuellement à la recherche d’un <span class="text-secondary fw-bold">job</span>
                 </p>
                 <div class="d-flex flex-wrap align-items-center grid-gap gap-32">
-                    <a class="btn btn-outline-primary" href="javascript:;">voir plus</a>
+                    <a class="btn btn-outline-primary" href="#projects-section">voir plus</a>
                     <a class="btn btn-primary" href="mailto:meloscavezzoni@gmail.com">Contactez-moi</a>
                 </div>
                 <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
