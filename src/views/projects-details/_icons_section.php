@@ -3,8 +3,18 @@
     <div class="container">
         <h2 class="mb-lg project-details-icons-title">Les icônes</h2>
 
-        <?php foreach ($currentProject['icons'] as $projectIcon) : ?>
-        <div class="project-details-icons-content">
+        <?php foreach ($currentProject['icons'] as $index => $projectIcon) : ?>
+        <?php
+                $iconCSSClass = "";
+
+                if ($index % 2 == 0) {
+                    $iconCSSClass .= " icons-right";
+                } else {
+                    $iconCSSClass .= " icons-left";
+                }
+
+                ?>
+        <div class="project-details-icons-content<?= $iconCSSClass; ?>">
             <div class="icons-text">
                 <?php if (isset($projectIcon['icon'])) : ?>
                 <img class="mb-lg" src="<?= $projectIcon['icon'] ?>" alt="<?= $projectIcon['iconAlt'] ?>">
