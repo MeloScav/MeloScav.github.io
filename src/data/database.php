@@ -293,6 +293,167 @@ $PROJECTS = [
             "image" => "/assets/illu-car/illu-car.jpg"
         ]
     ],
+    6 => [
+        "title" => "Pack d'icônes colorées",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-colorful-icons",
+        "shortDescription" => "Création d'un ensemble d'icônes avec un style fluide et coloré.",
+        "link" => "/projects/family-colorful-icons/details.php",
+        "introductionBanner" => "/assets/colorful-icons/set-colorful-icons.jpg",
+        "slideBanner" => "/assets/colorful-icons/set-colorful-icons.jpg",
+        "detailsBanner" => "/assets/colorful-icons/bg-banner-set-colorful-icons.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Dans le cadre d’un cours sur l'apprentissage d'Illustrator à l'IFAPME, j'ai du réaliser un ensemble d'icônes.",
+                1 => "Après avoir fait une recherche sur divers styles, j'ai réaliser un moodboard puis je me suis mise au travail !",
+                2 => "Pour ces icônes, j'ai décidé de partir sur un style fait main et assez fluide avec des tâches de couleurs, je trouve que ça donne un côté léger, moderne, simple et créatif aux différentes icônes.",
+                3 => "Je voulais un style très simple mais en même temps assez représentatif dans l'imaginaire collectif.",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/colorful-icons/set-colorful-icons.jpg"
+        ],
+        "icons" => [
+            0 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>utilisateur</strong> est plutôt simple, composée de deux parties non attachées et sous forme de tracé, une pour la tête et une pour le corps.",
+                    1 => "La couleur donnée est un mauve clair.",
+                ],
+                "image" => "/assets/colorful-icons/user.svg"
+            ],
+            1 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>utilisateurs</strong> représente deux personnages, également composée de deux parties non attachées et sous forme de tracé.",
+                    1 => "Ceux-ci possèdent chacun une couleur, permettant de les différenciers encore mieux. Le premier a un bleu tirant sur le vert alors que le deuxième a une couleur verte assez clair.",
+                ],
+                "image" => "/assets/colorful-icons/users.svg"
+            ],
+            2 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>\"j'aime\"</strong> est composée d'un bleu clair et d'un bleu foncé.",
+                ],
+                "image" => "/assets/colorful-icons/like.svg"
+            ],
+            3 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>image</strong> représente une photographie d'un paysage de montagne ensoleillé.",
+                    1 => "Elle est composée d'un vert clair, d'un bleu clair ainsi que d'un jaune clair.",
+                ],
+                "image" => "/assets/colorful-icons/image.svg"
+            ],
+            4 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>vidéo</strong> est composée d'une couleur orange clair.",
+                ],
+                "image" => "/assets/colorful-icons/video.svg"
+            ],
+            5 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>dossier</strong> est composée d'une couleur jaune clair.",
+                ],
+                "image" => "/assets/colorful-icons/folder.svg"
+            ],
+            6 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>enveloppe</strong> est composée d'un rouge orangé clair.",
+                ],
+                "image" => "/assets/colorful-icons/envelope.svg"
+            ],
+            7 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "L'icône <strong>téléchargement</strong> est composée d'un rose clair.",
+                ],
+                "image" => "/assets/colorful-icons/download.svg"
+            ]
+        ],
+    ],
+    7 => [
+        "title" => "Ne faites pas vomir votre Terre",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-pacifism",
+        "shortDescription" => "Réalisation d'une affiche sur un mouvement idéologique, le pacifisme.",
+        "link" => "/projects/pacifism/details.php",
+        "introductionBanner" => "/assets/pacifism/affiche-pacifisme-short.jpg",
+        "slideBanner" => "/assets/pacifism/affiche-pacifisme-short.jpg",
+        "detailsBanner" => "/assets/pacifism/bg-banner-pacifism.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Dans le cadre d’un cours de créativité visuelle, j'ai dû réaliser une affiche sur un mouvement politique ou idéologique.",
+                1 => "Après quelques rapides recherches sur ces sujets, j'ai décidé d'effectuer mon travail sur le pacifisme.",
+                2 => "Avant de m'y mettre, j'ai d'abord réalisé un moodboard ainsi que des recherches pour décrypter les pricipaux codes relatifs à cette idéologie. Ensuite, je me suis mise au travail !",
+                3 => "",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/pacifism/affiche-pacifisme.jpg"
+        ],
+    ],
+    8 => [
+        "title" => "Détournement de pictogrammes",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-picto",
+        "shortDescription" => "Détournement de plusieurs pictogrammes sans dénaturer leur nature graphico-esthétique.",
+        "link" => "/projects/pictograms/details.php",
+        "introductionBanner" => "/assets/pictograms/pictograms.jpg",
+        "slideBanner" => "/assets/pictograms/pictograms.jpg",
+        "detailsBanner" => "/assets/pictograms/bg-banner-pictograms.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Dans le cadre d'un cours de créativité visuelle, j'ai eu comme consigne de détourner des pictogrammes sans en dénaturer leur nature graphico-esthétique.",
+                1 => "Après quelques recherches, j'ai décidé de me lancer sur 3 panneaux / pictogrammes : arrêt et stationnement interdits, produit inflammable, sens interdit pour tout conducteur.",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/pictograms/presentation-pictograms.jpg"
+        ],
+        "icons" => [
+            0 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "J'ai décidé de détourner le panneau d'interdiction d'arrêt et de stationnement pour le transformer en une fenêtre de laquelle on peut voir un paysage avec un arbre, une montagne et un ciel bleu.",
+                ],
+                "image" => "/assets/pictograms/picto-window.svg"
+            ],
+            1 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "Pour le pictogramme de produit inflammable, j'ai décidé de le transformer en arbre de Noël avec ses décorations.",
+                    1 => "Au dessus de celui-ci, j'ai placé un chapeau pour renforcer encore plus le côté fête de Noël."
+                ],
+                "image" => "/assets/pictograms/picto-xmas.svg"
+            ],
+            2 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "Pour détourner le panneau de sens interdit, j'ai décidé d'y ajouter un mignon petit furet agrippant et mordant la barre blanche du panneau.",
+                ],
+                "image" => "/assets/pictograms/picto-ferret.svg"
+            ]
+        ],
+
+    ],
 ];
 ?>
 
