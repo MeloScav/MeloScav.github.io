@@ -164,8 +164,16 @@ ready(() => {
                     perPage: 1,
                     focus: 0
                 },
+                600: {
+                    arrows: false
+                }
             }
         });
         splideSlider.mount();
     }
+
+    // Navbar
+    window.addEventListener("scroll", () => {
+        document.body.classList.toggle("nav-scrolled", window.scrollY > 0);
+    });
 })
