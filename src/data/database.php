@@ -423,7 +423,7 @@ $PROJECTS = [
                 1 => "Après quelques recherches, j'ai décidé de me lancer sur 3 panneaux / pictogrammes : arrêt et stationnement interdits, produit inflammable, sens interdit pour tout conducteur.",
             ],
             "buttonLink" => "",
-            "image" => "/assets/pictograms/presentation-pictograms.jpg"
+            "image" => "/assets/pictograms/pictograms.jpg"
         ],
         "icons" => [
             0 => [
@@ -453,6 +453,164 @@ $PROJECTS = [
             ]
         ],
 
+    ],
+    9 => [
+        "title" => "La pandémie",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-covid",
+        "shortDescription" => "Création d'une illustration pour le concours \"Il était une fois la pandémie\" de l'ASBL Liège, ville santé.",
+        "link" => "/projects/covid-illustration/details.php",
+        "introductionBanner" => "/assets/covid-illustration/covid-illustration.jpg",
+        "slideBanner" => "/assets/covid-illustration/covid-illustration.jpg",
+        "detailsBanner" => "/assets/covid-illustration/bg-banner-pandemie-covid.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "J'ai réalisé cette illustration vectorielle dans le cadre d'un concours d'art, appelé \"Il était une fois la pandémie\", organisé par l'ASBL Liège, ville santé.",
+                1 => "Pour ce concours, il fallait représenter l'épidémie Covid19 et ses conséquences, c'est-à-dire : la dépression/ l'isolement, l'augmentation des dépendances (alcool, médicament, nourriture), la mort, l'éclatement des réseaux sociaux, la vaccination.",
+                2 => "J'ai choisi de représenter la partie \"dépression / isolement\" avec un dessin plutôt simple et des couleurs fades qui, pour moi, représentaient bien le côté isolement et dépression."
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/covid-illustration/covid-illustration.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "",
+            "colors" => [
+                0 => [
+                    "name" => "",
+                    "colorHex" => "",
+                    "text" => "J’ai choisi d’utiliser des couleurs fades et légèrement foncé pour l'intérieur de la maison ainsi que pour le personnage principale pour donner un côté triste, reflétant la solitude et la dépression. Alors que pour l'extérieur de la maison, dans la fenêtre, j'ai utilisé des couleurs légèrement plus clairs et saturés car il est à l'opposé de tout ça, synonyme de contact et de positivité."
+                ]
+            ],
+            "image" => "/assets/covid-illustration/mackbook-covid-illustration.png"
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Concept : Quand la maison devient une prison...",
+                    1 => "Pour montrer au mieux la dépression et l’isolement subi à cause du covid, j’ai décidé d’illustrer un moment que nous avons tous connus pendant plusieurs mois, le « sacro-saint » confinement.",
+                    2 => "Quelque soit la partie du globe sur laquelle nous nous trouvons, nous avons tous connus cette partie sombre de la lutte contre le coronavirus qui nous clouait chez nous sans presque aucunes possibilités de sortie, qui nous empêchait de voir nos amis ou notre famille. Selon notre cas, nous étions presque ou complètement isolés, les rayons du soleil sont devenus rares et les seuls éclaircis dans nos vies ont été les lampes de nos maisons ou celle de notre GSM.",
+                    3 => "Emprisonnés dans ce qui fut autre fois un douillet domicile, nous rêvions tous de sortir voir ce nouveau monde qui ne ressemblait plus à ce que nous avions connu. Quand nous pouvions sortir, pour faire des courses ou aller chez le médecin, nous le faisions masqués. Plus de visage, plus de sourire, le monde était devenu encore un peu plus triste. À tout ça se rajoutait la peur de l’autre, la peur de la maladie, 1m50 de distance, pas de contact physique, du gel hydroalcoolique, beaucoup de gel hydroalcoolique. Un faussé se creusait entre nous et les autres, augmentant encore plus l’isolement et la dépression déjà bien installés.",
+                    4 => "Pour beaucoup d’entre nous, l’après confinement n’est pas synonyme de liberté ni de joie ou de retour à la normal. Cette période sombre a été si forte en émotion, tellement de perturbations, que ça les a changés à tout jamais, troubles déjà présents mais renforcés ou créés suites à des fragilités, l’isolement et la dépression sont toujours bien présents, difficile à faire partir parfois, il faudra du temps pour un véritable retour à la normalité..."
+                ],
+                "image" => "/assets/covid-illustration/covid-illustration.jpg"
+            ]
+        ]
+    ],
+    10 => [
+        "title" => "Aquarium Museum Uliège",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-aquarium-museum",
+        "shortDescription" => "Réinterprétation du logo de l'Aquarium Museum de l'université de Liège.",
+        "link" => "/projects/aquarium-museum-logo/details.php",
+        "introductionBanner" => "/assets/aquarium-museum-logo/logo-aquarium-museum.jpg",
+        "slideBanner" => "/assets/aquarium-museum-logo/logo-aquarium-museum-short.jpg",
+        "detailsBanner" => "/assets/aquarium-museum-logo/bg-banner-logo-aquarium-museum.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Dans le cadre d'un cours de créativité visuelle, j'ai dû réinterpréter un logo en fonction d'un courant artistique choisi.",
+                1 => "Étant Liégeoise, j'ai décidé de prendre l'Aquarium Museum de l'université de Liège situé dans notre magnifique cité Ardente.",
+                2 => "Après quelques recherches, j'ai choisi d'utiliser un dauphin comme animal représentant cet établissement car, en plus de représenter l'océan et la grande biodiversité d'animaux aquatiques, il est associé à une multitude de représentations positives : ouverture sur le monde, harmonie, paix, etc.",
+                3 => "Pour les courants artistiques, j'ai décidé de réinterpréter le logo en fonction du Bauhaus et du courant artistique moderne. "
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/aquarium-museum-logo/logo-aquarium-presentation.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "aquarium-museum",
+            "colors" => [
+                0 => [
+                    "name" => "blue",
+                    "colorHex" => "#3D76E8",
+                    "text" => "Pour les deux logos Bauhaus, j'utilise un bleu assez clair et saturé pour rester dans l'esprit de ce courant artistique. C'est la couleur prédominante car elle rapelle l'océan mais elle inspire aussi confiance, calme et sérieux.",
+                ],
+                1 => [
+                    "name" => "red",
+                    "colorHex" => "#E54141",
+                    "text" => "Pour continuer dans le même esprit, j'ai utilisé un rouge clair avec du peps."
+                ],
+                2 => [
+                    "name" => "yellow",
+                    "colorHex" => "#FFFF00",
+                    "text" => "Le jaune est également un jaune très clair et éclatant."
+                ],
+                3 => [
+                    "name" => "black",
+                    "colorHex" => "#000000",
+                    "text" => "Le noir utilisé est aussi une couleur fort."
+                ],
+                4 => [
+                    "name" => "light-blue",
+                    "colorHex" => "#61B2CB",
+                    "text" => "Pour le logo moderne, j'ai utilisé une couleur similaire au logo actuel, un bleu clair qui rapelle l'océan mais aussi qui inspire confiance, calme et sérieux."
+                ],
+                5 => [
+                    "name" => "light-blue-text",
+                    "colorHex" => "#2D899E",
+                    "text" => "Pour le texte du logo moderne, j'ai utilisé un bleu clair un peu plus foncé pour garder le même esprit du bleu déjà présent tout en faisant un peu plus resortir ce texte."
+                ],
+            ],
+            "image" => "/assets/aquarium-museum-logo/macbook-logo-aquarium-museum.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/aquarium-museum-logo/details-font-title-primary-bauhaus.svg",
+                "title" => "Logo Bauhaus : titre principal",
+                "text" => [
+                    0 => "Pour le titre principal, j'ai utilisé la police Noka en taille medium.",
+                    1 => "C'est une police aux formes géométriques qui se fond parfaitement avec le style Bauhaus."
+                ]
+            ],
+            1 => [
+                "image" => "/assets/aquarium-museum-logo/details-font-title-secondary-bauhaus.svg",
+                "title" => "Logo Bauhaus : titre secondaire",
+                "text" => [
+                    0 => "Pour le titre secondaire, j'ai également utilisé la police Noka mais en bold."
+                ]
+            ],
+            2 => [
+                "image" => "/assets/aquarium-museum-logo/details-font-title-secondary-modern.svg",
+                "title" => "Logo moderne : les titres",
+                "text" => [
+                    0 => "Pour les titres, j'ai utilisé la police Tondo Bold.",
+                    1 => "C'est une police sans empatement aux formes arrondi qui représente de la nature, l'océan, et le confort."
+                ]
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Pour mon logo inspiré du style Bauhaus, j'ai décidé de créer un dauphin en partant d'un cercle. J'ai ensuite gardé certains cercles de construction comme élément du logo en modificant leur couleur et leur contour.",
+                    1 => "J'ai inséré le titre principal en lui donnant une transformation en arc de cercle, le mot \"museum\" a été coloré en rouge avec des bordures noirs.",
+                    2 => "Le titre secondaire est placé en bas du logo avec une déformation de certaines lettres et une découpe des mots avec une couleur pour chacun.",
+                    3 => "Les couleurs utilisées sont le noir, le bleu, le rouge et le jaune. C'est couleurs sont caractéristiques du Bauhaus.",
+                ],
+                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v1.svg"
+            ],
+            1 => [
+                "text" => [
+                    0 => "Ce logo est également inspiré du style Bauhaus mais c'est une version un peu plus simple et minimaliste que le premier.",
+                    2 => "J'ai gardé le même dauphin, créé à partir de cercles, mais je n'ai gardé que la forme de l'animal pour celui-ci.",
+                    3 => "Le titre principal est positionné en haut à gauche, en arc de cercle. Le mot \"museum\" a été coloré en rouge avec des bordures noirs.",
+                    4 => "Le titre secondaire est placé au niveau de la nageoire caudale, comme s'il était posé dessus. Il a une déformation de certaines de ses lettres et une découpe des mots avec une couleur pour chacun.",
+                    5 => "Les couleurs utilisées sont les mêmes que pour le premier logo."
+                ],
+                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v2.svg"
+            ],
+            2 => [
+                "text" => [
+                    0 => "Ce logo est inspiré du courant artistique moderne. Il est très simple et minimaliste. Facilement mémorisable, c'est aussi très simple de le redessiner sur une feuille de papier.",
+                    1 => "Pour celui-ci, j'ai voulu rester dans le même esprit que les deux premiers. J'ai donc gardé le même dauphin que j'ai ensuite modifié et coupé en deux parties au niveau de la nageoire caudale.",
+                    2 => "Les initiales du titre principal ont été intégrés à la forme du dauphin pour former un tout avec celui-ci. Cependant, il s'en ditingue par sa couleur qui légèrement plus foncé.",
+                    3 => "Le titre secondaire, qui est de la même couleur que le titre principal, a été placé entre le corps et la nageoire caudale.",
+                    4 => "Les couleurs utilisées sont des couleurs bleus, inspirés du logo actuel de l'Aquarium Museum, qui reflètent l'océan, les animaux marins, tout en inspirant confiance, calme et sérieux.",
+                ],
+                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-modern.svg"
+            ]
+        ]
     ],
 ];
 ?>
