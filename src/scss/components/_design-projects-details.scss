@@ -1,4 +1,8 @@
 .project-details-design {
+    h2 {
+        margin-bottom: 40px;
+    }
+
     &-content {
         display: grid;
         align-items: center;
@@ -53,7 +57,7 @@
                     grid-column: 1/7;
                 }
                 @include media-breakpoint-up(xl) {
-                    grid-column: 1/5;
+                    grid-column: 1/6;
                 }
             }
 
@@ -75,7 +79,7 @@
                     grid-column: 7/13;
                 }
                 @include media-breakpoint-up(xl) {
-                    grid-column: 7/11;
+                    grid-column: 7/12;
                 }
             }
 
