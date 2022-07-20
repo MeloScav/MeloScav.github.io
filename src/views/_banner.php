@@ -27,7 +27,8 @@
                 </div>
 
             </div>
-            <img class="main-banner-illu" src="../assets/me-cartoon-illustration.svg" />
+            <img class="main-banner-illu" src="../assets/me-cartoon-illustration.svg"
+                alt="Illustration de Méloé Scavezzoni" />
         </div>
     </div>
 
