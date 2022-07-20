@@ -1,5 +1,5 @@
 <?php
-$title = 'Projects | Mon ancien site';
+$title = 'Projets | Mon ancien site';
 $projectsType = 'Development';
 $isDetails = true;
 $transparentMainNav = true;

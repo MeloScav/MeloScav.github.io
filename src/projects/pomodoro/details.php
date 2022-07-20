@@ -1,5 +1,5 @@
 <?php
-$title = 'Projects | Pomodoro';
+$title = 'Projets | Pomodoro';
 $projectsType = 'Development';
 $isDetails = true;
 $transparentMainNav = true;
