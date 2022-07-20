@@ -4,21 +4,42 @@
 <html lang="fr">
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#ab2bc0">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="apple-mobile-web-app-title" content="M&eacute;lo&eacute; Scavezzoni">
     <meta name="application-name" content="M&eacute;lo&eacute; Scavezzoni">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Méloé Scavezzoni - UI / UX Designer - Développeuse web frontend">
+    <meta name="description"
+        content="Site portfolio contenant l'ensemble de mes réalisations en design, illustration et développement web. N'hésitez  pas à le visiter !">
+    <meta name="keywords"
+        content="Portfolio, UI / UX Designer, Développeuse web fontend, Développeur web frontend, Frontend web developer, UX, UI, Designer web, Web designer, Méloé Scavezzoni">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Méloé Scavezzoni">
+
+    <meta property="og:title" content="Méloé Scavezzoni">
+    <meta property="og:site_name" content="Méloé Scavezzoni, UI / UX Designer & Développeuse web frontend">
+    <meta property="og:url" content="https://meloscav.github.io" />
+    <meta property="og:description"
+        content="Site portfolio contenant l'ensemble de mes réalisations en design, illustration et développement web. N'hésitez  pas à le visiter !">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://meloscav.github.io/assets/OG-image.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#ab2bc0">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Merienda:wght@700&display=swap"
@@ -35,6 +56,7 @@
     <div class="container d-flex justify-centent-center">
         <div class="logo-container">
             <a href="/">
+                <span class="visually-hidden">Page d'accueil</span>
                 <svg>
                     <use href="/assets/sprite.svg#logo"></use>
                 </svg>
@@ -86,11 +108,13 @@
                 </div>
                 <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
                     <a href="https://github.com/MeloScav">
+                        <span class="visually-hidden">Lien vers ma page Github</span>
                         <svg class="icon icon-lg">
                             <use href="../assets/sprite.svg#github"></use>
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/meloe-scavezzoni/">
+                        <span class="visually-hidden">Lien vers ma page LinkedIn</span>
                         <svg class="icon icon-lg">
                             <use href="../assets/sprite.svg#linkedin"></use>
                         </svg>
@@ -98,7 +122,8 @@
                 </div>
 
             </div>
-            <img class="main-banner-illu" src="../assets/me-cartoon-illustration.svg" />
+            <img class="main-banner-illu" src="../assets/me-cartoon-illustration.svg"
+                alt="Illustration de Méloé Scavezzoni" />
         </div>
     </div>
 
@@ -122,21 +147,7 @@
         <h2>Mes projets récents</h2>
 
         
-                        <div class="project project-left project-picto">
-            <div class="box-image">
-                                <img src="/assets/pictograms/pictograms.jpg" alt="Détournement de pictogrammes" />
-                
-                <div class="overlay"></div>
-            </div>
-            <div class="project-info">
-                                <h3 class="h4">Détournement de pictogrammes</h3>
-                
-                                <p>Détournement de plusieurs pictogrammes sans dénaturer leur nature graphico-esthétique.</p>
-                
-                                <a href="/projects/pictograms/details.html" class="btn btn-outline-primary">En savoir plus</a>
-                            </div>
-        </div>
-                        <div class="project project-right project-covid">
+                        <div class="project project-left project-covid">
             <div class="box-image">
                                 <img src="/assets/covid-illustration/covid-illustration.jpg" alt="La pandémie" />
                 
@@ -150,7 +161,7 @@
                                 <a href="/projects/covid-illustration/details.html" class="btn btn-outline-primary">En savoir plus</a>
                             </div>
         </div>
-                        <div class="project project-left project-aquarium-museum">
+                        <div class="project project-right project-aquarium-museum">
             <div class="box-image">
                                 <img src="/assets/aquarium-museum-logo/logo-aquarium-museum.jpg" alt="Aquarium Museum Uliège" />
                 
@@ -162,6 +173,20 @@
                                 <p>Réinterprétation du logo de l'Aquarium Museum de l'université de Liège.</p>
                 
                                 <a href="/projects/aquarium-museum-logo/details.html" class="btn btn-outline-primary">En savoir plus</a>
+                            </div>
+        </div>
+                        <div class="project project-left project-animal-illustration">
+            <div class="box-image">
+                                <img src="/assets/animal-illustration/animal-illustration.jpg" alt="Tableau numérique animaux" />
+                
+                <div class="overlay"></div>
+            </div>
+            <div class="project-info">
+                                <h3 class="h4">Tableau numérique animaux</h3>
+                
+                                <p>Création d'une illustration minimaliste et dynamique d'animaux.</p>
+                
+                                <a href="/projects/animal-illustration/details.html" class="btn btn-outline-primary">En savoir plus</a>
                             </div>
         </div>
             </div>
@@ -267,7 +292,8 @@
     </div>
     <div class="footer-content bg-light-primary">
         <div class="container">
-            <a href="/">
+            <a class="d-inline-block" href="/">
+                <span class="visually-hidden">Page d'accueil</span>
                 <svg class="footer-logo">
                     <use href="/assets/sprite.svg#logo-footer"></use>
                 </svg>
@@ -289,11 +315,13 @@
                     <h4 class="footer-title">Retrouvez-moi sur</h4>
                     <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
                         <a class="footer-link" href="https://github.com/MeloScav">
+                            <span class="visually-hidden">Lien vers ma page Github</span>
                             <svg class="icon icon-md">
                                 <use href="/assets/sprite.svg#github"></use>
                             </svg>
                         </a>
                         <a class="footer-link" href="https://www.linkedin.com/in/meloe-scavezzoni/">
+                            <span class="visually-hidden">Lien vers ma page LinkedIn</span>
                             <svg class="icon icon-md">
                                 <use href="/assets/sprite.svg#linkedin"></use>
                             </svg>
