@@ -612,6 +612,49 @@ $PROJECTS = [
             ]
         ]
     ],
+    11 => [
+        "title" => "Tableau numérique animaux",
+        "type" =>  [
+            0 => "development"
+        ],
+        "cssClass" => "project-animal-illustration",
+        "shortDescription" => "Création d'une illustration minimaliste et dynamique d'animaux.",
+        "link" => "/projects/animal-illustration/details.php",
+        "introductionBanner" => "/assets/animal-illustration/animal-illustration.jpg",
+        "slideBanner" => "/assets/animal-illustration/animal-illustration-short.jpg",
+        "detailsBanner" => "/assets/beer-lovers/beer-lover-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "J'ai réalisé ce tableau numérique dans le cadre d'un cours de créativité visuelle.",
+                1 => "La consigne était simplement de réaliser un tableau en HTML, CSS et, optionnellement, JavaScrip, avec des animations pour rendre le tableau dynamique.",
+                2 => "Pour cette exercice, j'ai décidé de faire 3 illustrations d'animaux avec un style minimaliste, j'utilise une simple ligne pour les dessiner.",
+                3 => "Pour l'animation, j'ai fait apparaître chaque illustration l'une après l'autre comme si elles étaient dessinées sous nos yeux puis disparaître en sens inverse pour laisser place à la suivante."
+            ],
+            "buttonLink" => "https://meloscav.github.io/animal-illustration/",
+            "image" => "/assets/animal-illustration/animal-illustration.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "animal-illustration",
+            "colors" => [
+                0 => [
+                    "name" => "brown",
+                    "colorHex" => "#552516",
+                    "text" => "J'ai utilisé un brun foncé car c'est une couleur qui représente la nature. Elle donne également une sensation de quelque chose de noble, robuste, doux et rassurant."
+                ],
+                1 => [
+                    "name" => "purple",
+                    "colorHex" => "#74165F",
+                    "text" => "Le mauve est utilisé pour son côté enthousiaste, sa délicatesse et sa positivité."
+                ],
+                2 => [
+                    "name" => "blue",
+                    "colorHex" => "#334867",
+                    "text" => "Le bleu est utilisé pour la sérénité et la sagesse qu'il inspire."
+                ],
+            ],
+            "image" => "/assets/beer-lovers/macbook-beer-lovers-festival.png"
+        ]
+    ],
 ];
 ?>
 
