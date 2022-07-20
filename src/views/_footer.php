@@ -9,7 +9,8 @@
     </div>
     <div class="footer-content bg-light-primary">
         <div class="container">
-            <a href="/">
+            <a class="d-inline-block" href="/">
+                <span class="visually-hidden">Page d'accueil</span>
                 <svg class="footer-logo">
                     <use href="/assets/sprite.svg#logo-footer"></use>
                 </svg>
@@ -31,11 +32,13 @@
                     <h4 class="footer-title">Retrouvez-moi sur</h4>
                     <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
                         <a class="footer-link" href="https://github.com/MeloScav">
+                            <span class="visually-hidden">Lien vers ma page Github</span>
                             <svg class="icon icon-md">
                                 <use href="/assets/sprite.svg#github"></use>
                             </svg>
                         </a>
                         <a class="footer-link" href="https://www.linkedin.com/in/meloe-scavezzoni/">
+                            <span class="visually-hidden">Lien vers ma page LinkedIn</span>
                             <svg class="icon icon-md">
                                 <use href="/assets/sprite.svg#linkedin"></use>
                             </svg>

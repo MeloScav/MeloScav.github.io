@@ -2,6 +2,7 @@
     <div class="container d-flex justify-centent-center">
         <div class="logo-container">
             <a href="/">
+                <span class="visually-hidden">Page d'accueil</span>
                 <svg>
                     <use href="/assets/sprite.svg#logo"></use>
                 </svg>

@@ -15,11 +15,13 @@
                 </div>
                 <div class="icons-container d-flex flex-wrap align-items-center grid-gap gap-32">
                     <a href="https://github.com/MeloScav">
+                        <span class="visually-hidden">Lien vers ma page Github</span>
                         <svg class="icon icon-lg">
                             <use href="../assets/sprite.svg#github"></use>
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/meloe-scavezzoni/">
+                        <span class="visually-hidden">Lien vers ma page LinkedIn</span>
                         <svg class="icon icon-lg">
                             <use href="../assets/sprite.svg#linkedin"></use>
                         </svg>
