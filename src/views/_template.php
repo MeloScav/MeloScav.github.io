@@ -3,21 +3,42 @@
 <?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#ab2bc0">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="apple-mobile-web-app-title" content="M&eacute;lo&eacute; Scavezzoni">
     <meta name="application-name" content="M&eacute;lo&eacute; Scavezzoni">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Méloé Scavezzoni - UI / UX Designer - Développeuse web frontend">
+    <meta name="description"
+        content="Site portfolio contenant l'ensemble de mes réalisations en design, illustration et développement web. N'hésitez  pas à le visiter !">
+    <meta name="keywords"
+        content="Portfolio, UI / UX Designer, Développeuse web fontend, Développeur web frontend, Frontend web developer, UX, UI, Designer web, Web designer, Méloé Scavezzoni">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Méloé Scavezzoni">
+
+    <meta property="og:title" content="Méloé Scavezzoni">
+    <meta property="og:site_name" content="Méloé Scavezzoni, UI / UX Designer & Développeuse web frontend">
+    <meta property="og:url" content="https://meloscav.github.io" />
+    <meta property="og:description"
+        content="Site portfolio contenant l'ensemble de mes réalisations en design, illustration et développement web. N'hésitez  pas à le visiter !">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://meloscav.github.io/assets/OG-image.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#ab2bc0">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Merienda:wght@700&display=swap"
