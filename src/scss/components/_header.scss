@@ -224,19 +224,20 @@
   }
 }
 
-.badge-new {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.badge-wrapper {
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    align-items: center;
+  }
 
-  padding: 2px 4px;
-  line-height: 1;
-  font-size: 12px;
-
-  border-radius: 2px;
-  background-color: $secondary;
-  color: $white;
-  z-index: -1;
+  .custom-badge {
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
 }
 
 // Nav open

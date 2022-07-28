@@ -1,0 +1,13 @@
+.custom-badge {
+    padding: 2px 4px;
+    line-height: 1;
+    font-size: 12px;
+
+    border-radius: 2px;
+    z-index: -1;
+}
+
+.bagde-secondary {
+    background-color: $secondary;
+    color: $white;
+}

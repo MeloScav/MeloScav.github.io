@@ -25,11 +25,11 @@
                         <span>Illustration</span>
                     </a>
                 </li>
-                <li class="position-relative">
-                    <span class="badge-new">NEW</span>
+                <li class="badge-wrapper">
                     <a href="https://opensea.io/MeloScav?tab=created" rel="noopener noreferrer" target="_blank">
                         <span>NFTs</span>
                     </a>
+                    <span class="custom-badge bagde-secondary">NEW</span>
                 </li>
             </ul>
             <a class="btn btn-primary" href="mailto:meloscavezzoni@gmail.com">Contactez-moi</a>
