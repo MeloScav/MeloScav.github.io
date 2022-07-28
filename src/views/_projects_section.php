@@ -3,16 +3,10 @@
         <h2>Mes projets récents</h2>
 
         <?php
+
         $projectsLimit = 3;
-        $lastProjects = array_slice($PROJECTS, -$projectsLimit, $projectsLimit, false);
+        $lastProjects = array_reverse(array_slice($PROJECTS, -$projectsLimit, $projectsLimit, false), true);
 
-        // $lastProjects = array();
-
-        // foreach ($PROJECTS as $index => $project) {
-        //     if ($index === 3 || $index === 2 || $index === 1) {
-        //         $lastProjects[] = $project;
-        //     }
-        // }
         ?>
 
         <?php foreach ($lastProjects as $index => $project) : ?>
