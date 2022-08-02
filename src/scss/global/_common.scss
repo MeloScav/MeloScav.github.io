@@ -23,6 +23,7 @@ body {
   }
 }
 
+// Scroll bar
 *::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -36,4 +37,35 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: $primary;
   border-radius: 6px;
+}
+
+// Selection
+::selection {
+  background: $primary;
+
+  color: $white;
+}
+
+::-moz-selection {
+  background: $primary;
+
+  color: $white;
+}
+
+.bg-primary,
+.invert-selection,
+.label-primary {
+  ::selection,
+  &::selection {
+    background: $white;
+
+    color: $primary;
+  }
+
+  ::-moz-selection,
+  &::-moz-selection {
+    background: $white;
+
+    color: $primary;
+  }
 }
