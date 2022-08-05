@@ -53,7 +53,9 @@
 <body class="loading">
     <?php include("_navbar.php"); ?>
     <?= $content ?>
+    <?php if (isset($activePage) && $activePage != '404') : ?>
     <?php include("_footer.php"); ?>
+    <?php endif; ?>
 
     <div class="init-loader remove-onload-transition">
         <svg viewBox="0 0 192 77" fill="none" xmlns="http://www.w3.org/2000/svg">
