@@ -7,7 +7,8 @@
                     Oh, vous vous êtes apparemment perdu dans l’océan !
                 </p>
                 <p>
-                    N’hésitez pas à retourner sur la page d’accueil ou à aller voir des magnifiques pieuvres dans cet
+                    N’hésitez pas à retourner sur la <b>page d’accueil</b> ou à aller voir des <b>magnifiques
+                        pieuvres</b> dans cet
                     océan.
                 </p>
             </div>
