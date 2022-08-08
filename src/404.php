@@ -1,5 +1,5 @@
 <?php
-$title = 'Page 404';
+$title = 'Page non trouvée';
 $transparentMainNav = false;
 ?>
 
