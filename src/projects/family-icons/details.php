@@ -3,7 +3,7 @@ $title = "Projets | Famille d'icônes";
 $transparentMainNav = true;
 $projectsType = 'illustration';
 $isDetails = true;
-require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/src/data/_database.php');
 
 $currentProject = [];
 

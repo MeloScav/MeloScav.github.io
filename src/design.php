@@ -2,7 +2,7 @@
 $title = 'Design';
 $projectsType = 'design';
 $transparentMainNav = false;
-require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/src/data/_database.php');
 ?>
 
 <?php ob_start(); ?>

@@ -3,7 +3,7 @@ $title = 'Projets | Beer Lovers Festival';
 $projectsType = 'design';
 $isDetails = true;
 $transparentMainNav = true;
-require($_SERVER['DOCUMENT_ROOT'] . '/src/data/database.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/src/data/_database.php');
 
 $currentProject = [];
 
