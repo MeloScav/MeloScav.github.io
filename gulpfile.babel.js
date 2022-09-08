@@ -33,16 +33,12 @@ task("pretty-html", (done) => {
 task("copy-static-files", (done) => {
     src(
             [
-                "./src/!(scss|css|js)**/*",
-                "./src/!(scss|css|js)**/**",
-                "./src/!(scss|css|js)**",
-                "!./src/views",
-                "!./src/**/*.php",
+                "./src/**/*.*",
+                "!./src/**/*.{html,php,js,css,scss}",
             ], {
                 base: "./src",
             }
         )
-        .pipe(plumber())
         .pipe(dest("./dist/"));
     done();
 });
@@ -66,7 +62,7 @@ task("compile-sass-dev", (done) => {
 });
 
 task("compile-sass-build", (done) => {
-    src(["./src/scss/**/*.scss", "./src/sass/**/*.scss", "!./src/scss/**/_*"])
+    src(["./src/scss/**/*.scss", "./src/sass/**/*.sass", "!./src/scss/**/_*"])
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(
@@ -84,7 +80,7 @@ task("compile-sass-build", (done) => {
 });
 
 task("minify-js", (done) => {
-    src("./src/**/*.js", {
+    src("./src/index.js", {
             base: "./src/"
         })
         .pipe(babel())
