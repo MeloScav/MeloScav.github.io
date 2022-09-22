@@ -750,6 +750,96 @@ $PROJECTS = [
             ]
         ]
     ],
+    13 => [
+        "title" => "Il ristorante come a casa",
+        "type" =>  [
+            0 => "design"
+        ],
+        "cssClass" => "project-ristorante-come-a-casa",
+        "shortDescription" => "Création d'un design pour un restaurant italien fictif.",
+        "link" => "/projects/ristorante-come-a-casa/details.php",
+        "introductionBanner" => "/assets/ristorante-come-a-casa/ristorante-short-image.jpg",
+        "slideBanner" => "/assets/ristorante-come-a-casa/ristorante-short-image.jpg",
+        "detailsBanner" => "/assets/ristorante-come-a-casa/bg-banner-ristorante.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Pour un restaurant italien fictif, j'ai décidé de réaliser un design à la fois sobre et élégant.",
+                1 => "L'objectif était de créer le site entier en gardant un côté assez sombre tout en restant simple et moderne. Il devait contenir une page pour sa carte, une page à propos, une page pour la galerie et une page de contact.",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/ristorante-come-a-casa/ristorante-presentation.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "ristorante",
+            "colors" => [
+                0 => [
+                    "name" => "primary",
+                    "colorHex" => "#B31828",
+                    "text" => "Pour la couleur primaire, j'ai choisi d'utiliser un rouge légèrement foncé pour faire référence au drapeau italien mais également car cette couleur est synonyme d'énergie, de passion et d'amour, ce qui correspont parfaitement à la cuisine italienne."
+                ],
+                1 => [
+                    "name" => "secondary",
+                    "colorHex" => "#221C1C",
+                    "text" => "Pour la couleur secondaire, j'ai utilisé un rouge presque noir et peu saturé. Celle-ci permet de donner un côté sophistiqué au site."
+                ],
+                2 => [
+                    "name" => "white",
+                    "colorHex" => "#FFFBFB",
+                    "text" => "Pour la couleur blanche, j'ai utilisé un blanc légèrement saturé avec la couleur primaire."
+                ],
+            ],
+            "image" => "/assets/ristorante-come-a-casa/macbook-ristorante.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/ristorante-come-a-casa/details-font-title.svg",
+                "title" => "Les titres",
+                "text" => [
+                    0 => "Pour les titres, j’ai choisi d’utiliser la police Century Schoolbook.",
+                    1 => "C'est une police avec empattement qui permet de donner un côté intemporel, professionnel et sophistiqué au site."
+                ]
+            ],
+            1 => [
+                "image" => "/assets/ristorante-come-a-casa/details-font-text.svg",
+                "title" => "Les textes",
+                "text" => [
+                    0 => "Pour les textes, j’ai utilisé la police Baloo Da 2.",
+                    1 => "C’est une police sans empatement qui permet de donner un côté moderne au site. C'est une police très lisible qui peut être lu facilement quelque soit la résolution de l'écran."
+                ]
+            ]
+        ],
+        "icons" => [
+            0 => [
+                "icon" => "/assets/ristorante-come-a-casa/ristorante-logo.svg",
+                "iconAlt" => "Icon beer",
+                "text" => [
+                    0 => "Pour le logo, j'ai dessiné un chapeau de chef cuisinier aux couleurs du drapeau italien, j'ai ensuite mis le texte principal en blanc, pour qu'il resorte bien sur le fond foncé, et le texte secondaire en rouge.",
+                ],
+                "image" => "/assets/ristorante-come-a-casa/macbook-ristorante-icons.png"
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Mon public cible, ce sont les personnes désireuses de manger, fans de cuisine italienne, en recherche d'un restaurant ou qui veulent voyager grâce à la cuisine.",
+                    1 => "Mon objectif est de retenir l’attention du visiteur et de lui donner envie de découvrir la carte ainsi que de venir déguster les différents plats. J'avais également pour objectif de transmettre le côté sophistiqué et passionné du restaurant et de la cuisine à travers le design. Pour ce faire, je suis partie sur un rouge sombre et peu saturé, presque noir, que j'ai utilisé en background en y ajoutant des formes obliques.",
+                    2 => "En plus de ce noir légèrement rouge, j'ai parsemé le design de blanc pour ajouter un côté minimaliste et moderne.",
+                    3 => "J’ai construit la page pour que le regard du visiteur se pose d’abord sur le centre du banner, où il y a le titre, une phrase d'accroche ainsi que deux boutons invitant aux actions voulues. Son regard se pose ensuite sur l'icône permettant de signaler au visiteur qu'il faut scroller pour finir par aller sur le logo puis le menu.",
+                    4 => "Le visiteur a directement les informations importantes en ouvrant le site et il peut facilement voir le menu ou prendre contact.",
+                    5 => "Pour la seconde section, le regarde va sur les images, de la gauche vers la droite, puis sur le titre ainsi que la phrase d'accroche. Cette partie permet de mettre en évidence chacune des sections du menu et permet également au visiteur d'aller voir directement ce qui l'intéresse.",
+                ],
+                "image" => "/assets/ristorante-come-a-casa/ristorante-design-first-part.jpg"
+            ],
+            1 => [
+                "text" => [
+                    0 => "Les 2 prochaines sections servent à donner envie de visiter chacunes des pages correspondantes. L'oeil du visiteur est guidé pour aller à gauche puis au centre grâce aux textes et images qui changent de place, ceci évite la redondance et permet de concerver l'envie de lire chacune d'entre elles. Un bouton d'action est également présent pour inviter le visiteur à cliquer.",
+                    1 => "La dernière section est un call-to-action. Composé d'un titre, d'une phrase d'accroche ainsi que d'un bouton d'appel à l'action, il permet de donner envie de contacter le restaurant et de leur rendre visite.",
+                    2 => "Pour le footer, l'oeil va aller de la gauche vers la droite. On voit d'abord les informations importantes comme l'adresse, le numéro de téléphone et l'email, ensuite les horaires pour finir avec le menu de navigation du site."
+                ],
+                "image" => "/assets/ristorante-come-a-casa/ristorante-design-second-part.jpg"
+            ]
+        ]
+    ],
 ];
 ?>
 
