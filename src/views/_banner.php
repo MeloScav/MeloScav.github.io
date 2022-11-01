@@ -3,7 +3,7 @@
         <div class="main-banner">
             <div class="main-banner-content">
 
-                <p class="main-banner-sub-title text-md">Frontend web developer & UI / UX Designer</p>
+                <p class="main-banner-sub-title text-md">Frontend web developer & UX / UI Designer</p>
                 <h1 class="main-banner-title">Méloé Scavezzoni</h1>
 
                 <p class="main-banner-description text-lg">
