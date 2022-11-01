@@ -11,7 +11,7 @@
                     <div class="about-me-content-info-text">
                         <p>
                             Développeuse web frontend de base et passionnée par tout ce
-                            qui est visuel, j’ai décidé de me lancer dans l’apprentissage de l’UI / UX Design.
+                            qui est visuel, j’ai décidé de me lancer dans l’apprentissage de l’UX / UI Design.
                         </p>
                         <p>
                             Dans mon temps libre, j’aime dessiner, peindre, me promener ainsi que de découvrir des
