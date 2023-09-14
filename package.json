@@ -37,7 +37,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^1.0.0",
-    "sass": "^1.49.8"
+    "sass": "1.49.8"
   },
   "babel": {
     "presets": [
@@ -50,7 +50,7 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide": "4.0.7",
     "bootstrap": "^5.1.3"
   }
 }
