@@ -839,6 +839,95 @@ $PROJECTS = [
             ]
         ]
     ],
+    13 => [
+        "title" => "TAUKN",
+        "type" =>  [
+            0 => "design"
+        ],
+        "cssClass" => "project-taukn",
+        "shortDescription" => "Création d'un site Blockchain permettant d'acheter des produits via des cryptomonnaies.",
+        "link" => "/projects/taukn/details.php",
+        "introductionBanner" => "/assets/taukn/taukn.jpg",
+        "slideBanner" => "/assets/taukn/taukn.jpg",
+        "detailsBanner" => "/assets/taukn/taukn-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Pour une nouvelle entreprise active dans la Blockchain et souhaitant lancer sa présence en ligne, j'ai réaliser un site d'investissement Blockchain.",
+                1 => "Leur souhait était de permettre aux personnes d'investir simplement dans toutes sortes d'objet / produits / entreprises via la Blockchain.",
+                2 => "Ce site est destiné à un public déjà connaisseur du monde de la Blockchain souhaitant investir dans des projets diverses."
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/taukn/taukn-presentation.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "taukn",
+            "colors" => [
+                0 => [
+                    "name" => "primary",
+                    "colorHex" => "#553CF2",
+                    "text" => "Pour la couleur primaire, je suis partie du logo de l'entreprise qui était composé de noir, bleu et vert. J'ai choisi le bleu qui tire légèrement vert la violet car c'est une couleur qui fait référence au monde de la finance, aux cryptomonnaies, elle inspire confiance mais fait aussi référence à la croissance et à la richesse."
+                ],
+                1 => [
+                    "name" => "secondary",
+                    "colorHex" => "#64DAB6",
+                    "text" => "En couleur secondaire, j’ai choisi le vert du logo qui est un vert assez saturé tirant vert le bleu. Cette couleur permet d'apporter un peu plus de peps, elle évoque également le monde de la finance et des cryptomonnaies. Le vert permet aussi de donner un sentiment de croissance, de chance et de stabilité."
+                ],
+                2 => [
+                    "name" => "title",
+                    "colorHex" => "#130D37",
+                    "text" => "Pour les titres, je suis partie sur le bleu de la couleur primaire en très foncé pour donner un peu plus de couleur au site mais également le différencier du texte et guider l'oeil de l'utilisateur."
+                ],
+                3 => [
+                    "name" => "black",
+                    "colorHex" => "#0C0C0D",
+                    "text" => "J'ai utilisé 9 niveaux de gris pour guider l'oeil de l'utilisateur, structurer mes informations et ajuster mes niveaux de lecture. Je suis partie d'un noir légèrement saturé avec la couleur primaire jusqu'au blanc, également légèrement saturé avec la couleur primaire."
+                ],
+                4 => [
+                    "name" => "white",
+                    "colorHex" => "#FCFCFD",
+                    "text" => "Le blanc utilisé est légèrement saturé avec la couleur primaire."
+                ]
+            ],
+            "image" => "/assets/taukn/macbook-taukn.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/taukn/details-font-title-taukn.svg",
+                "title" => "Les titres",
+                "text" => [
+                    0 => "Pour les titres, j’ai choisi d’utiliser la police Ruda qui est une Google fonts.",
+                    1 => "Il s'agit d'une police sans empattement, très lisible, avec du caractère, qui permet de donner un côté moderne au site. Elle présente également un côté droit et pointu, ce qui représente bien le monde de la Blockchain.",
+                    2 => "Comme il s'agit d'une Google fonts, elle est accessible depuis n'importe quel navigateur et visible par la plupart des utilisateurs, quel que soit leur système d'exploitation, la police n'aura pas besoin d'être téléchargée.",
+                ]
+            ],
+            1 => [
+                "image" => "/assets/taukn/details-font-text-taukn.svg",
+                "title" => "Les textes",
+                "text" => [
+                    0 => "Pour le texte, j’ai utilisé la police Source Sans 3, qui est également une Google fonts.",
+                    1 => "C’est une police très simple, sans empattement, qui permet de donner un côté moderne au site. Cette police est également très lisible et peut être lu quel que soit la résolution de l'écran."
+                ]
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Le public cible est composé de personnes, déjà activent dans le monde de la Blockchain, cherchant différents types de produits dans lesquels investir.",
+                    1 => "Le but du site est de simplifier au maximum le parcours utilisateurs et de diminuer le nombre d'actions à effectuer pour investir dans un produits.",
+                    2 => "Le parcours utilisateur commence avec la navbar et le banner qui vont lui permettre de voir les différents élements important, d'effectuer directement une recherche s'il sait ce qu'il cherche ainsi qu'avoir un apperçu des prochains produits et voir leur date d'arrivée pour potentiellement prévoir quand venir pour y investir.",
+                    3 => "Étant donné que l'utilisateur cherche à investir rapidement dans des produits, la suite du parcours utilisateur va permettre à l'utilisateur de voir les produits ajoutés récemment mais également les produits les plus intéressants dans lesquelles il y a eu le plus d'investissement.",
+                ],
+                "image" => "/assets/taukn/taukn-design-first-part.jpg"
+            ],
+            1 => [
+                "text" => [
+                    0 => "A la fin du parcours de la page d'accueil, l'utilisateur vera l'ensemble des catégories disponible sur le site. S'il n'a pas encore cliqué sur un produit, c'est qu'il n'a pas encore vu ce qu'il cherchait ou quelque chose pouvant lui plaire, mettre à la fin l'ensemble des catégories lui permettra de faire un choix plus large lui permettant de voir différant produits par rapport à une catégorie intérressante pour lui.",
+                    1 => "Le footer permettra a l'utilisateur de s'orienter sur le site et de trouver les liens important (notamment ceux présents dans le menu) mais aussi moins important mais qui pourrait tout être utilent dans certaines circonstances (ex: FAQ, liens légaux, etc.).",
+                ],
+                "image" => "/assets/taukn/taukn-design-second-part.jpg"
+            ]
+        ]
+    ],
 ];
 ?>
 
