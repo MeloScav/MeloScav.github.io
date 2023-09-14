@@ -2,92 +2,6 @@
 global $PROJECTS;
 $PROJECTS = [
     0 => [
-        "title" => "Mon ancien site web",
-        "type" => [
-            0 => "development"
-        ],
-        "cssClass" => "project-old-website",
-        "shortDescription" => "Mon ancien et premier site portfolio.",
-        "link" => "/projects/old-website/details.php",
-        "introductionBanner" => "/assets/old-website/my-old-website-first.jpeg",
-        "slideBanner" => "/assets/old-website/my-old-website-first.jpeg",
-        "detailsBanner" => "/assets/old-website/bg-banner-old-website.jpg",
-        "presentation" => [
-            "text" => [
-                0 => "Mon premier site portfolio que j'ai réalisé en sortant de ma formation de développeuse web frontend.",
-                1 => "Je l'ai réalisé en utilisant la bibliothèque javascript REACT JS.",
-            ],
-            "buttonLink" => "https://meloescavezzoni.netlify.app/",
-            "image" => "/assets/old-website/my-old-website-choice.jpeg"
-        ],
-        "detailsColors" => [
-            "cssClass" => "old-website",
-            "colors" => [
-                0 => [
-                    "name" => "blue",
-                    "colorHex" => "#1497d4",
-                    "text" => "En couleur primaire, j'ai utilisé un bleu plutôt clair. Cette couleur reflète le sérieux et la confiance."
-                ],
-                1 => [
-                    "name" => "dark",
-                    "colorHex" => "#000000",
-                    "text" => "En couleur secondaire, j'ai utilisé un noir pour permettre de faire ressortir la couleur primaire et de donner un côté sophistiqué au site."
-                ]
-            ],
-            "image" => "/assets/old-website/macbook-old-website.png"
-        ]
-    ],
-    1 => [
-        "title" => "Mon ancien site portfolio",
-        "type" => [
-            0 => "development"
-        ],
-        "cssClass" => "project-old-site-portfolio",
-        "shortDescription" => "Réalisation de mon site portfolio en One Page.",
-        "link" => "/projects/old-site/details.php",
-        "introductionBanner" => "/assets/old-portfolio/old-website-view-home.jpg",
-        "slideBanner" => "/assets/old-portfolio/old-website-img-slider.jpg",
-        "detailsBanner" => "/assets/old-portfolio/bg-banner-old-website-portfolio.jpg",
-        "presentation" => [
-            "text" => [
-                0 => "J'ai créé ce site car je trouvais que mon ancien site portfolio était devenu trop vieux. Je l'ai donc redesigner en un site plus simple et plus représentatif de mon image et personnalité.",
-                1 => "Ce site est un One Page réalisé en utilisant uniquement du HTML, SCSS et JavaScript."
-            ],
-            "buttonLink" => "https://meloscav.netlify.app/",
-            "image" => "/assets/old-portfolio/old-website-presentation.jpeg"
-        ],
-        "detailsColors" => [
-            "cssClass" => "old-portfolio",
-            "colors" => [
-                0 => [
-                    "name" => "purple",
-                    "colorHex" => "#c74db2",
-                    "text" => "En couleur primaire, j'ai utilisé un mauve clair qui permet de donner un côté créatif et féminin au site."
-                ],
-                1 => [
-                    "name" => "dark-text",
-                    "colorHex" => "#141414",
-                    "text" => "Pour le texte, j'ai utilisé une nuance de noir."
-                ],
-                2 => [
-                    "name" => "white",
-                    "colorHex" => "#f8f8f8",
-                    "text" => "Pour une autre partie du texte, j'ai utilisé une nuance de blanc."
-                ]
-            ],
-            "image" => "/assets/old-portfolio/macbook-old-webiste-portfolio.png"
-        ],
-        "fonts" => [
-            0 => [
-                "image" => "/assets/old-portfolio/details-font-old-portfolio.svg",
-                "title" => "Les titres et textes",
-                "text" => [
-                    0 => "J'ai utilisé la police Montserrat pour l'ensemble du site.",
-                ]
-            ]
-        ]
-    ],
-    2 => [
         "title" => "Pomodoro",
         "type" => [
             0 => "development"
@@ -138,7 +52,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    3 => [
+    1 => [
         "title" => "Beer lovers’ Festival",
         "type" =>  [
             0 => "design"
@@ -240,7 +154,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    4 => [
+    2 => [
         "title" => "Ensemble d’icônes",
         "type" =>  [
             0 => "illustration"
@@ -272,7 +186,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    5 => [
+    3 => [
         "title" => "Illustration vectorielle",
         "type" => [
             0 => "illustration"
@@ -293,7 +207,7 @@ $PROJECTS = [
             "image" => "/assets/illu-car/illu-car.jpg"
         ]
     ],
-    6 => [
+    4 => [
         "title" => "Pack d'icônes colorées",
         "type" =>  [
             0 => "illustration"
@@ -384,7 +298,7 @@ $PROJECTS = [
             ]
         ],
     ],
-    7 => [
+    5 => [
         "title" => "Ne faites pas vomir votre Terre",
         "type" =>  [
             0 => "illustration"
@@ -406,7 +320,7 @@ $PROJECTS = [
             "image" => "/assets/pacifism/affiche-pacifisme.jpg"
         ],
     ],
-    8 => [
+    6 => [
         "title" => "Détournement de pictogrammes",
         "type" =>  [
             0 => "illustration"
@@ -454,7 +368,7 @@ $PROJECTS = [
         ],
 
     ],
-    9 => [
+    7 => [
         "title" => "La pandémie",
         "type" =>  [
             0 => "illustration"
@@ -498,7 +412,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    10 => [
+    8 => [
         "title" => "Aquarium Museum Uliège",
         "type" =>  [
             0 => "illustration"
@@ -612,7 +526,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    11 => [
+    9 => [
         "title" => "Tableau numérique animaux",
         "type" =>  [
             0 => "development"
@@ -652,10 +566,10 @@ $PROJECTS = [
                     "text" => "Le bleu est utilisé pour la sérénité et la sagesse qu'il inspire."
                 ],
             ],
-            "image" => "/assets/beer-lovers/macbook-beer-lovers-festival.png"
+            "image" => "/assets/animal-illustration/macbook-logo-animal-illustration.png"
         ]
     ],
-    12 => [
+    10 => [
         "title" => "Site piscine",
         "type" =>  [
             0 => "design"
@@ -750,7 +664,7 @@ $PROJECTS = [
             ]
         ]
     ],
-    13 => [
+    11 => [
         "title" => "Il ristorante come a casa",
         "type" =>  [
             0 => "design"
@@ -837,6 +751,91 @@ $PROJECTS = [
                     2 => "Pour le footer, l'oeil va aller de la gauche vers la droite. On voit d'abord les informations importantes comme l'adresse, le numéro de téléphone et l'email, ensuite les horaires pour finir avec le menu de navigation du site."
                 ],
                 "image" => "/assets/ristorante-come-a-casa/ristorante-design-second-part.jpg"
+            ]
+        ]
+    ],
+    12 => [
+        "title" => "Duchesne Optic",
+        "type" =>  [
+            0 => "design"
+        ],
+        "cssClass" => "project-duchesne-optic",
+        "shortDescription" => "Refonte graphique du site Duchesne Optic.",
+        "link" => "/projects/duchesne-optic/details.php",
+        "introductionBanner" => "/assets/duchesne-optic/duchesne-optice-short-image.jpg",
+        "slideBanner" => "/assets/duchesne-optic/duchesne-optice-short-image.jpg",
+        "detailsBanner" => "/assets/duchesne-optic/bg-banner-duchesne-optic.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Refonte graphique du site d'une entreprise Belge active dans le monde de l’optique Belgo-Luxembourgeois.",
+                1 => "L'objectif était de simplifier le site tout en le rendant plus moderne. Il a été transformé en une One Page permettant de rapidement choisir une marque et de visualiser les différentes lunettes proposées par celle-ci.",
+                2 => "Ce site propose des lunettes à des professionnels qui doivent pouvoir voir rapidement ce qui est proposé pour ensuite contacter l'entreprise."
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/duchesne-optic/duchesne-optic-presentation.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "duchesne-optic",
+            "colors" => [
+                0 => [
+                    "name" => "primary",
+                    "colorHex" => "#AF0000",
+                    "text" => "Pour la couleur primaire, j'ai choisi d'utiliser un rouge très saturé qui permet de donner plus d'énergie au site, elle fait également référence à la passion car Duchesne Optic est une entreprise familiale passionnée par le monde de l'optique depuis 1984."
+                ],
+                1 => [
+                    "name" => "texte",
+                    "colorHex" => "#2E2020",
+                    "text" => "Pour le texte, j'ai utilisé un gris foncé légèrement saturé de la couleur primaire."
+                ],
+                2 => [
+                    "name" => "title",
+                    "colorHex" => "#610000",
+                    "text" => "Pour les titres, j'ai utilisé un rouge très foncé pour ajouter un peu plus de peps et guider l'oeil de l'utilisateur."
+                ],
+                3 => [
+                    "name" => "white",
+                    "colorHex" => "#FAFAFA",
+                    "text" => "Pour la couleur blanche, j'ai utilisé un blanc très légèrement saturé avec la couleur primaire."
+                ],
+            ],
+            "image" => "/assets/duchesne-optic/macbook-duchesne-optic.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/duchesne-optic/details-font-title.svg",
+                "title" => "Les titres",
+                "text" => [
+                    0 => "Pour les titres, j’ai choisi d’utiliser la police Josefin Sans.",
+                    1 => "C'est une police sans empattement, avec du caractère, très lisible, qui permet de donner un côté moderne au site.",
+                    2 => "Cette police est une Google fonts, elle est accessible depuis n'importe quel navigateur et visible par la plupart des utilisateurs, quel que soit leur système d'exploitation, la police n'aura pas besoin d'être téléchargée.",
+                ]
+            ],
+            1 => [
+                "image" => "/assets/duchesne-optic/details-font-text.svg",
+                "title" => "Les textes",
+                "text" => [
+                    0 => "Pour les textes, j’ai utilisé la police Ubuntu.",
+                    1 => "C’est une police sans empatement qui permet de donner un côté moderne au site. C'est une police très lisible qui peut être lu facilement quelque soit la résolution de l'écran.",
+                    2 => "Cette police est une Google fonts, elle est accessible depuis n'importe quel navigateur et visible par la plupart des utilisateurs, quel que soit leur système d'exploitation, la police n'aura pas besoin d'être téléchargée.",
+                ]
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Le public cible est composé de professionnel de l'optique cherchant des fournisseurs de lunettes.",
+                    1 => "Duchesne Optic a l'avantage d'avoir déjà des clients habituelle qui souhaitent principalement voir rapidement les nouvelles marques ou lunettes disponibles chez eux.",
+                    2 => "L'action principale du site est le fait de contacter l'entreprise, j'ai donc disposée un bouton primaire directement dans la navbar qui sera en position fixe.",
+                    3 => "La première section permet d'introduire l'entreprise et de rapidement savoir sur quel type de site on se trouve (un site proposant des lunettes), j'y ai ajouté un Call To Action permettant d'inciter l'utilisateur à contacter l'entreprise.",
+                    4 => "La deuxième section de mon parcours utilisateur est là pour lui permettre de choisir une marque, d'avoir une courte explication de celle-ci et puis de voir les différentes lunettes proposées. Cette section arrive directement en deuxième position car c'est la raison pour laquelle l'utilisateur visite le site, il doit donc y avoir rapidement accès pour diminuer le temps nécessaire vers l'action désirée. Pour cette section, j'ai choisi scroll infini car nous sommes dans une expérience de découverte des produits sans recherche particulière mais qui reste cependant contrôlé à l'aide d'un bouton d'action, celui-ci permet à l'utilisateur de mieux maîtriser ce qu'il souhaite voir.",
+                ],
+                "image" => "/assets/duchesne-optic/duchesne-optic-design-first-part.jpg"
+            ],
+            1 => [
+                "text" => [
+                    0 => "A la fin de mon parcours utilisateurs, on trouve la section de contact permettant de contacter l'entreprise, ce qui est mon action principale. Il me permet, en fin de parcours, d'inciter l'utilisateur à contacter l'entreprise.",
+                ],
+                "image" => "/assets/duchesne-optic/duchesne-optic-design-second-part.jpg"
             ]
         ]
     ],
