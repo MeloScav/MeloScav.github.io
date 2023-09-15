@@ -1018,6 +1018,129 @@ $PROJECTS = [
             ]
         ]
     ],
+    15 => [
+        "title" => "Audit UX",
+        "type" =>  [
+            0 => "design"
+        ],
+        "cssClass" => "project-audit-ux",
+        "shortDescription" => "Audit UX d'une Landing Page d'E-shop.",
+        "link" => "/projects/audit-ux/details.php",
+        "introductionBanner" => "/assets/audit-ux/audit-ux.jpg",
+        "slideBanner" => "/assets/audit-ux/audit-ux.jpg",
+        "detailsBanner" => "/assets/audit-ux/audit-ux-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Pour mon examen du cours d'Expérience utilisateur, il nous a été demandé de réaliser un Audit UX d'une landing page pour un magasin de thé.",
+                1 => "Pour cet Audit, j'ai commencé avec une récolte des informations importantes sur le client mais aussi sur les profils des utilisateurs. J'ai ensuite examiné l'ensemble des éléments de la page, qu'ils soient positifs ou négatifs, j'en ai ensuite fait une présentation avec mes recommandations, comme si je présentais l'Audit UX a un client. Pour ce faire, je me suis inspirée des points importants repris dans la grille heuristiques de Nielsen.",
+                2 => "A la fin de cet Audit, j'ai ajouté une Priorization Map pour classer les différentes recommandations par ordre de priorité en fonction de leur impact et de leur faisabilité.",
+                3 => "J'ai ensuite réalisé une contre-proposition designé pour cette homepage."
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/audit-ux/audit-ux-presentation.png"
+        ],
+        "detailsColors" => [
+            "cssClass" => "audit-ux",
+            "colors" => [
+                0 => [
+                    "name" => "primary",
+                    "colorHex" => "#5D802E",
+                    "text" => "La couleur primaire du site est un vert tirant légèrement vers le jaune. Pour ma contre-proposition, j'ai légèrement foncé cette couleur en passant d'une luminosité de 34 à 28 pour permettre un meilleur contraste des boutons."
+                ],
+                1 => [
+                    "name" => "secondary",
+                    "colorHex" => "#F6CE46",
+                    "text" => "La couleur secondaire est un jaune tirant légèrement vers l'orange."
+                ],
+                2 => [
+                    "name" => "black",
+                    "colorHex" => "#2E261F",
+                    "text" => "Les nuances de gris du site, allant du noir vers le blanc, ont été faites à partir d'orange, c'est-à-dire que chacune de ces nuances est légèrement saturé avec de l'orange. Pour ma contre-proposition, j'ai changé chacune de ces nuances de gris car le orange n'est pas repris dans le site. J'ai donc changé ces couleurs en les saturant légèrement avec la couleur primaire. Le noir est donc passé de la couleur #2E261F à la couleur #1D2216."
+                ],
+            ],
+            "image" => "/assets/audit-ux/audit-ux-charte.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/audit-ux/details-font-title-audit-ux.svg",
+                "title" => "Les titres",
+                "text" => [
+                    0 => "Pour les titres, la police Shrikhand est utilisée.",
+                    1 => "Il s'agit d'une police italique, ce qui diminue la lisibilité de ceux-ci. En général, les polices italiques sont réservées aux citations.",
+                    2 => "Pour ma contre-proposition, j'ai changé la police des titres en Lato qui est une police sans empattement, elle est tres lisible et donne un coté moderne au site. Comme il s'agit d'une Google fonts, elle est accessible depuis n'importe quel navigateur et visible par la plupart des utilisateurs, quel que soit leur système d'exploitation, la police n'aura pas besoin d'être téléchargée.",
+                ]
+            ],
+            1 => [
+                "image" => "/assets/audit-ux/details-font-text-audit-ux.svg",
+                "title" => "Les textes",
+                "text" => [
+                    0 => "Pour le texte, la police Inter a été utilisée.",
+                    1 => "C’est une police très simple, sans empattement, qui permet de donner un côté moderne au site.",
+                    2 => "Pour ma contre-proposition, j'ai tout de même décidé de changé cette police avec la police Almarai qui est également un police sans empattement, très lisible et faisant partie des Google fonts.",
+                ]
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Le client est actif dans la vente de thé bio et équitable sur internet. la plupart de ses clients sont des citadins, aisées, cultivées, faisant attention à l'environnement, voulant acheter du thé bio et équitable.",
+                    1 => "La homepage du client est séparée en 9 sections (sans compter le footer et la navbar). Je suis partie sur une analyse de chacune en vérifiant tout que ce soit la taille des polices, le contraste, la lisibilité, etc. Pour ce faire, je me suis inspirée des points importants repris dans la grille heuristiques de Nielsen."
+                ],
+                "image" => "/assets/audit-ux/audit-ux-design-client-1.jpg"
+            ],
+            1 => [
+                "text" => [
+                    0 => "Suite de la homepage du client.",
+                ],
+                "image" => "/assets/audit-ux/audit-ux-design-client-2.jpg"
+            ],
+            2 => [
+                "text" => [
+                    0 => "Suite de la homepage du client.",
+                ],
+                "image" => "/assets/audit-ux/audit-ux-design-client-3.jpg"
+            ],
+            3 => [
+                "text" => [
+                    0 => "Exemple de ma présentation d'Audit UX.",
+                    1 => "Je parle des éléments à modifier, j'explique pourquoi et je m'aide d'image pour illustrer mes propos au client."
+                ],
+                "image" => "/assets/audit-ux/audit-ux-hero-section.jpg"
+            ],
+            4 => [
+                "text" => [
+                    0 => "Pour ma contre-proposition, j'ai retravaillé les polices et les couleurs pour quelles aillent mieux avec l'image du client mais aussi pour quelles soit plus lisible pour les utilisateurs.",
+                    1 => "J'ai également modifier le parcours de l'utilisateur pour améliorer son expérience sur le site et éviter aux maximums toutes frustrations.",
+                    2 => "J'ai commencé par modifier les liens de la navbar pour qu'ils soient plus compréhensible mais aussi pour que l'utilisateur puisse chercher et avoir accès directement à ce qui l'intéresse et de ce fait, diminuer le nombre de clics nécessaire pour réaliser l'action voulue.",
+                    3 => "j'ai ensuite complètement changé le banner qui n'était pas suffisement lisible et qui ne permettait pas d'identifier correctement le client ou ce qu'il vend. Étant donné que le but principal du client est d'acheter du thé, j'en ai profité pour mettre en avant les nouvelles gammes de thés pour pousser l'utilisateur à aller la découvrir ou à découvrir les autres thés disponibles.",
+                    4 => "Si l'utilisateur a encore décidé de scroller, c'est qu'il n'est pas encore convaincu. Je lui propose donc l'ensemble des différentes sortes de thés pour qu'il puisse y trouver son bonheur et cliquer sur ce qui l'intéresse.",
+                    5 => "Après ça, j'ai remis la promotion proposée par le site pour inciter l'utilisateur a acheter. Je l'ai changé de place car cette section n'arrivait pas au bon moment dans le parcours utilisateur, l'image d'illustration était également trop présente et l'image du produit pas assez mise en avant, le bouton était également gris et pas suffisement visible. J'en ai donc profité pour donner un peu plus de peps à cette section et mettre un peu plus en avant la gourde offerte."
+                ],
+                "image" => "/assets/audit-ux/homepage-new-1.jpg"
+            ],
+            5 => [
+                "text" => [
+                    0 => "Les 3 sections suivantes sont des sections permettant de proposer les bestsellers ainsi que des thés et infusions proposés.",
+                    1 => "J'ai retraivaillé les cartes produits pour permettre de mieux les identifiers et inciter l'utilisateurs à acheter le produit directement ou aller en savoir plus."
+                ],
+                "image" => "/assets/audit-ux/homepage-new-2.jpg"
+            ],
+            6 => [
+                "text" => [
+                    0 => "A la fin de ces 3 sections, j'ai mis les informations à propos de la société et de leurs thés et infusions. Je l'ai mis à ce moment du parcours utilisateurs car cette section est moins importante que les autres mais aussi car si l'utilisateur n'a toujours pas cliqué sur un des produits à ce niveau de la homepage, c'est surement qu'il veut être rassuré ou en savoir plus à propos de la société.",
+                ],
+                "image" => "/assets/audit-ux/homepage-new-3.jpg"
+            ],
+            6 => [
+                "text" => [
+                    0 => "Après les informations sur la société et leurs produits, j'ai ajouté le section contenant les articles parlant d'eux pour permettre de rassurer encore plus l'utilisateur mais aussi lui permettre d'en apprendre encore plus sur la société.",
+                    1 => "La dernière section contient les informations à propos du paiement et de la livraison. Pour cette section, j'ai principalement changé les icônes car sur la version de base, la lisibilité n'était pas très bonne.",
+                    2 => "J'ai également réorganisé le footer, qui n'était pas très compréhensible sur la version d'origine. J'ai adouci sa couleur pour que ce soit plus agréable à lire, j'ai modifier les niveaux de lectures, arrangé le tout en colonne et ajouté les liens légaux qui sont obligatoires sur les sites e-commerces mais qui n'était pas du tout visible sur la version du client."
+                ],
+                "image" => "/assets/audit-ux/homepage-new-4.jpg"
+            ],
+        ]
+    ],
 ];
 ?>
 
