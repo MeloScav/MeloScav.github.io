@@ -5,12 +5,15 @@ $secondary: #1e73e4;
 
 $theme-colors: (
     "primary": $primary,
-    "secondary": $secondary,
+    "secondary": $secondary
 );
 
 $min-contrast-ratio: 2.5;
 
-$btn-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out, border-color 0.35s ease-in-out,
+$btn-transition:
+    color 0.35s ease-in-out,
+    background-color 0.35s ease-in-out,
+    border-color 0.35s ease-in-out,
     box-shadow 0.35s ease-in-out;
 
 // BUTTONS
@@ -37,7 +40,7 @@ $grid-breakpoints: (
     md: 768px,
     lg: 992px,
     xl: 1200px,
-    xxl: 1600px,
+    xxl: 1600px
 );
 
 $container-max-widths: (
@@ -45,7 +48,7 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1140px,
-    xxl: 1520px,
+    xxl: 1520px
 );
 
 // CUSTOM VARIABLES
@@ -71,21 +74,21 @@ $projects-colors: (
         "blue": #01cee2,
         "red": #ffb198,
         "black": #171612,
-        "white": #fffdf6,
+        "white": #fffdf6
     ),
     "pomodoro": (
         "dark-rose": #ac7b7d,
         "dark-blue": #34435e,
-        "pure-white": #ffffff,
+        "pure-white": #ffffff
     ),
     "old-website": (
         "blue": #1497d4,
-        "dark": #000000,
+        "dark": #000000
     ),
     "old-portfolio": (
         "purple": #c74db2,
         "dark-text": #141414,
-        "white": #f8f8f8,
+        "white": #f8f8f8
     ),
     "aquarium-museum": (
         "blue": #3d76e8,
@@ -93,38 +96,44 @@ $projects-colors: (
         "yellow": #ffff00,
         "black": #000000,
         "light-blue": #61b2cb,
-        "light-blue-text": #2d899e,
+        "light-blue-text": #2d899e
     ),
     "animal-illustration": (
         "brown": #552516,
         "purple": #74165f,
-        "blue": #334867,
+        "blue": #334867
     ),
     "piscine": (
         "primary": #1d8efb,
         "secondary": #ed7118,
         "title": #1161af,
         "text": #0f171e,
-        "white": #fcfdff,
+        "white": #fcfdff
     ),
     "ristorante": (
         "primary": #b31828,
         "secondary": #221c1c,
-        "white": #fffbfb,
+        "white": #fffbfb
     ),
     "duchesne-optic": (
         "primary": #af0000,
         "texte": #2e2020,
         "title": #610000,
-        "white": #fafafa,
+        "white": #fafafa
     ),
     "taukn": (
         "primary": #553cf2,
         "secondary": #64dab6,
         "title": #130d37,
         "black": #0c0c0d,
-        "white": #fcfcfd,
+        "white": #fcfcfd
     ),
+    "ifapme": (
+        "primary": #d61774,
+        "secondary": #177f97,
+        "black": #272024,
+        "white": #ffffff
+    )
 );
 
 // CONTAINER
