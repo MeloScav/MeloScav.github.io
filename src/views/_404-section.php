@@ -1,8 +1,7 @@
 <section class="section-404 pt-main-nav-height">
     <div class="container">
         <div class="section-404-content">
-            <img class="img-400-illustration" src="./../assets/404-page/404.svg"
-                alt="Illustration 404 avec une pieuvre">
+            <img class="img-400-illustration" src="/assets/404-page/404.svg" alt="Illustration 404 avec une pieuvre">
             <div class="text-wrapper">
                 <p>
                     Oh, vous vous êtes apparemment perdu dans l’océan !
