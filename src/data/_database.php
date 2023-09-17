@@ -140,7 +140,9 @@ $PROJECTS = [
                     2 => "Pour ce faire, je suis restée sur quelque chose d’assez fluide, avec des formes et des vagues pour donner un effet jeune, moderne, et de renforcer encore plus le côté festif. J’ai placé un bouton d’inscription directement visible sur le banner, en ouvrant le site, il y a également une section d’informations sur le festival, une section pour pour donner envie aux visiteurs de participer avec un bouton pour s’inscrire et une Google Map pour visualiser le lieu précis de ces festivités.",
                     3 => "J’ai aussi créé une icône de bière qui permet de mettre l’accent sur la bière qui est un élément essentiel du festival. Elle donne un côté plus visuel et festif au site."
                 ],
-                "image" => "/assets/beer-lovers/beer-lovers-festival-home.jpg"
+                "image" => [
+                    "source" => "/assets/beer-lovers/beer-lovers-festival-home.jpg"
+                ]
             ],
             1 => [
                 "text" => [
@@ -150,7 +152,9 @@ $PROJECTS = [
                     3 => "Après cela, son oeil ira vers une Google Map, utile pour visualiser correctement le lieu des festivités, puis vers une phrase d’accroche invitant la personne a venir.",
                     4 => "En dernier lieu, il verra, dans le bas de page, l’icône de bière. Celle-ci permet de rappeler la fête, la bière, et faire référence à la phrase d’accroche juste au-dessus invitant le visiteur à venir boire un verre. Son regard se dirigera, après cela, sur les différents liens du site, présent juste en-dessous, ainsi que sur les différents moyens de contact."
                 ],
-                "image" => "/assets/beer-lovers/design-beer-lovers-explain.jpg"
+                "image" => [
+                    "source" => "/assets/beer-lovers/design-beer-lovers-explain.jpg"
+                ]
             ]
         ]
     ],
@@ -408,7 +412,9 @@ $PROJECTS = [
                     3 => "Emprisonnés dans ce qui fut autre fois un douillet domicile, nous rêvions tous de sortir voir ce nouveau monde qui ne ressemblait plus à ce que nous avions connu. Quand nous pouvions sortir, pour faire des courses ou aller chez le médecin, nous le faisions masqués. Plus de visage, plus de sourire, le monde était devenu encore un peu plus triste. À tout ça se rajoutait la peur de l’autre, la peur de la maladie, 1m50 de distance, pas de contact physique, du gel hydroalcoolique, beaucoup de gel hydroalcoolique. Un faussé se creusait entre nous et les autres, augmentant encore plus l’isolement et la dépression déjà bien installés.",
                     4 => "Pour beaucoup d’entre nous, l’après confinement n’est pas synonyme de liberté ni de joie ou de retour à la normal. Cette période sombre a été si forte en émotion, tellement de perturbations, que ça les a changés à tout jamais, troubles déjà présents mais renforcés ou créés suites à des fragilités, l’isolement et la dépression sont toujours bien présents, difficile à faire partir parfois, il faudra du temps pour un véritable retour à la normalité..."
                 ],
-                "image" => "/assets/covid-illustration/covid-illustration.jpg"
+                "image" => [
+                    "source" => "/assets/covid-illustration/covid-illustration.jpg"
+                ]
             ]
         ]
     ],
@@ -502,7 +508,9 @@ $PROJECTS = [
                     2 => "Le titre secondaire est placé en bas du logo avec une déformation de certaines lettres et une découpe des mots avec une couleur pour chacun.",
                     3 => "Les couleurs utilisées sont le noir, le bleu, le rouge et le jaune. C'est couleurs sont caractéristiques du Bauhaus.",
                 ],
-                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v1.svg"
+                "image" => [
+                    "source" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v1.svg"
+                ]
             ],
             1 => [
                 "text" => [
@@ -512,7 +520,9 @@ $PROJECTS = [
                     4 => "Le titre secondaire est placé au niveau de la nageoire caudale, comme s'il était posé dessus. Il a une déformation de certaines de ses lettres et une découpe des mots avec une couleur pour chacun.",
                     5 => "Les couleurs utilisées sont les mêmes que pour le premier logo."
                 ],
-                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v2.svg"
+                "image" => [
+                    "source" => "/assets/aquarium-museum-logo/logo-aquarium-museum-bauhaus-v2.svg"
+                ]
             ],
             2 => [
                 "text" => [
@@ -522,7 +532,9 @@ $PROJECTS = [
                     3 => "Le titre secondaire, qui est de la même couleur que le titre principal, a été placé entre le corps et la nageoire caudale.",
                     4 => "Les couleurs utilisées sont des couleurs bleus, inspirés du logo actuel de l'Aquarium Museum, qui reflètent l'océan, les animaux marins, tout en inspirant confiance, calme et sérieux.",
                 ],
-                "image" => "/assets/aquarium-museum-logo/logo-aquarium-museum-modern.svg"
+                "image" => [
+                    "source" => "/assets/aquarium-museum-logo/logo-aquarium-museum-modern.svg"
+                ]
             ]
         ]
     ],
@@ -646,7 +658,9 @@ $PROJECTS = [
                     3 => "L'ensemble du design est composé de formes fluides et de vagues pour faire référence à l'eau mais également pour donner un côté frais, paisible et moderne au site.",
                     4 => "En plus de la couleur primaire, qui permet de donner un côté calme et sérieux, le design est parsemé de blanc pour un côté minimaliste, simple et propre."
                 ],
-                "image" => "/assets/piscine/piscine-design-first-part.jpg"
+                "image" => [
+                    "source" => "/assets/piscine/piscine-design-first-part.jpg"
+                ]
             ],
             1 => [
                 "text" => [
@@ -660,7 +674,9 @@ $PROJECTS = [
                     7 => "La dernière section est un simple call-to-action. Composé d'un titre, d'une phrase d'accroche ainsi que d'un bouton d'appel à l'action, il permet de donner envie de contacter l'entreprise et de leur rendre visite.",
                     8 => "Pour le footer, l'oeil va aller de la gauche vers la droite. On voit d'abord les informations importantes comme l'adresse, le numéro de téléphone et l'email, ensuite les horaires pour finir avec le menu de navigation du site."
                 ],
-                "image" => "/assets/piscine/piscine-design-second-part.jpg"
+                "image" => [
+                    "source" => "/assets/piscine/piscine-design-second-part.jpg"
+                ]
             ]
         ]
     ],
@@ -742,7 +758,9 @@ $PROJECTS = [
                     4 => "Le visiteur a directement les informations importantes en ouvrant le site et il peut facilement voir le menu ou prendre contact.",
                     5 => "Pour la seconde section, le regarde va sur les images, de la gauche vers la droite, puis sur le titre ainsi que la phrase d'accroche. Cette partie permet de mettre en évidence chacune des sections du menu et permet également au visiteur d'aller voir directement ce qui l'intéresse.",
                 ],
-                "image" => "/assets/ristorante-come-a-casa/ristorante-design-first-part.jpg"
+                "image" => [
+                    "source" => "/assets/ristorante-come-a-casa/ristorante-design-first-part.jpg"
+                ]
             ],
             1 => [
                 "text" => [
@@ -750,7 +768,9 @@ $PROJECTS = [
                     1 => "La dernière section est un call-to-action. Composé d'un titre, d'une phrase d'accroche ainsi que d'un bouton d'appel à l'action, il permet de donner envie de contacter le restaurant et de leur rendre visite.",
                     2 => "Pour le footer, l'oeil va aller de la gauche vers la droite. On voit d'abord les informations importantes comme l'adresse, le numéro de téléphone et l'email, ensuite les horaires pour finir avec le menu de navigation du site."
                 ],
-                "image" => "/assets/ristorante-come-a-casa/ristorante-design-second-part.jpg"
+                "image" => [
+                    "source" => "/assets/ristorante-come-a-casa/ristorante-design-second-part.jpg"
+                ]
             ]
         ]
     ],
@@ -829,13 +849,17 @@ $PROJECTS = [
                     3 => "La première section permet d'introduire l'entreprise et de rapidement savoir sur quel type de site on se trouve (un site proposant des lunettes), j'y ai ajouté un Call To Action permettant d'inciter l'utilisateur à contacter l'entreprise.",
                     4 => "La deuxième section de mon parcours utilisateur est là pour lui permettre de choisir une marque, d'avoir une courte explication de celle-ci et puis de voir les différentes lunettes proposées. Cette section arrive directement en deuxième position car c'est la raison pour laquelle l'utilisateur visite le site, il doit donc y avoir rapidement accès pour diminuer le temps nécessaire vers l'action désirée. Pour cette section, j'ai choisi scroll infini car nous sommes dans une expérience de découverte des produits sans recherche particulière mais qui reste cependant contrôlé à l'aide d'un bouton d'action, celui-ci permet à l'utilisateur de mieux maîtriser ce qu'il souhaite voir.",
                 ],
-                "image" => "/assets/duchesne-optic/duchesne-optic-design-first-part.jpg"
+                "image" => [
+                    "source" => "/assets/duchesne-optic/duchesne-optic-design-first-part.jpg"
+                ]
             ],
             1 => [
                 "text" => [
                     0 => "A la fin de mon parcours utilisateurs, on trouve la section de contact permettant de contacter l'entreprise, ce qui est mon action principale. Il me permet, en fin de parcours, d'inciter l'utilisateur à contacter l'entreprise.",
                 ],
-                "image" => "/assets/duchesne-optic/duchesne-optic-design-second-part.jpg"
+                "image" => [
+                    "source" => "/assets/duchesne-optic/duchesne-optic-design-second-part.jpg"
+                ]
             ]
         ]
     ],
@@ -918,14 +942,18 @@ $PROJECTS = [
                     3 => "Le parcours utilisateur commence avec la navbar et le banner qui vont lui permettre de voir les différents élements important, d'effectuer directement une recherche s'il sait ce qu'il cherche ainsi qu'avoir un apperçu des prochains produits et voir leur date d'arrivée pour potentiellement prévoir quand venir pour y investir.",
                     4 => "Étant donné que l'utilisateur cherche à investir rapidement dans des produits, la suite du parcours utilisateur va permettre à l'utilisateur de voir les produits ajoutés récemment mais également les produits les plus intéressants dans lesquelles il y a eu le plus d'investissement.",
                 ],
-                "image" => "/assets/taukn/taukn-design-first-part.jpg"
+                "image" =>  [
+                    "source" => "/assets/taukn/taukn-design-first-part.jpg"
+                ]
             ],
             1 => [
                 "text" => [
                     0 => "A la fin du parcours de la page d'accueil, l'utilisateur vera l'ensemble des catégories disponible sur le site. S'il n'a pas encore cliqué sur un produit, c'est qu'il n'a pas encore vu ce qu'il cherchait ou quelque chose pouvant lui plaire, mettre à la fin l'ensemble des catégories lui permettra de faire un choix plus large lui permettant de voir différant produits par rapport à une catégorie intérressante pour lui.",
                     1 => "Le footer permettra a l'utilisateur de s'orienter sur le site et de trouver les liens important (notamment ceux présents dans le menu) mais aussi moins important mais qui pourrait tout être utilent dans certaines circonstances (ex: FAQ, liens légaux, etc.).",
                 ],
-                "image" => "/assets/taukn/taukn-design-second-part.jpg"
+                "image" =>  [
+                    "source" => "/assets/taukn/taukn-design-second-part.jpg"
+                ]
             ]
         ]
     ],
@@ -1002,19 +1030,25 @@ $PROJECTS = [
                     3 => "Il nous a été demandé de nous concentrer principalement sur la partie feedback des cours. J'ai donc commencé par faire des wireframes de chacun de mes écrans pour ensuite passer au design de ceux-ci.",
                     4 => "Le premier écran reprend l'ensemble des cours passé. J'ai placé des icônes en couleurs, représentant chacun des cours, pour que l'utilisateur puisse rapidement reconnaître les différents cours sans avoir à lire à chaque fois le contenu de chacune des cartes. Mes niveaux de lectures ont été construit à l'aide de mes nuances de gris mais également à l'aide des tailles de textes qui ont chacune été faites en suivant la grille des 8 px, ce qui permet de garder une certaine conhérence dans l'architecture des textes mais également d'améliorer la lecture et de donner plus de cohérence au design. Deux boutons sont visibles en bas de la carte, permettant à l'utilisateur de rapidement effectué les deux actions principales liées aux cours (télécharger les documents et donner un feedback au prof).",
                 ],
-                "image" => "/assets/ifapme/ifapme-design-first-part.jpg"
+                "image" => [
+                    "source" => "/assets/ifapme/ifapme-design-first-part.jpg"
+                ]
             ],
             1 => [
                 "text" => [
                     0 => "Le second écran est une modale permettant de commenter le cours. Étant donné que nous sommes sur une modale permettant de voir l'écran de base en dessous de celle-ci, l'utilisateur comprend où il est et ce qu'il faisait. Par contre, pour lui permettre de correctement identifier de quel cours il s'agit, diminuer les frustrations et prévenir les erreurs, j'ai remis les informations principales permettant d'identifier correctement le cours en question. J'invite ensuite l'utilisateur à donner une cote sous forme d'étoile et a laisser un commentaire.",
                 ],
-                "image" => "/assets/ifapme/ifapme-design-second-part.jpg"
+                "image" => [
+                    "source" => "/assets/ifapme/ifapme-design-second-part.jpg"
+                ]
             ],
             2 => [
                 "text" => [
                     0 => "Le troisième écran reprend ensuite l'ensemble des cours pour lesquels il n'a pas encore effectué chacune des actions. Les boutons changent pour permettre à l'utilisateur de rapidement voir les actions qui ont déjà été effectuées.",
                 ],
-                "image" => "/assets/ifapme/ifapme-design-third-part.jpg"
+                "image" => [
+                    "source" => "/assets/ifapme/ifapme-design-third-part.jpg"
+                ]
             ]
         ]
     ],
@@ -1086,26 +1120,34 @@ $PROJECTS = [
                     0 => "Le client est actif dans la vente de thé bio et équitable sur internet. la plupart de ses clients sont des citadins, aisées, cultivées, faisant attention à l'environnement, voulant acheter du thé bio et équitable.",
                     1 => "La homepage du client est séparée en 9 sections (sans compter le footer et la navbar). Je suis partie sur une analyse de chacune en vérifiant tout que ce soit la taille des polices, le contraste, la lisibilité, etc. Pour ce faire, je me suis inspirée des points importants repris dans la grille heuristiques de Nielsen."
                 ],
-                "image" => "/assets/audit-ux/audit-ux-design-client-1.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/audit-ux-design-client-1.jpg"
+                ]
             ],
             1 => [
                 "text" => [
                     0 => "Suite de la homepage du client.",
                 ],
-                "image" => "/assets/audit-ux/audit-ux-design-client-2.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/audit-ux-design-client-2.jpg"
+                ]
             ],
             2 => [
                 "text" => [
                     0 => "Suite de la homepage du client.",
                 ],
-                "image" => "/assets/audit-ux/audit-ux-design-client-3.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/audit-ux-design-client-3.jpg"
+                ]
             ],
             3 => [
                 "text" => [
                     0 => "Exemple de ma présentation d'Audit UX.",
                     1 => "Je parle des éléments à modifier, j'explique pourquoi et je m'aide d'image pour illustrer mes propos au client."
                 ],
-                "image" => "/assets/audit-ux/audit-ux-hero-section.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/audit-ux-hero-section.jpg"
+                ]
             ],
             4 => [
                 "text" => [
@@ -1116,28 +1158,120 @@ $PROJECTS = [
                     4 => "Si l'utilisateur a encore décidé de scroller, c'est qu'il n'est pas encore convaincu. Je lui propose donc l'ensemble des différentes sortes de thés pour qu'il puisse y trouver son bonheur et cliquer sur ce qui l'intéresse.",
                     5 => "Après ça, j'ai remis la promotion proposée par le site pour inciter l'utilisateur a acheter. Je l'ai changé de place car cette section n'arrivait pas au bon moment dans le parcours utilisateur, l'image d'illustration était également trop présente et l'image du produit pas assez mise en avant, le bouton était également gris et pas suffisement visible. J'en ai donc profité pour donner un peu plus de peps à cette section et mettre un peu plus en avant la gourde offerte."
                 ],
-                "image" => "/assets/audit-ux/homepage-new-1.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/homepage-new-1.jpg"
+                ]
             ],
             5 => [
                 "text" => [
                     0 => "Les 3 sections suivantes sont des sections permettant de proposer les bestsellers ainsi que des thés et infusions proposés.",
                     1 => "J'ai retraivaillé les cartes produits pour permettre de mieux les identifiers et inciter l'utilisateurs à acheter le produit directement ou aller en savoir plus."
                 ],
-                "image" => "/assets/audit-ux/homepage-new-2.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/homepage-new-2.jpg"
+                ]
             ],
             6 => [
                 "text" => [
                     0 => "A la fin de ces 3 sections, j'ai mis les informations à propos de la société et de leurs thés et infusions. Je l'ai mis à ce moment du parcours utilisateurs car cette section est moins importante que les autres mais aussi car si l'utilisateur n'a toujours pas cliqué sur un des produits à ce niveau de la homepage, c'est surement qu'il veut être rassuré ou en savoir plus à propos de la société.",
                 ],
-                "image" => "/assets/audit-ux/homepage-new-3.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/homepage-new-3.jpg"
+                ]
             ],
-            6 => [
+            7 => [
                 "text" => [
                     0 => "Après les informations sur la société et leurs produits, j'ai ajouté le section contenant les articles parlant d'eux pour permettre de rassurer encore plus l'utilisateur mais aussi lui permettre d'en apprendre encore plus sur la société.",
                     1 => "La dernière section contient les informations à propos du paiement et de la livraison. Pour cette section, j'ai principalement changé les icônes car sur la version de base, la lisibilité n'était pas très bonne.",
                     2 => "J'ai également réorganisé le footer, qui n'était pas très compréhensible sur la version d'origine. J'ai adouci sa couleur pour que ce soit plus agréable à lire, j'ai modifier les niveaux de lectures, arrangé le tout en colonne et ajouté les liens légaux qui sont obligatoires sur les sites e-commerces mais qui n'était pas du tout visible sur la version du client."
                 ],
-                "image" => "/assets/audit-ux/homepage-new-4.jpg"
+                "image" => [
+                    "source" => "/assets/audit-ux/homepage-new-4.jpg"
+                ]
+            ],
+        ]
+    ],
+    16 => [
+        "title" => "Rassala",
+        "type" =>  [
+            0 => "design"
+        ],
+        "cssClass" => "project-rassala",
+        "shortDescription" => "Création d'une application mobile de laverie",
+        "link" => "/projects/rassala/details.php",
+        "introductionBanner" => "/assets/rassala/rassala.jpg",
+        "slideBanner" => "/assets/rassala/rassala.jpg",
+        "detailsBanner" => "/assets/rassala/rassala-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Pour mon examen du cours d'UX / UI Design : prototypes, UX Architecture, UX Design et Workshop, j'ai réalisé une application mobile Android pour une laverie connectée.",
+                1 => "Pour cette application, j'ai réalisé diverses interviews, fait des personas sur base de ces interviews, réalisé une Empathy Map, une Experience Map, une User Journey Map, un User Flow et un Site Map.",
+                2 => "Je suis ensuite partie sur la réalisé des différents Wireframes basse et medium fidelité pour ensuite faire le design. Une fois mon design fini pour mon flux principale, j'ai réalisé quelques Users Tests. J'ai ensuite fait une présentation de l'application comme si je la présentais à un client ou à des investisseurs."
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/rassala/rassala-presentation.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "rassala",
+            "colors" => [
+                0 => [
+                    "name" => "primary",
+                    "colorHex" => "#205DDF",
+                    "text" => "La couleur primaire est un bleu légèrement foncé pour améliorer la lisibilité et le contraste de cette couleur avec le blanc. En plus d'être une couleur particulièrement visible et attirant l'oeil, le bleu permet de donner un sentiment de sécurité, de confiance et de professionnalisme. Celui-ci a notamment été utiliser pour faire référence à l'eau."
+                ],
+                1 => [
+                    "name" => "secondary",
+                    "colorHex" => "#DFA220",
+                    "text" => "La couleur secondaire est un jaune légèrement foncé pour améliorer la lisibilité et le contraste de cette couleur avec le blanc."
+                ],
+                2 => [
+                    "name" => "black",
+                    "colorHex" => "#131416",
+                    "text" => "Les nuances de gris du site, allant du noir vers le blanc, ont été faites à partir de la couleur primaire, c'est-à-dire que chacune de ces nuances est légèrement saturé avec du bleu."
+                ],
+            ],
+            "image" => "/assets/rassala/rassala-charte.png"
+        ],
+        "fonts" => [
+            0 => [
+                "image" => "/assets/rassala/details-font-title-rassala.svg",
+                "title" => "Les titres",
+                "text" => [
+                    0 => "Pour les titres, la police Roboto est utilisée.",
+                    1 => "Il s'agit de la police utilisée dans les Guidelines Material Design pour Android.",
+                ]
+            ],
+            1 => [
+                "image" => "/assets/rassala/details-font-text-rassala.svg",
+                "title" => "Les textes",
+                "text" => [
+                    0 => "Pour le texte, la police Roboto a été utilisée.",
+                    1 => "Il s'agit de la police utilisée dans les Guidelines Material Design pour Android.",
+                ]
+            ]
+        ],
+        "icons" => [
+            0 => [
+                "icon" => "/assets/rassala/rassala-logo.svg",
+                "iconAlt" => "Icon de l'application Rassale. Ce logo représente le dessin d'une machine à laver avec son hublot.",
+                "text" => [
+                    0 => "Pour mon application de laverie, j'ai créé un logo de manière assez minimaliste pour qu'il soit facile à retenir, facile à dessiner de mémoire et visible en tout petit.",
+                    1 => "Ce logo représente le dessin d'une machine à laver avec son hublot. A côté, on peut y voir le nom de la marque \"Rassala\". "
+                ],
+                "image" => "/assets/rassala/rassala-logo-presentation.png"
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Les clients cibles sont les jeunes commençant la vie active, les étudiants, les personnes en Eramus, les retraités et les occasionnels.",
+                    1 => "Pour ce design, je me suis efforcée de régler les différents problèmes rapportés lors que mes interviews, les pains points de mes personas, et d'améliorer l'expérience des utilisateurs avec les laveries.",
+                    2 => "Le design est simple et minimaliste, tout en respectant les Guidlines d'Android.",
+                ],
+                "image" => [
+                    "cssClass" => "mx-auto",
+                    "source" => "/assets/rassala/rassala-design.jpg"
+                ]
             ],
         ]
     ],

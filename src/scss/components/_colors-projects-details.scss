@@ -42,6 +42,7 @@
 
     .colors-wrapper {
         display: grid;
+        margin-bottom: 24px;
 
         @include media-breakpoint-up(lg) {
             grid-column: 1/6;
