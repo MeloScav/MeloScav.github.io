@@ -1053,6 +1053,64 @@ $PROJECTS = [
         ]
     ],
     15 => [
+        "title" => "Blockedex",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-blockedex",
+        "shortDescription" => "Création d'un logo pour une entreprise active dans la Blockchain.",
+        "link" => "/projects/blockedex/details.php",
+        "introductionBanner" => "/assets/blockedex/blockedex.jpg",
+        "slideBanner" => "/assets/blockedex/blockedex.jpg",
+        "detailsBanner" => "/assets/blockedex/blockedex-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "J'ai reçu une demaine d'un client actif dans le domaine de la Blockchain (Création de Smart Contract, consulting Blockchain, DAPPS) pour la réalisation d'un logo. Sa demande était de réaliser un logo faisant référence à son nom \"Blockedex\" qui est un mélange entre \"Block\", de la Blockchain, et de \"Pokédex\", de l'univers de Pokémon. Les couleurs voulues devaient être futuristes et modernes.",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/blockedex/blockedex.jpg"
+        ],
+        "detailsColors" => [
+            "cssClass" => "blockedex",
+            "colors" => [
+                0 => [
+                    "name" => "blue",
+                    "colorHex" => "#0B8BF4",
+                    "text" => "J'ai choisi d'utiliser la couleur bleu, qui est une couleur souvent utilisée dans le monde de la Blockchain et de la finance, elle permet de donner un sentiment de sécurité, de confiance et de professionalisme."
+                ],
+                1 => [
+                    "name" => "purple",
+                    "colorHex" => "#703BF2",
+                    "text" => "J'ai choisi d'utiliser également du mauve car cette couleur permet de donner un côté mystérieux et luxueux à la blockchain."
+                ],
+            ],
+            "image" => "/assets/blockedex/blockedex-logo.svg"
+        ],
+        "icons" => [
+            0 => [
+                "icon" => "",
+                "iconAlt" => "",
+                "text" => [
+                    0 => "Pour ce logo, j'ai réalisé un dessin minimaliste pour qu'il soit facile à retenir, facile à redessiner de mémoire et visible en tout petit. J'ai veillé à ce qu'il soit approprié à la société et suffisement distinctif pour qu'on puisse facilement reconnaitre la socitété grâce à son logo et suffisemment simple pour s'en rappeler après l'avoir vu une seule fois.",
+                    1 => "Il représente un dessin assez minimaliste d'un carré avec un autre carré à l'intérieur pour à la fois représenter l'univers de la blockchain mais également faire référence au dessin d'un pokeball. A l'intérieur de celui-ci, la forme \"b\" apparaît pour faire référence au nom \"Blockedex\". Dans l'espace vide, un C apparaît rappellant le \"C\" de blockchain et celui de \"Blockedex\".",
+                    2 => "Les formes droites et géométriques permettent de donner un sentiment de sécurité, de force, de stabilité et de professionnalisme."
+                ],
+                "image" => "/assets/blockedex/Blockedex-logo-anime.gif"
+            ]
+        ],
+        "design" => [
+            0 => [
+                "text" => [
+                    0 => "Pour la partie texte de ce logo, j'ai utilisé \"Univia Pro\" qui est une police Adobe.",
+                    1 => "Il s'agit d'une police sans empattement, très lisible, qui permet de donner un côté moderne. Elle présente également un aspect assez droit et pointu, ce qui correspond bien aux styles des polices web3 et le \"o\" de Blockedex forme presque un carré, ce qui fait un petit clin d'oeil au mot \"bloc\" de la blockchain."
+                ],
+                "image" => [
+                    "source" => "/assets/blockedex/blockedex-logo.svg"
+                ]
+            ],
+        ]
+    ],
+    16 => [
         "title" => "Audit UX",
         "type" =>  [
             0 => "design"
@@ -1191,7 +1249,7 @@ $PROJECTS = [
             ],
         ]
     ],
-    16 => [
+    17 => [
         "title" => "Rassala",
         "type" =>  [
             0 => "design"
@@ -1275,7 +1333,7 @@ $PROJECTS = [
             ],
         ]
     ],
-    17 => [
+    18 => [
         "title" => "BlockNest",
         "type" =>  [
             0 => "design"
@@ -1390,65 +1448,25 @@ $PROJECTS = [
             ],
         ]
     ],
-    18 => [
-        "title" => "Blockedex",
+    19 => [
+        "title" => "Character design 3D",
         "type" =>  [
             0 => "illustration"
         ],
-        "cssClass" => "project-blockedex",
-        "shortDescription" => "Création d'un logo pour une entreprise active dans la Blockchain.",
-        "link" => "/projects/blockedex/details.php",
-        "introductionBanner" => "/assets/blockedex/blockedex.jpg",
-        "slideBanner" => "/assets/blockedex/blockedex.jpg",
-        "detailsBanner" => "/assets/blockedex/blockedex-banner.jpg",
+        "cssClass" => "project-illustration3d",
+        "shortDescription" => "Création d'une illustration 3D pour un site web.",
+        "link" => "/projects/illustration3d/details.php",
+        "introductionBanner" => "/assets/illustration3d/illustration3d-character-hello.png",
+        "slideBanner" => "/assets/illustration3d/illustration3d-character-hello.png",
+        "detailsBanner" => "/assets/illustration3d/illustration3d-banner.jpg",
         "presentation" => [
             "text" => [
-                0 => "J'ai reçu une demaine d'un client actif dans le domaine de la Blockchain (Création de Smart Contract, consulting Blockchain, DAPPS) pour la réalisation d'un logo. Sa demande était de réaliser un logo faisant référence à son nom \"Blockedex\" qui est un mélange entre \"Block\", de la Blockchain, et de \"Pokédex\", de l'univers de Pokémon. Les couleurs voulues devaient être futuristes et modernes.",
+                0 => "Pour le site portfolio d'un client, j'ai réalisé une illustration 3D d'un personnage.",
             ],
             "buttonLink" => "",
-            "image" => "/assets/blockedex/blockedex.jpg"
+            "image" => "/assets/illustration3d/illustration3d-character-animate.gif"
         ],
-        "detailsColors" => [
-            "cssClass" => "blockedex",
-            "colors" => [
-                0 => [
-                    "name" => "blue",
-                    "colorHex" => "#0B8BF4",
-                    "text" => "J'ai choisi d'utiliser la couleur bleu, qui est une couleur souvent utilisée dans le monde de la Blockchain et de la finance, elle permet de donner un sentiment de sécurité, de confiance et de professionalisme."
-                ],
-                1 => [
-                    "name" => "purple",
-                    "colorHex" => "#703BF2",
-                    "text" => "J'ai choisi d'utiliser également du mauve car cette couleur permet de donner un côté mystérieux et luxueux à la blockchain."
-                ],
-            ],
-            "image" => "/assets/blockedex/blockedex-logo.svg"
-        ],
-        "icons" => [
-            0 => [
-                "icon" => "",
-                "iconAlt" => "",
-                "text" => [
-                    0 => "Pour ce logo, j'ai réalisé un dessin minimaliste pour qu'il soit facile à retenir, facile à redessiner de mémoire et visible en tout petit. J'ai veillé à ce qu'il soit approprié à la société et suffisement distinctif pour qu'on puisse facilement reconnaitre la socitété grâce à son logo et suffisemment simple pour s'en rappeler après l'avoir vu une seule fois.",
-                    1 => "Il représente un dessin assez minimaliste d'un carré avec un autre carré à l'intérieur pour à la fois représenter l'univers de la blockchain mais également faire référence au dessin d'un pokeball. A l'intérieur de celui-ci, la forme \"b\" apparaît pour faire référence au nom \"Blockedex\". Dans l'espace vide, un C apparaît rappellant le \"C\" de blockchain et celui de \"Blockedex\".",
-                    2 => "Les formes droites et géométriques permettent de donner un sentiment de sécurité, de force, de stabilité et de professionnalisme."
-                ],
-                "image" => "/assets/blockedex/Blockedex-logo-anime.gif"
-            ]
-        ],
-        "design" => [
-            0 => [
-                "text" => [
-                    0 => "Pour la partie texte de ce logo, j'ai utilisé \"Univia Pro\" qui est une police Adobe.",
-                    1 => "Il s'agit d'une police sans empattement, très lisible, qui permet de donner un côté moderne. Elle présente également un aspect assez droit et pointu, ce qui correspond bien aux styles des polices web3 et le \"o\" de Blockedex forme presque un carré, ce qui fait un petit clin d'oeil au mot \"bloc\" de la blockchain."
-                ],
-                "image" => [
-                    "source" => "/assets/blockedex/blockedex-logo.svg"
-                ]
-            ],
-        ]
     ],
-
 ];
 ?>
 
