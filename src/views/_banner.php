@@ -26,6 +26,12 @@
                             <use href="../assets/sprite.svg#linkedin"></use>
                         </svg>
                     </a>
+                    <a href="https://www.instagram.com/meloscav/">
+                        <span class="visually-hidden">Lien vers ma page Instagram</span>
+                        <svg class="icon icon-lg">
+                            <use href="../assets/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
                 </div>
 
             </div>
