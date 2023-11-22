@@ -1467,6 +1467,25 @@ $PROJECTS = [
             "image" => "/assets/illustration3d/illustration3d-character-animate.gif"
         ],
     ],
+    20 => [
+        "title" => "Crocro - Character design",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-crocro",
+        "shortDescription" => "Création d'une illustration 3D d'un crocodile.",
+        "link" => "/projects/crocro/details.php",
+        "introductionBanner" => "/assets/crocro/crocro-profil.jpg",
+        "slideBanner" => "/assets/crocro/crocro-profil.jpg",
+        "detailsBanner" => "/assets/crocro/crocro-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'un crocodile 3d avec Blender.",
+            ],
+            "buttonLink" => "",
+            "image" => "/assets/crocro/crocro-animate.gif"
+        ],
+    ],
 ];
 ?>
 
