@@ -32,6 +32,12 @@
                             <use href="../assets/sprite.svg#instagram"></use>
                         </svg>
                     </a>
+                    <a href="https://dribbble.com/MeloScav">
+                        <span class="visually-hidden">Lien vers ma page Dribbble</span>
+                        <svg class="icon icon-lg">
+                            <use href="../assets/sprite.svg#dribbble"></use>
+                        </svg>
+                    </a>
                 </div>
 
             </div>
