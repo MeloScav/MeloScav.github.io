@@ -1486,6 +1486,120 @@ $PROJECTS = [
             "image" => "/assets/crocro/crocro-animate.gif"
         ],
     ],
+    21 => [
+        "title" => "Voiture 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-car",
+        "shortDescription" => "Création d'une voiture 3D roulant sur une route ainsi que l'animation de celle-ci.",
+        "link" => "/projects/car3d/details.php",
+        "introductionBanner" => "/assets/car3d/road-image-MeloScav.jpg",
+        "slideBanner" => "/assets/car3d/road-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/car3d/car3d-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'une voiture en 3d sur Spline ainsi qu'une animation de celle-ci roulant sur une route et renversant des cubes.",
+            ],
+            "buttonLink" => "https://my.spline.design/route-e822e87a482549be0885b20a97edbd1b/",
+            "image" => "/assets/car3d/road-gif-MeloScav.gif"
+        ],
+    ],
+    22 => [
+        "title" => "Clavier 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-keyboard",
+        "shortDescription" => "Création d'un clavier 3d intéractif.",
+        "link" => "/projects/keyboard3d/details.php",
+        "introductionBanner" => "/assets/keyboard3d/keyboard-image-MeloScav.jpg",
+        "slideBanner" => "/assets/keyboard3d/keyboard-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/keyboard3d/keyboard-banner-MeloScav.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'un design 3d d'un clavier intéractif réagissant au touche du clavier de l'ordinateur.",
+            ],
+            "buttonLink" => "https://my.spline.design/untitled-9dde30eacfcb39d33efff142ad865b0a/",
+            "image" => "/assets/keyboard3d/keyboard-gif-MeloScav.gif"
+        ],
+    ],
+    23 => [
+        "title" => "Soleil 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-sun3d",
+        "shortDescription" => "Création d'un soleil entouré de boules.",
+        "link" => "/projects/sun3d/details.php",
+        "introductionBanner" => "/assets/sun3d/sun-image-MeloScav.jpg",
+        "slideBanner" => "/assets/sun3d/sun-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/sun3d/sun3d-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'un soleil en 3D entouré de boules, réagissant au hover de la souris.",
+            ],
+            "buttonLink" => "https://my.spline.design/untitled-1bebce3464f7f019092b297722e45dea/",
+            "image" => "/assets/sun3d/sun-gif-MeloScav.gif"
+        ],
+    ],
+    24 => [
+        "title" => "Switch toggle 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-switchtoggle",
+        "shortDescription" => "Création d'un bouton toggle intéractif changeant de couleur.",
+        "link" => "/projects/switch-toggle/details.php",
+        "introductionBanner" => "/assets/switch-toggle/switch-toggle-image-MeloScav.jpg",
+        "slideBanner" => "/assets/switch-toggle/switch-toggle-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/switch-toggle/switch-toggle-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'un bouton toggle intéractif permettant de changer la couleur d'ambiance.",
+            ],
+            "buttonLink" => "https://my.spline.design/untitled-8c78d75bf82111f406c402dfb67150fb/",
+            "image" => "/assets/switch-toggle/switch-toggle-gif-MeloScav.gif"
+        ],
+    ],
+    25 => [
+        "title" => "Terre 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-earth3d",
+        "shortDescription" => "Création de la Terre en 3D.",
+        "link" => "/projects/earth3d/details.php",
+        "introductionBanner" => "/assets/earth3d/earth-image-MeloScav.jpg",
+        "slideBanner" => "/assets/earth3d/earth-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/earth3d/earth-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation de la Terre en 3D ainsi que son animation.",
+            ],
+            "buttonLink" => "https://my.spline.design/earth-bc1fe82f2b1563564c3c6970f3983078/",
+            "image" => "/assets/earth3d/earth-gif-MeloScav.gif"
+        ],
+    ],
+    26 => [
+        "title" => "Polaroid 3D",
+        "type" =>  [
+            0 => "illustration"
+        ],
+        "cssClass" => "project-polaroid3d",
+        "shortDescription" => "Création d'un polaroid en 3D.",
+        "link" => "/projects/polaroid3d/details.php",
+        "introductionBanner" => "/assets/polaroid3d/polaroid-image-MeloScav.jpg",
+        "slideBanner" => "/assets/polaroid3d/polaroid-image-MeloScav.jpg",
+        "detailsBanner" => "/assets/polaroid3d/polaroid-banner.jpg",
+        "presentation" => [
+            "text" => [
+                0 => "Réalisation d'un polaroid en 3D ainsi que l'animation d'une image sortant de celui-ci.",
+            ],
+            "buttonLink" => "https://my.spline.design/untitled-ad4233227529004f733f7bcefcbf81f0/",
+            "image" => "/assets/polaroid3d/polaroid-gif-MeloScav.gif"
+        ],
+    ],
 ];
 ?>
 
