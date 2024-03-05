@@ -43,6 +43,18 @@
                                 <use href="/assets/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
+                        <a class="footer-link" href="https://www.instagram.com/meloscav/">
+                            <span class="visually-hidden">Lien vers ma page Instagram</span>
+                            <svg class="icon icon-md">
+                                <use href="../assets/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-link" href="https://dribbble.com/MeloScav">
+                            <span class="visually-hidden">Lien vers ma page Dribbble</span>
+                            <svg class="icon icon-md">
+                                <use href="../assets/sprite.svg#dribbble"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
