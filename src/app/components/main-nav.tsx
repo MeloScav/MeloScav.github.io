@@ -5,6 +5,9 @@ import React from "react";
 import mainLogo from "@/app/assets/images/Logo.svg";
 import {
   Container,
+  Nav,
+  NavItem,
+  NavLink,
   Navbar,
   NavbarBrand,
   NavbarOffcanvas,
@@ -42,22 +45,28 @@ const MainNav = () => {
               </OffcanvasTitle>
             </OffcanvasHeader>
             <OffcanvasBody>
-              <ul className="navbar-nav">
-                {mainMenu.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.href} className={item.className}>
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <Nav className="justify-content-end flex-grow-1">
+                <Navbar className="navbar-nav">
+                  {mainMenu.map((item, index) => {
+                    const isBtn = item.className?.includes("btn");
+
+                    return (
+                      <NavItem as={"li"} key={index}>
+                        <Link
+                          href={item.href}
+                          className={
+                            (!isBtn ? "nav-link " : "") + (item.className || "")
+                          }
+                        >
+                          {item.title}
+                        </Link>
+                      </NavItem>
+                    );
+                  })}
+                </Navbar>
+              </Nav>
             </OffcanvasBody>
           </NavbarOffcanvas>
-
-          {/* <nav className="main-header__navbar navbar">
-           
-            
-          </nav> */}
         </header>
       </Navbar>
     </Container>
