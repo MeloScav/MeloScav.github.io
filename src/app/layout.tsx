@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Almarai, Merienda } from "next/font/google";
 import "./styles/index.scss";
 import MainNav from "./components/main-nav";
 import MainFooter from "./components/main-footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const almarai = Almarai({
+  weight: ["400", "700"],
+  subsets: ["arabic"],
+  variable: "--font-family-base",
+});
+
+const merienda = Merienda({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-family-headings",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${almarai.className} ${merienda.className}`}>
         <MainNav />
         {children}
         <MainFooter />
