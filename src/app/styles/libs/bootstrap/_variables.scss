@@ -1,0 +1,74 @@
+// Fonts
+$font-family-base: var(--font-family-base);
+$headings-font-family: var(--font-family-headings);
+
+// Color system
+
+// Gray-color-variables
+$white:    #FDFDFD;
+$gray-100: #F7F6F7;
+$gray-200: #EEECEE;
+$gray-300: #D4D0D4;
+$gray-400: #ABA3AC;
+$gray-500: #908891;
+$gray-600: #746A76;
+$gray-700: #544A55;
+$gray-800: #2E272E;
+$gray-900: #211C21;
+$black:    #131013;
+// Gray-color-variables
+
+// Gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+// Gray-colors-map
+
+// Theme-color-variables
+$primary:       #8A2999;
+$secondary:     #1E73E4;
+// Theme-color-variables
+
+// Theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary
+);
+// Theme-colors-map
+
+// Border-radius-variables
+$border-radius:  2rem;
+// Border-radius-variables
+
+// Spacer-variables-maps
+$spacer: 16px;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+// Spacer-variables-maps
+
+// Navbar
+// $nav-link-padding-y: 16px;
+// $nav-link-padding-x:  10px;
+$navbar-nav-link-padding-x: 10px;
+$navbar-light-color: $gray-500;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $navbar-light-hover-color;
+$nav-link-color: $gray-500;
+
+// Button
+$input-btn-padding-y: 16px;
+$input-btn-padding-x: 24px;
