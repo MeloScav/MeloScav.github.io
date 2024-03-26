@@ -9,18 +9,19 @@ interface IMainMenuItem {
 export const mainMenu: IMainMenuItem[] = [
     {
         title: "Design",
-        href: "/projects/design"
+        href: "/projects/design",
     },
     {
         title: "Développement",
-        href: "/projects/development"
+        href: "/projects/development",
     },
     {
         title: "Illustration",
-        href: "/projects/illustration"
+        href: "/projects/illustration",
     },
     {
         title: "Me contacter",
         href: `mailto:${MAIL}`,
+        className: "btn btn-primary ms-3"
     }
 ]
