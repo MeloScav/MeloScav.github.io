@@ -2,7 +2,7 @@ import { mainMenu } from "@/data/menus";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import mainLogo from "@/app/assets/images/Logo.svg";
+import mainLogo from "@/assets/images/Logo.svg";
 import {
   Container,
   Nav,
@@ -19,57 +19,64 @@ import {
 
 const MainNav = () => {
   return (
-    <Container>
-      <Navbar expand="lg" className="main-header">
-        <header className="main-header d-flex flex-fill justify-content-between main-header">
-          <div className="main-header__logo">
-            <span className="visually-hidden">Page d&apos;accueil</span>
+    <div className="main-nav-wrapper">
+      <Container>
+        <Navbar expand="lg">
+          <header className="main-nav d-flex flex-fill justify-content-between">
+            <div className="main-nav__logo">
+              <span className="visually-hidden">Page d&apos;accueil</span>
 
-            <Link href={"/"}>
-              <Image src={mainLogo} alt="Scavezzoni Méloé Logo" priority />
-            </Link>
-          </div>
+              <Link href={"/"}>
+                <Image src={mainLogo} alt="Scavezzoni Méloé Logo" priority />
+              </Link>
+            </div>
 
-          <NavbarToggle aria-controls="main-nav" />
+            <NavbarToggle aria-controls="main-nav" />
 
-          <NavbarOffcanvas
-            id={"main-nav"}
-            aria-labelledby={"main-nav-label"}
-            placement="end"
-          >
-            <OffcanvasHeader closeButton>
-              <OffcanvasTitle id={"main-nav-label"}>
-                <Link href={"/"}>
-                  <Image src={mainLogo} alt="Scavezzoni Méloé Logo" priority />
-                </Link>
-              </OffcanvasTitle>
-            </OffcanvasHeader>
-            <OffcanvasBody>
-              <Nav className="justify-content-end flex-grow-1">
-                <Navbar className="navbar-nav">
-                  {mainMenu.map((item, index) => {
-                    const isBtn = item.className?.includes("btn");
+            <NavbarOffcanvas
+              id={"main-nav"}
+              aria-labelledby={"main-nav-label"}
+              placement="end"
+            >
+              <OffcanvasHeader closeButton>
+                <OffcanvasTitle id={"main-nav-label"}>
+                  <Link href={"/"}>
+                    <Image
+                      src={mainLogo}
+                      alt="Scavezzoni Méloé Logo"
+                      priority
+                    />
+                  </Link>
+                </OffcanvasTitle>
+              </OffcanvasHeader>
+              <OffcanvasBody>
+                <Nav className="justify-content-end flex-grow-1">
+                  <Navbar className="navbar-nav">
+                    {mainMenu.map((item, index) => {
+                      const isBtn = item.className?.includes("btn");
 
-                    return (
-                      <NavItem as={"li"} key={index}>
-                        <Link
-                          href={item.href}
-                          className={
-                            (!isBtn ? "nav-link " : "") + (item.className || "")
-                          }
-                        >
-                          {item.title}
-                        </Link>
-                      </NavItem>
-                    );
-                  })}
-                </Navbar>
-              </Nav>
-            </OffcanvasBody>
-          </NavbarOffcanvas>
-        </header>
-      </Navbar>
-    </Container>
+                      return (
+                        <NavItem as={"li"} key={index}>
+                          <Link
+                            href={item.href}
+                            className={
+                              (!isBtn ? "nav-link " : "") +
+                              (item.className || "")
+                            }
+                          >
+                            {item.title}
+                          </Link>
+                        </NavItem>
+                      );
+                    })}
+                  </Navbar>
+                </Nav>
+              </OffcanvasBody>
+            </NavbarOffcanvas>
+          </header>
+        </Navbar>
+      </Container>
+    </div>
   );
 };
 
