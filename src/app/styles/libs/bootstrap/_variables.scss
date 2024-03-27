@@ -1,7 +1,3 @@
-// Fonts
-$font-family-base: var(--font-family-base);
-$headings-font-family: var(--font-family-headings);
-
 // Color system
 
 // Gray-color-variables
@@ -11,7 +7,7 @@ $gray-200: #EEECEE;
 $gray-300: #D4D0D4;
 $gray-400: #ABA3AC;
 $gray-500: #908891;
-$gray-600: #746A76;
+$gray-600: #776D78;
 $gray-700: #544A55;
 $gray-800: #2E272E;
 $gray-900: #211C21;
@@ -31,6 +27,34 @@ $grays: (
   "900": $gray-900
 );
 // Gray-colors-map
+
+// Fonts
+$font-family-sans-serif: var(--font-family-base), sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: var(--font-family-headings), sans-serif;
+$headings-line-height: 1.2;
+$headings-font-weight: 700;
+$headings-color: $black;
+$body-color: $gray-600;
+
+$h1-font-size: 104px;
+$h2-font-size: 88px;
+$h3-font-size: 56px;
+$h4-font-size: 48px;
+$h5-font-size: 32px;
+$h6-font-size: 24px;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  "md": 24px,
+  "lg": 32px,
+  "xl": 40px,
+);
+// Fonts
 
 // Theme-color-variables
 $primary:       #8A2999;
@@ -56,7 +80,8 @@ $spacers: (
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer * 2,
+  6: $spacer * 2.5,
 );
 // Spacer-variables-maps
 
@@ -64,11 +89,14 @@ $spacers: (
 // $nav-link-padding-y: 16px;
 // $nav-link-padding-x:  10px;
 $navbar-nav-link-padding-x: 10px;
-$navbar-light-color: $gray-500;
+$nav-link-color: $gray-600;
+$nav-link-font-weight: 700;
+$navbar-light-color: $gray-600;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $navbar-light-hover-color;
-$nav-link-color: $gray-500;
+
 
 // Button
 $input-btn-padding-y: 16px;
 $input-btn-padding-x: 24px;
+$btn-font-weight: 700;
