@@ -1,0 +1,7 @@
+$max-widths: (1000);
+
+@each $max-width in $max-widths {
+    .mw-#{$max-width} {
+        max-width: #{$max-width}px;
+    }
+}
