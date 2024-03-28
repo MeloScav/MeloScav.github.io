@@ -1,10 +1,20 @@
 import { Container } from "react-bootstrap";
-import TitleDecorated from "./title-decorated";
-import TextHighlighted from "./text-highlighted";
+import TitleDecorated from "./decorations/title-decorated";
+import TextHighlighted from "./decorations/text-highlighted";
+import DecorationIcon from "./decorations/decoration-icon";
 
 const MainBanner = () => {
   return (
     <Container className="main-banner">
+      <div className="main-banner__decorations">
+        <DecorationIcon
+          iconId={"circle"}
+          className="text-primary-light"
+          width="32px"
+          style={{ top: "35%", left: "1.19%" }}
+        />
+      </div>
+
       <div className="main-banner__content mw-1000 mx-auto">
         <TitleDecorated className="text-center">
           Méloé Scavezzoni
