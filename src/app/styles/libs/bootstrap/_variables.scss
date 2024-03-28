@@ -1,17 +1,17 @@
 // Color system
 
 // Gray-color-variables
-$white:    #FDFDFD;
-$gray-100: #F7F6F7;
-$gray-200: #EEECEE;
-$gray-300: #D4D0D4;
-$gray-400: #ABA3AC;
+$white: #fdfdfd;
+$gray-100: #f7f6f7;
+$gray-200: #eeecee;
+$gray-300: #d4d0d4;
+$gray-400: #aba3ac;
 $gray-500: #908891;
-$gray-600: #776D78;
-$gray-700: #544A55;
-$gray-800: #2E272E;
-$gray-900: #211C21;
-$black:    #131013;
+$gray-600: #776d78;
+$gray-700: #544a55;
+$gray-800: #2e272e;
+$gray-900: #211c21;
+$black: #131013;
 // Gray-color-variables
 
 // Gray-colors-map
@@ -24,12 +24,15 @@ $grays: (
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
+  "900": $gray-900,
 );
 // Gray-colors-map
 
 // Fonts
-$font-family-sans-serif: var(--font-family-base), sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: var(--font-family-base), sans-serif, system-ui,
+  -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family: var(--font-family-headings), sans-serif;
 $headings-line-height: 1.2;
 $headings-font-weight: 700;
@@ -57,27 +60,31 @@ $font-sizes: (
 // Fonts
 
 // Theme-color-variables
-$primary:       #8A2999;
-$secondary:     #1E73E4;
+$primary: #8a2999;
+$primary-light: #e1a5ea;
+$secondary: #1e73e4;
+$secondary-light: #93b4e1;
 // Theme-color-variables
 
 // Theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary
+  "primary": $primary,
+  "primary-light": $primary-light,
+  "secondary": $secondary,
+  "secondary-light": $secondary-light,
 );
 // Theme-colors-map
 
 // Border-radius-variables
-$border-radius:  2rem;
+$border-radius: 2rem;
 // Border-radius-variables
 
 // Spacer-variables-maps
 $spacer: 16px;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2,
@@ -94,7 +101,6 @@ $nav-link-font-weight: 700;
 $navbar-light-color: $gray-600;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $navbar-light-hover-color;
-
 
 // Button
 $input-btn-padding-y: 16px;
