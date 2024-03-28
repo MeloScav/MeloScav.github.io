@@ -1,6 +1,6 @@
 import classNames from "@/utils/classNames";
 import React, { PropsWithChildren, ReactNode } from "react";
-import SpriteSVG from "./sprite-svg";
+import SpriteSVG from "../sprite-svg";
 
 interface ITextHighlightedProps extends PropsWithChildren {
   className?: string;
@@ -13,7 +13,7 @@ const TextHighlighted = (props: ITextHighlightedProps): ReactNode => {
     <span className="highlighted-text">
       <mark className={classNames(className)}>
         {children}
-        <SpriteSVG iconId="text-highlight" />
+        <SpriteSVG iconId="text-highlight" isDecorationIcon={true} />
       </mark>
     </span>
   );
