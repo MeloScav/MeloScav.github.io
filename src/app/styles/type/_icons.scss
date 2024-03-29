@@ -18,4 +18,14 @@
   height: var(--decoration-icon-height, var(--decoration-icon-width));
 
   pointer-events: none;
+
+  &--responsive {
+    @include media-breakpoint-down(md) {
+      scale: 0.8;
+    }
+
+    @include media-breakpoint-down(sm) {
+      scale: 0.6;
+    }
+  }
 }
