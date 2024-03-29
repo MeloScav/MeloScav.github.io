@@ -38,14 +38,12 @@ $headings-line-height: 1.2;
 $headings-font-weight: 700;
 $headings-color: $black;
 $body-color: $gray-600;
-
 $h1-font-size: 104px;
 $h2-font-size: 88px;
 $h3-font-size: 56px;
 $h4-font-size: 48px;
 $h5-font-size: 32px;
 $h6-font-size: 24px;
-
 $font-sizes: (
   1: $h1-font-size,
   2: $h2-font-size,
@@ -72,6 +70,7 @@ $theme-colors: (
   "primary-light": $primary-light,
   "secondary": $secondary,
   "secondary-light": $secondary-light,
+  "gray-300": $gray-300,
 );
 // Theme-colors-map
 
@@ -80,6 +79,7 @@ $border-radius: 2rem;
 // Border-radius-variables
 
 // Spacer-variables-maps
+$grid-gutter-width: 64px;
 $spacer: 16px;
 $spacers: (
   0: 0,
@@ -106,3 +106,22 @@ $navbar-light-active-color: $navbar-light-hover-color;
 $input-btn-padding-y: 16px;
 $input-btn-padding-x: 24px;
 $btn-font-weight: 700;
+
+// Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1515px,
+);
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: calc(map-get($container-max-widths, xxl) + ($grid-gutter-width * 2)),
+);
