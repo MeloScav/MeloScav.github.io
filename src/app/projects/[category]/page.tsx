@@ -16,7 +16,7 @@ const CategoryPage = (props: ICategoryPageProps) => {
   const { params } = props;
   const currentCategory = params.category;
 
-  return <h1>Test {currentCategory}</h1>;
+  return <h1>Categorie : {currentCategory}</h1>;
 };
 
 export default CategoryPage;
