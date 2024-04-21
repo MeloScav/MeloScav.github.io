@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={classNames(almarai.variable, merienda.variable)}>
-      <body>
+      <body className="pt-main-nav-height">
         <MainNav />
         {children}
         <MainFooter />
