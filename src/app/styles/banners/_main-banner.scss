@@ -7,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 100vh;
-  padding-top: calc(var(--main-nav-height) + 64px);
+  min-height: calc(100vh - var(--main-nav-height));
+  padding-top: 64px;
 
   justify-content: center;
 
@@ -28,5 +28,18 @@
   &__content {
     position: relative;
     margin-bottom: calc(5.9259vh + var(--main-nav-height));
+  }
+
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    justify-content: center;
   }
 }
