@@ -1,0 +1,18 @@
+:root {
+  --py-section: 104px;
+}
+
+.pt-main-nav-height {
+  padding-top: var(--main-nav-height);
+}
+
+.py-section {
+  padding-top: var(--py-section);
+  padding-bottom: var(--py-section);
+
+  --py-section: 104px;
+
+  // &--1 {
+  //   --py-section: 64px;
+  // }
+}
