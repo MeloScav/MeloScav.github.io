@@ -1,0 +1,7 @@
+.full-height-section {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--main-nav-height));
+
+  justify-content: center;
+}
