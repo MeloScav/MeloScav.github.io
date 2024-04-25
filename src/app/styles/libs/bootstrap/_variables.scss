@@ -33,6 +33,7 @@ $font-family-sans-serif: var(--font-family-base), sans-serif, system-ui,
   -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
   "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol", "Noto Color Emoji";
+$line-height-base: 1.5;
 $headings-font-family: var(--font-family-headings), sans-serif;
 $headings-line-height: 1.2;
 $headings-font-weight: 700;
@@ -49,17 +50,16 @@ $font-sizes: (
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  "md": 24px,
-  "lg": 32px,
-  "xl": 40px,
+  5: 40px,
+  6: $h5-font-size,
+  7: $h6-font-size,
 );
 // Fonts
 
 // Theme-color-variables
 $primary: #8a2999;
 $primary-light: #e1a5ea;
+$primary-dark: #3d1344;
 $secondary: #1e73e4;
 $secondary-light: #93b4e1;
 // Theme-color-variables
@@ -70,7 +70,10 @@ $theme-colors: (
   "primary-light": $primary-light,
   "secondary": $secondary,
   "secondary-light": $secondary-light,
+  "gray-100": $gray-100,
   "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-800": $gray-800,
 );
 // Theme-colors-map
 
@@ -89,8 +92,15 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 2,
   6: $spacer * 2.5,
+  7: $spacer * 3,
+  8: $spacer * 3.5,
+  9: $spacer * 4,
 );
 // Spacer-variables-maps
+
+// Type
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
 
 // Navbar
 // $nav-link-padding-y: 16px;
@@ -106,6 +116,27 @@ $navbar-light-active-color: $navbar-light-hover-color;
 $input-btn-padding-y: 16px;
 $input-btn-padding-x: 24px;
 $btn-font-weight: 700;
+
+// Cards
+// $card-spacer-y: 32px;
+// $card-spacer-x: 0;
+$card-title-spacer-y: $spacer * 0.5;
+$card-title-color: $gray-100;
+// $card-subtitle-color:               null !default;
+$card-border-width: 0;
+$card-border-color: transparent;
+$card-border-radius: 0;
+// $card-box-shadow:                   null !default;
+$card-inner-border-radius: 0;
+// $card-cap-padding-y:                $card-spacer-y * .5 !default;
+// $card-cap-padding-x:                $card-spacer-x !default;
+// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+// $card-cap-color:                    null !default;
+// $card-height:                       null !default;
+$card-color: $gray-400;
+$card-bg: transparent;
+// $card-img-overlay-padding:          $spacer !default;
+// $card-group-margin:                 $grid-gutter-width * .5 !default;
 
 // Containers
 $container-max-widths: (
