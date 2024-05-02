@@ -1,0 +1,19 @@
+.grid-categories-cards {
+  display: grid;
+
+  gap: $grid-gutter-width;
+  --grid-columns: 12;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+
+  > :nth-child(1) {
+    grid-column: span 7;
+  }
+
+  > :nth-child(2) {
+    grid-column: span 5;
+  }
+
+  > :nth-child(3) {
+    grid-column: span var(--grid-columns);
+  }
+}
