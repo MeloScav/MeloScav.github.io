@@ -37,7 +37,6 @@ $line-height-base: 1.5;
 $headings-font-family: var(--font-family-headings), sans-serif;
 $headings-line-height: 1.2;
 $headings-font-weight: 700;
-$headings-color: $black;
 $body-color: $gray-600;
 $h1-font-size: 104px;
 $h2-font-size: 88px;
@@ -82,7 +81,7 @@ $border-radius: 2rem;
 // Border-radius-variables
 
 // Spacer-variables-maps
-$grid-gutter-width: 64px;
+$grid-gutter-width: 32px;
 $spacer: 16px;
 $spacers: (
   0: 0,
@@ -154,5 +153,5 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: calc(map-get($container-max-widths, xxl) + ($grid-gutter-width * 2)),
+  xxl: calc(map-get($container-max-widths, xxl) + ($grid-gutter-width * 4)),
 );
