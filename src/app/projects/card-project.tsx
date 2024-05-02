@@ -13,6 +13,7 @@ import {
 import Tag from "../components/tag";
 import Image from "next/image";
 import { IProject } from "@/types";
+import classNames from "@/utils/classNames";
 
 interface ICardProjectProps {
   className?: string;
@@ -23,7 +24,7 @@ const CardProject = (props: ICardProjectProps) => {
   const { className, project } = props;
 
   return (
-    <Card className={className}>
+    <Card className={classNames("card-project", className)}>
       <Ratio aspectRatio="4x3">
         <CardImg
           as={Image}
