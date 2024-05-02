@@ -11,7 +11,7 @@ const MainBanner = () => {
         <div className="main-banner__content mw-1000 mx-auto">
           <MainBannerDecorations />
 
-          <TitleDecorated className="text-center">
+          <TitleDecorated className="text-center text-black">
             Méloé Scavezzoni
           </TitleDecorated>
           <p className="fs-5 mt-6">
