@@ -1,43 +1,47 @@
 "use client";
+
+import { CategoryType } from "@/types";
+
 import React, { useRef } from "react";
 import { Button, Container, Stack } from "react-bootstrap";
 import ButtonDecoration from "./decorations/button-decoration";
 import SpriteSVG from "./sprite-svg";
 import CardProject from "../projects/card-project";
-import { projects } from "@/data/projects";
+import { getProjects } from "../services/get-projects";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const RecentProjects = () => {
-  const recentProjectList = projects(3);
+  const recentProjectList = getProjects();
   const projectsWrapperRef = useRef<HTMLDivElement>(null);
   const projectsSliderRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const projectsWrapper = projectsWrapperRef.current;
-    const projectsSlider = projectsSliderRef.current;
+  // useGSAP(() => {
+  //   const projectsWrapper = projectsWrapperRef.current;
+  //   const projectsSlider = projectsSliderRef.current;
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: projectsWrapper,
-        start: "center center",
-        end: "+=100%",
-        pin: projectsWrapper,
-        scrub: true,
-        invalidateOnRefresh: true,
-        // markers: true,
-      },
-    });
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: projectsWrapper,
+  //       start: "center center",
+  //       end: "+=100%",
+  //       pin: projectsWrapper,
+  //       scrub: true,
+  //       invalidateOnRefresh: true,
+  //       // markers: true,
+  //     },
+  //   });
 
-    tl.to(projectsSlider, {
-      x: () => (projectsSlider?.scrollWidth || 0) * -1,
-      xPercent: 80,
-      ease: "power1.out",
-    });
-  }, [projectsWrapperRef, projectsSliderRef]);
+  //   tl.to(projectsSlider, {
+  //     x: () => (projectsSlider?.scrollWidth || 0) * -1,
+  //     xPercent: 80,
+  //     ease: "power1.out",
+  //   });
+  // }, [projectsWrapperRef, projectsSliderRef]);
 
   return (
     <div
@@ -58,15 +62,24 @@ const RecentProjects = () => {
               </p>
 
               <ButtonDecoration>
-                <Button variant="outline-primary-light">
+                <Link
+                  href="/projects/design"
+                  className="btn btn-outline-primary-light"
+                >
                   Voir les designs
-                </Button>
-                <Button variant="outline-primary-light">
+                </Link>
+                <Link
+                  href="/projects/development"
+                  className="btn btn-outline-primary-light"
+                >
                   Voir les développements
-                </Button>
-                <Button variant="outline-primary-light">
+                </Link>
+                <Link
+                  href="/projects/illustrations"
+                  className="btn btn-outline-primary-light"
+                >
                   Voir les illustrations
-                </Button>
+                </Link>
               </ButtonDecoration>
             </Stack>
 
