@@ -1,5 +1,4 @@
 :root {
-  --decoration-icon-width: 1em;
   --icon-color: currentColor;
   --icon-size: 1em;
 }
@@ -10,22 +9,4 @@
   height: var(--icon-size);
 
   color: var(--icon-color);
-}
-
-.decoration-icon {
-  position: absolute;
-  width: var(--decoration-icon-width);
-  height: var(--decoration-icon-height, var(--decoration-icon-width));
-
-  pointer-events: none;
-
-  &--responsive {
-    @include media-breakpoint-down(md) {
-      scale: 0.8;
-    }
-
-    @include media-breakpoint-down(sm) {
-      scale: 0.6;
-    }
-  }
 }

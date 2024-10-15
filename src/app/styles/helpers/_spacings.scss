@@ -1,4 +1,5 @@
 :root {
+  --gap-section: 104px;
   --py-section: 104px;
 }
 
@@ -14,5 +15,15 @@
 
   &--1 {
     --py-section: 136px;
+  }
+}
+
+.gap-section {
+  column-gap: var(--gap-section);
+  gap: var(--gap-section);
+  row-gap: var(--gap-section);
+
+  &--1 {
+    --gap-section: 136px;
   }
 }

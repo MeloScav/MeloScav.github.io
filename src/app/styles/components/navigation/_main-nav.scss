@@ -1,14 +1,24 @@
 :root {
-  --main-nav-padding-y: #{$navbar-padding-y};
   --main-nav-height: calc(74px + (var(--main-nav-padding-y) * 2));
+  --main-nav-padding-y: #{$navbar-padding-y};
 }
 
 .main-nav-wrapper {
   position: fixed;
-  z-index: $zindex-fixed;
-  background-color: $white;
   top: 0;
   left: 0;
   width: 100%;
   height: var(--main-nav-height);
+  z-index: $zindex-fixed;
+
+  background-color: transparent;
+
+  transition: all 0.25s ease-in-out;
+  transition-property: background-color;
+}
+
+body.is-nav-scrolled {
+  .main-nav-wrapper {
+    background-color: $white;
+  }
 }

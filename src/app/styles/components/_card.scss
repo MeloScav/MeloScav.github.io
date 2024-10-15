@@ -11,11 +11,24 @@
   overflow: hidden;
 
   .card-body {
-    min-height: 500px;
+    @include media-breakpoint-up(md) {
+      min-height: 500px;
+    }
   }
 
-  &--thumb {
-    display: grid;
+  display: grid;
+
+  @include media-breakpoint-down(xxl) {
+    img {
+      object-position: left center;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+
+    &--vertical {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 }

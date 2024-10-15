@@ -1,4 +1,4 @@
-$max-widths: (1000);
+$max-widths: (530, 1000);
 
 @each $max-width in $max-widths {
   .mw-#{$max-width} {
