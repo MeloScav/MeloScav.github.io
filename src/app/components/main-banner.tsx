@@ -3,11 +3,14 @@ import TitleDecorated from "./decorations/title-decorated";
 import TextHighlighted from "./decorations/text-highlighted";
 import MainBannerDecorations from "./decorations/main-banner-decorations";
 import ScrollDownBtn from "./scroll-down-btn";
+import DecorationColumns from "./decorations/decoration-columns";
 
 const MainBanner = () => {
   return (
-    <div className="main-banner-wrapper">
-      <Container className="main-banner js-main-banner">
+    <Container className="main-banner-wrapper">
+      <div className="main-banner">
+        <DecorationColumns />
+
         <div className="main-banner__content mw-1000 mx-auto">
           <MainBannerDecorations />
 
@@ -30,8 +33,8 @@ const MainBanner = () => {
         </div>
 
         <ScrollDownBtn />
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 };
 
