@@ -32,58 +32,62 @@ const CardCategory: React.FC<ICardCategoryProps> = (props) => {
     return "bg-black";
   }, [isDesign, isDevelopment]);
 
+  const thumbInfo = useMemo(() => {
+    if (isDesign) return { width: 800, height: 514, ratio: "1x1" };
+    if (isIllustration) return { width: 760, height: 514, ratio: "34x23" };
+    if (isDevelopment) return { width: 454, height: 146, ratio: "28x9" };
+  }, [isDesign, isDevelopment, isIllustration]);
+
   return (
     <Card
       className={classNames(
         "card-category",
-        category.thumbSrc ? "card-category--thumb" : "",
+        isDevelopment ? "card-category--vertical" : "",
         bgClassName,
         className
       )}
     >
       <CardBody className={isDevelopment ? "text-gray-800" : "text-gray-300"}>
         <Stack gap={5} className="h-100">
-          {isDevelopment ? (
-            <p
-              className={classNames(
-                "fs-5 pre-line-format pe-none user-select-none"
-              )}
-              dangerouslySetInnerHTML={{
-                __html: `const sayHello = () => {
-                        &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello world");
-                    };`,
-              }}
-            ></p>
+          {category.thumbSrc && isDevelopment ? (
+            <Ratio aspectRatio={thumbInfo?.ratio} className="mw-530">
+              <Image
+                className="object-fit-cover"
+                src={category.thumbSrc}
+                alt={category.name}
+                width={thumbInfo?.width}
+                height={thumbInfo?.height}
+              />
+            </Ratio>
           ) : null}
-          <Stack gap={5} className={isDevelopment ? "justify-content-end" : ""}>
-            <h4
-              className={classNames(
-                "h3",
-                isDevelopment ? "text-black" : "text-white"
-              )}
-            >
-              {category.name}
-            </h4>
-            <div className="fs-7">{category.description}</div>
 
-            {category.tags?.length ? (
-              <Stack direction="horizontal" gap={5} className="fs-7 flex-wrap">
-                {category.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </Stack>
-            ) : null}
-          </Stack>
+          <h4
+            className={classNames(
+              "h3",
+              isDevelopment ? "mt-auto text-black" : "text-white"
+            )}
+          >
+            {category.name}
+          </h4>
+          <div className="fs-7">{category.description}</div>
+
+          {category.tags?.length ? (
+            <Stack direction="horizontal" gap={5} className="fs-7 flex-wrap">
+              {category.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </Stack>
+          ) : null}
         </Stack>
       </CardBody>
-      {category.thumbSrc ? (
-        <Ratio aspectRatio={isIllustration ? "34:23" : "1x1"}>
+      {category.thumbSrc && (isDesign || isIllustration) ? (
+        <Ratio aspectRatio={thumbInfo?.ratio}>
           <Image
             className="object-fit-cover"
             src={category.thumbSrc}
             alt={category.name}
-            width={isIllustration ? 760 : 800}
-            height={isIllustration ? 811 : 514}
+            width={thumbInfo?.width}
+            height={thumbInfo?.height}
           />
         </Ratio>
       ) : null}
