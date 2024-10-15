@@ -1,0 +1,32 @@
+:root {
+  --decoration-icon-width: 1em;
+}
+
+.decoration-icons-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.decoration-icon {
+  position: absolute;
+  width: var(--decoration-icon-width);
+  height: var(--decoration-icon-height, var(--decoration-icon-width));
+
+  pointer-events: none;
+
+  &--responsive {
+    @include media-breakpoint-down(md) {
+      scale: 0.8;
+    }
+
+    @include media-breakpoint-down(sm) {
+      scale: 0.6;
+    }
+  }
+}
