@@ -1,25 +1,25 @@
 import { mainMenu } from "@/data/menus";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import mainLogo from "@/assets/images/Logo.svg";
 import {
   Container,
   Nav,
   NavItem,
-  NavLink,
   Navbar,
-  NavbarBrand,
   NavbarOffcanvas,
   NavbarToggle,
   OffcanvasBody,
   OffcanvasHeader,
   OffcanvasTitle,
 } from "react-bootstrap";
+import MainNavWrapper from "@/app/components/main-nav-wrapper";
+
+import mainLogo from "@/assets/images/Logo.svg";
 
 const MainNav = () => {
   return (
-    <div className="main-nav-wrapper">
+    <MainNavWrapper>
       <Container>
         <Navbar expand="lg">
           <header className="main-nav d-flex flex-fill justify-content-between">
@@ -76,7 +76,7 @@ const MainNav = () => {
           </header>
         </Navbar>
       </Container>
-    </div>
+    </MainNavWrapper>
   );
 };
 
