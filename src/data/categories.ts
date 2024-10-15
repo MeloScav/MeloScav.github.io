@@ -13,13 +13,13 @@ export const categories: ICategory[] = [
     id: CategoryType.DEVELOPMENT,
     description: "Ensemble de mes réalisations de développement.",
     name: "Development",
-    thumbSrc: "",
+    thumbSrc: "/images/categories/development/thumb.svg",
   },
   {
     id: CategoryType.ILLUSTRATION,
     description:
       "Ensemble de mes illustrations, créations de logo, icônes, modèles 3D, etc.",
     name: "Illustration",
-    thumbSrc: "/images/categories/illustration/thumb.png",
+    thumbSrc: "/images/categories/illustration/thumb.svg",
   },
 ];
