@@ -1,8 +1,9 @@
-import React from "react";
 import MainBanner from "./components/main-banner";
-import Spacer from "./components/spacer";
 import RecentProjects from "./components/recent-projects";
 import SeeMoreProjects from "./components/see-more-projects";
+import AboutSection from "./components/about-section";
+import { Container, Stack } from "react-bootstrap";
+import DecorationColumns from "./components/decorations/decoration-columns";
 
 export default function Home() {
   return (
@@ -10,9 +11,14 @@ export default function Home() {
       <MainBanner />
       {/* <Spacer></Spacer> */}
       <RecentProjects />
-      <SeeMoreProjects />
-      <span>Tatatatata</span>
-      <Spacer></Spacer>
+
+      <Container className="overflow-x-clip">
+        <Stack className="py-section py-section--1 gap-section gap-section--1 position-relative">
+          <DecorationColumns />
+          <SeeMoreProjects />
+          <AboutSection />
+        </Stack>
+      </Container>
     </>
   );
 }
