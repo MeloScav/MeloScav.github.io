@@ -14,7 +14,7 @@ const ButtonDecoration = (props: IDecorationButtonProps): ReactNode => {
     <Stack gap={2}>
       <div className="text-figma">
         <SpriteSVG className="me-2" iconId={"icon-btn"} />
-        <span>Button</span>
+        <span>Buttons</span>
       </div>
       <div className="d-flex">
         <Stack

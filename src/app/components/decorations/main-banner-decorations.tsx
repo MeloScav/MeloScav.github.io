@@ -1,9 +1,8 @@
-import React from "react";
 import DecorationIcon from "./decoration-icon";
 
 const MainBannerDecorations = () => {
   return (
-    <div className="main-banner__decorations">
+    <div className="decoration-icons-wrapper">
       <DecorationIcon
         iconId={"circle"}
         className="text-primary-light"
@@ -51,8 +50,7 @@ const MainBannerDecorations = () => {
       <DecorationIcon
         iconId={"triangle"}
         className="text-primary"
-        width="39px"
-        height="33px"
+        width="44px"
         style={{
           bottom: "0",
           right: "118.9%",
