@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx prettier:*)",
+      "Bash(npx next:*)",
+      "Bash(git show main:*)"
+    ]
+  }
+}
