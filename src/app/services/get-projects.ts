@@ -37,3 +37,6 @@ export const getProjects = ({
 
   return limit ? projectsToReturn.slice(0, limit) : projectsToReturn;
 };
+
+export const getProjectById = (id: string): IProject | undefined =>
+  projects.find((project) => project.id === id);

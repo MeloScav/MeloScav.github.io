@@ -75,7 +75,7 @@ const RecentProjects = () => {
                   Voir les développements
                 </Link>
                 <Link
-                  href="/projects/illustrations"
+                  href="/projects/illustration"
                   className="btn btn-outline-primary-light"
                 >
                   Voir les illustrations

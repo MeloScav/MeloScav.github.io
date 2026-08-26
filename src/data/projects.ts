@@ -6,8 +6,8 @@ export const projects: Array<IProject> = [
     name: "Audit UX",
     category: CategoryType.DESIGN,
     description:
-      "Audit UX d&apos;une landing page d&apos;e-shop pour un magasin de thé avec une contre proposition designé",
-    shortDescription: "Audit UX d&apos;une landing page d&apos;e-shop.",
+      "Audit UX d'une landing page d'e-shop pour un magasin de thé avec une contre proposition designé",
+    shortDescription: "Audit UX d'une landing page d'e-shop.",
     thumbSrc: "/images/projects/audit-ux/thumb.jpg",
     tags: ["Audit UX", "UX", "UI", "Design"],
   },
@@ -16,8 +16,8 @@ export const projects: Array<IProject> = [
     name: "Audit UX",
     category: CategoryType.DESIGN,
     description:
-      "Audit UX d&apos;une landing page d&apos;e-shop pour un magasin de thé avec une contre proposition designé",
-    shortDescription: "Audit UX d&apos;une landing page d&apos;e-shop.",
+      "Audit UX d'une landing page d'e-shop pour un magasin de thé avec une contre proposition designé",
+    shortDescription: "Audit UX d'une landing page d'e-shop.",
     thumbSrc: "/images/projects/audit-ux/thumb.jpg",
     tags: ["Audit UX", "UX", "UI", "Design"],
   },
@@ -26,8 +26,8 @@ export const projects: Array<IProject> = [
     name: "Audit UX",
     category: CategoryType.DESIGN,
     description:
-      "Audit UX d&apos;une landing page d&apos;e-shop pour un magasin de thé avec une contre proposition designé",
-    shortDescription: "Audit UX d&apos;une landing page d&apos;e-shop.",
+      "Audit UX d'une landing page d'e-shop pour un magasin de thé avec une contre proposition designé",
+    shortDescription: "Audit UX d'une landing page d'e-shop.",
     thumbSrc: "/images/projects/audit-ux/thumb.jpg",
     tags: ["Audit UX", "UX", "UI", "Design"],
   },
