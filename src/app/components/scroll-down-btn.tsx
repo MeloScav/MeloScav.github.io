@@ -100,7 +100,7 @@ const ScrollDownBtn = () => {
               {
                 top: () => getNavHeight(),
                 left: 0,
-                width: () => window.innerWidth,
+                width: () => document.documentElement.clientWidth,
                 height: () => window.innerHeight - getNavHeight(),
                 borderRadius: 0,
                 autoAlpha: 1,
