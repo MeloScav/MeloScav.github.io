@@ -12,7 +12,7 @@ export const categories: ICategory[] = [
   {
     id: CategoryType.DEVELOPMENT,
     description: "Ensemble de mes réalisations de développement.",
-    name: "Development",
+    name: "Développement",
     thumbSrc: "/images/categories/development/thumb.svg",
   },
   {
