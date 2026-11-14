@@ -1,6 +1,7 @@
 import { CategoryType, ICategory } from "@/types";
 import classNames from "@/utils/classNames";
 import Image from "next/image";
+import Link from "next/link";
 
 import React, { useMemo } from "react";
 import { Card, CardBody, Ratio, Stack } from "react-bootstrap";
@@ -78,6 +79,16 @@ const CardCategory: React.FC<ICardCategoryProps> = (props) => {
               ))}
             </Stack>
           ) : null}
+
+          <Link
+            href={`/projects/${category.id.toLowerCase()}`}
+            className={classNames(
+              "btn align-self-start",
+              isDevelopment ? "btn-outline-gray-800" : "btn-outline-gray-100"
+            )}
+          >
+            Découvrir
+          </Link>
         </Stack>
       </CardBody>
       {category.thumbSrc && (isDesign || isIllustration) ? (
