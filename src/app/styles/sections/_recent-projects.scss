@@ -1,0 +1,52 @@
+.projects-wrapper__title {
+  padding-bottom: map-get($spacers, 9);
+}
+
+// On desktop the section is pinned while the cards slide, so it has to fit
+// in one screen. The cards take their size from the height that is left.
+.projects-wrapper {
+  @include media-breakpoint-up(lg) {
+    --card-body-height: 240px;
+
+    height: 100vh;
+    min-height: 0;
+    padding-top: calc(var(--main-nav-height) + 24px);
+    padding-bottom: 40px;
+
+    justify-content: flex-start;
+
+    .projects-wrapper__title {
+      padding-bottom: 32px;
+
+      @media (max-height: 820px) {
+        font-size: 64px;
+      }
+    }
+
+    .projects-slider {
+      flex: 1 1 auto;
+      min-height: 0;
+
+      container-type: size;
+    }
+
+    .cards-wrapper {
+      grid-auto-columns: min(100%, (100cqh - var(--card-body-height)) * 4 / 3);
+      align-items: start;
+    }
+
+    .card-project .card-text {
+      display: -webkit-box;
+      overflow: hidden;
+
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+}
+
+.projects-slider__arrow {
+  @media (max-height: 820px) {
+    display: none !important;
+  }
+}

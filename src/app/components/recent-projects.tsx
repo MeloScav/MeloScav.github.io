@@ -1,55 +1,112 @@
 "use client";
 
-import { CategoryType } from "@/types";
-
 import React, { useRef } from "react";
-import { Button, Container, Stack } from "react-bootstrap";
-import ButtonDecoration from "./decorations/button-decoration";
+import { Container, Stack } from "react-bootstrap";
+import ProjectCategoryLinks from "./project-category-links";
 import SpriteSVG from "./sprite-svg";
 import CardProject from "../projects/card-project";
 import { getProjects } from "../services/get-projects";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Link from "next/link";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const RecentProjects = () => {
-  const recentProjectList = getProjects();
+  const recentProjectList = getProjects({ limit: 6 });
   const projectsWrapperRef = useRef<HTMLDivElement>(null);
   const projectsSliderRef = useRef<HTMLDivElement>(null);
 
-  // useGSAP(() => {
-  //   const projectsWrapper = projectsWrapperRef.current;
-  //   const projectsSlider = projectsSliderRef.current;
+  useGSAP(
+    () => {
+      const projectsWrapper = projectsWrapperRef.current;
+      const projectsSlider = projectsSliderRef.current;
 
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: projectsWrapper,
-  //       start: "center center",
-  //       end: "+=100%",
-  //       pin: projectsWrapper,
-  //       scrub: true,
-  //       invalidateOnRefresh: true,
-  //       // markers: true,
-  //     },
-  //   });
+      if (!projectsWrapper || !projectsSlider) {
+        return;
+      }
 
-  //   tl.to(projectsSlider, {
-  //     x: () => (projectsSlider?.scrollWidth || 0) * -1,
-  //     xPercent: 80,
-  //     ease: "power1.out",
-  //   });
-  // }, [projectsWrapperRef, projectsSliderRef]);
+      const mm = gsap.matchMedia();
+
+      mm.add(
+        "(min-width: 992px) and (prefers-reduced-motion: no-preference)",
+        () => {
+          /**
+           * How far the slider travels so its last item ends with the same
+           * gap on the right as the content has on the left. Rects are read
+           * without the current x so the result holds mid-animation.
+           */
+          const getDistance = () => {
+            const lastItem = projectsSlider.querySelector(
+              ".cards-wrapper > :last-child",
+            );
+
+            if (!lastItem) {
+              return 0;
+            }
+
+            const x = Number(gsap.getProperty(projectsSlider, "x"));
+            const contentLeft =
+              projectsSlider.getBoundingClientRect().left -
+              x +
+              parseFloat(getComputedStyle(projectsSlider).paddingLeft);
+            const lastRight = lastItem.getBoundingClientRect().right - x;
+
+            return Math.max(
+              0,
+              lastRight - (projectsWrapper.clientWidth - contentLeft),
+            );
+          };
+
+          const timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: projectsWrapper,
+              start: "top top",
+              end: () => "+=" + (window.innerHeight + getDistance()),
+              pin: true,
+              scrub: 1,
+              invalidateOnRefresh: true,
+            },
+          });
+
+          timeline
+            .fromTo(
+              ["h2", projectsSlider],
+              { y: 80, autoAlpha: 0 },
+              { y: 0, autoAlpha: 1, stagger: 0.2, duration: 1 }
+            )
+            .to(projectsSlider, {
+              x: () => -getDistance(),
+              ease: "none",
+              duration: 3,
+            });
+        },
+      );
+
+      mm.add(
+        "(max-width: 991.98px) and (prefers-reduced-motion: no-preference)",
+        () => {
+          gsap.set(".card-project", { autoAlpha: 0, y: 40 });
+
+          ScrollTrigger.batch(".card-project", {
+            start: "top 85%",
+            once: true,
+            onEnter: (cards) =>
+              gsap.to(cards, { autoAlpha: 1, y: 0, stagger: 0.1 }),
+          });
+        },
+      );
+    },
+    { scope: projectsWrapperRef },
+  );
 
   return (
     <div
       ref={projectsWrapperRef}
-      className="projects-wrapper bg-gray-800 overflow-x-hidden full-height-section py-section z-1"
+      className="projects-wrapper bg-gray-800 overflow-x-clip full-height-section py-section z-1"
     >
       <Container>
-        <h2 className="text-gray-100 pb-9">Projets récents</h2>
+        <h2 className="projects-wrapper__title text-gray-100">Projets récents</h2>
       </Container>
 
       <Container ref={projectsSliderRef} className="projects-slider">
@@ -61,29 +118,10 @@ const RecentProjects = () => {
                 pas à consulter également l’ensemble de mes réalisations.
               </p>
 
-              <ButtonDecoration>
-                <Link
-                  href="/projects/design"
-                  className="btn btn-outline-primary-light"
-                >
-                  Voir les designs
-                </Link>
-                <Link
-                  href="/projects/development"
-                  className="btn btn-outline-primary-light"
-                >
-                  Voir les développements
-                </Link>
-                <Link
-                  href="/projects/illustration"
-                  className="btn btn-outline-primary-light"
-                >
-                  Voir les illustrations
-                </Link>
-              </ButtonDecoration>
+              <ProjectCategoryLinks />
             </Stack>
 
-            <div className="d-flex justify-content-center">
+            <div className="projects-slider__arrow d-flex justify-content-center">
               <SpriteSVG
                 iconId={"decoration-arrow"}
                 className="text-gray-300 mx-auto"
@@ -103,15 +141,7 @@ const RecentProjects = () => {
               N’hésitez pas à consulter l’ensemble de mes réalisations.
             </p>
 
-            <ButtonDecoration>
-              <Button variant="outline-primary-light">Voir les designs</Button>
-              <Button variant="outline-primary-light">
-                Voir les développements
-              </Button>
-              <Button variant="outline-primary-light">
-                Voir les illustrations
-              </Button>
-            </ButtonDecoration>
+            <ProjectCategoryLinks />
           </Stack>
         </div>
       </Container>

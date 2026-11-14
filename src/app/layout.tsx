@@ -30,7 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={classNames(almarai.variable, merienda.variable)}>
-      <body className="pt-main-nav-height">
+      {/* GSAP's ScrollTrigger leaves an empty style attribute on body when it registers, before hydration. */}
+      <body className="pt-main-nav-height" suppressHydrationWarning>
         <MainNav />
         {children}
         <MainFooter />

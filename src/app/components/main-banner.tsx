@@ -32,6 +32,8 @@ const MainBanner = () => {
           </p>
         </div>
 
+        <div className="main-banner__panel bg-gray-800" aria-hidden="true" />
+
         <ScrollDownBtn />
       </div>
     </Container>
