@@ -17,17 +17,25 @@ import { getCategoryById } from "../services/get-categories";
 interface ICardProjectProps {
   className?: string;
   project: IProject;
+  /** "light" for cards on a white background, "dark" (default) on gray-800. */
+  variant?: "dark" | "light";
 }
 
 const CardProject = (props: ICardProjectProps) => {
-  const { className, project } = props;
+  const { className, project, variant = "dark" } = props;
   const category = getCategoryById(project.category);
   const badges = [...(project.tags ?? []), category?.name].filter(
     (badge): badge is string => Boolean(badge)
   );
 
   return (
-    <Card className={classNames("card-project", className)}>
+    <Card
+      className={classNames(
+        "card-project",
+        variant === "light" ? "card-project--light" : "",
+        className
+      )}
+    >
       <Ratio aspectRatio="4x3">
         <CardImg
           as={Image}
@@ -48,7 +56,7 @@ const CardProject = (props: ICardProjectProps) => {
             <Tag
               key={badge}
               variant="gray-400"
-              className="text-gray-300"
+              className="card-project__tag"
               outline
               pill
             >

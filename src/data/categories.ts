@@ -5,6 +5,8 @@ export const categories: ICategory[] = [
     id: CategoryType.DESIGN,
     description:
       "Ensemble de mes réalisations de design, analyse UX / UI, page web, web application, application mobile, etc.",
+    intro:
+      "Plongez dans mon univers créatif avec la galerie de designs, ses formes, ses couleurs…",
     name: "Design",
     thumbSrc: "/images/categories/design/thumb.png",
     tags: ["UX / UI", "Design", "Figma"],

@@ -24,6 +24,8 @@ export interface ICategory {
   id: keyof typeof CategoryType;
   name: string;
   description: string;
+  /** Text under the title of the category page, falls back to description. */
+  intro?: string;
   thumbSrc: string;
   tags?: Array<string>;
 }
