@@ -14,6 +14,12 @@ export interface IProject {
   category: keyof typeof CategoryType;
 }
 
+export interface ISocialLink {
+  name: string;
+  href: string;
+  iconId: string;
+}
+
 export interface ICategory {
   id: keyof typeof CategoryType;
   name: string;

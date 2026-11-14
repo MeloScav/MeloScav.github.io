@@ -1,0 +1,94 @@
+// The footer fills the screen under the fixed nav. The free height is split
+// between the title, the columns and the logo instead of fixed margins, so
+// the whole footer fits on one screen.
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--main-nav-height));
+  padding-top: 64px;
+  padding-bottom: 40px;
+  overflow-x: clip;
+
+  > .container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 96px;
+
+    justify-content: space-between;
+
+    @media (max-height: 820px) {
+      gap: 64px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    @media (max-height: 820px) {
+      font-size: $h3-font-size;
+    }
+  }
+
+  // Sits just after "ensemble" on desktop, under the title on mobile where
+  // the last line is too short to leave room beside it.
+  &__smiley {
+    top: calc(100% - 0.9em);
+    left: 58%;
+
+    color: $primary-light;
+    opacity: 0.7;
+
+    @include media-breakpoint-down(lg) {
+      top: calc(100% + 8px);
+      right: 0;
+      left: auto;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    color: rgba($white, 0.8);
+    line-height: 1.6;
+    text-decoration: none;
+
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      color: $white;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 24px;
+
+    .icon {
+      --icon-size: 40px;
+    }
+  }
+
+  &__logo {
+    align-self: flex-start;
+
+    color: $white;
+
+    svg {
+      display: block;
+      width: 352px;
+      height: 140px;
+
+      @media (max-height: 820px) {
+        width: 220px;
+        height: 88px;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 220px;
+        height: 88px;
+      }
+    }
+  }
+}
