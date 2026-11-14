@@ -12,13 +12,15 @@ export default function Home() {
       {/* <Spacer></Spacer> */}
       <RecentProjects />
 
-      <Container className="overflow-x-clip">
-        <Stack className="py-section py-section--1 gap-section gap-section--1 position-relative">
-          <DecorationColumns />
-          <SeeMoreProjects />
-          <AboutSection />
-        </Stack>
-      </Container>
+      <div className="overflow-x-clip">
+        <Container>
+          <Stack className="py-section py-section--1 gap-section gap-section--1 position-relative">
+            <DecorationColumns />
+            <SeeMoreProjects />
+            <AboutSection />
+          </Stack>
+        </Container>
+      </div>
     </>
   );
 }

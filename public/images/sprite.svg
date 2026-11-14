@@ -25,7 +25,7 @@
 
 </symbol>
 <symbol id="hashtag" viewBox="0 0 36 37">
-    <path d="M0 7.82692H36M0 29.8846H36M7.92 0L7.92 37M29.52 0L29.52 37" stroke="#E7C2ED" stroke-width="4"/>
+    <path d="M0 7.82692H36M0 29.8846H36M7.92 0L7.92 37M29.52 0L29.52 37" stroke="currentColor" stroke-width="4"/>
 
 </symbol>
 <symbol id="icon-btn" viewBox="0 0 24 24">

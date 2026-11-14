@@ -1,7 +1,9 @@
 import classNames from "@/utils/classNames";
-import { Button, Stack } from "react-bootstrap";
+import { Stack } from "react-bootstrap";
 import ButtonDecoration from "./decorations/button-decoration";
-import { MAIL } from "@/data/constants";
+import AboutDecorations from "./decorations/about-decorations";
+import DecorationIcon from "./decorations/decoration-icon";
+import { CV_PATH, MAIL } from "@/data/constants";
 
 interface IAboutSectionProps {
   className?: string;
@@ -14,12 +16,26 @@ const AboutSection: React.FC<IAboutSectionProps> = (props) => {
     <Stack
       gap={4}
       className={classNames(
-        "overflow-x-clip full-height-section justify-content-start",
+        "about-section position-relative full-height-section justify-content-start",
         className
       )}
     >
+      <AboutDecorations />
+
       <Stack gap={6} className="flex-grow-0">
-        <h4 className="h2 text-black">A propos</h4>
+        <h4 className="h2 text-black position-relative align-self-start">
+          A propos
+          <DecorationIcon
+            iconId={"decoration-arrow"}
+            className="text-gray-300 d-none d-lg-block"
+            width="34px"
+            height="113px"
+            style={{
+              top: "calc(100% - 32px)",
+              right: "calc(100% + 47px)",
+            }}
+          />
+        </h4>
         <div className="fs-6 mw-1000">
           <p className="m-0">
             <strong>UX / UI designeuse</strong> et développeuse web frontend, je
@@ -37,10 +53,12 @@ const AboutSection: React.FC<IAboutSectionProps> = (props) => {
         </div>
       </Stack>
       <ButtonDecoration className="flex-grow-0">
-        <Button variant="outline-primary">Télécharger mon CV</Button>
-        <Button href={`mailto:${MAIL}`} variant="primary">
+        <a href={CV_PATH} className="btn btn-outline-primary" download>
+          Télécharger mon CV
+        </a>
+        <a href={`mailto:${MAIL}`} className="btn btn-primary">
           Me contacter
-        </Button>
+        </a>
       </ButtonDecoration>
     </Stack>
   );

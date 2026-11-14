@@ -1,0 +1,7 @@
+// Leaves a band under the buttons for the decorations, which are anchored to
+// the bottom of the section.
+.about-section {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 200px;
+  }
+}
