@@ -237,6 +237,7 @@ export const projects: Array<IProject> = [
       "Pour mon examen du cours d'Expérience utilisateur, il nous a été demandé de réaliser un Audit UX d'une landing page pour un magasin de thé.",
     shortDescription: "Audit UX d'une Landing Page d'E-shop.",
     thumbSrc: "/images/projects/audit-ux/thumb.jpg",
+    tags: ["Audit UX", "UX", "UI"],
   },
   {
     id: "rassala",

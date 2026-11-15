@@ -1,30 +1,27 @@
-import { PropsWithChildren } from "react";
-import DecorationIcon from "./decorations/decoration-icon";
+import { PropsWithChildren, ReactNode } from "react";
+import TitleArrow from "./decorations/title-arrow";
 import PageHeaderDecorations from "./decorations/page-header-decorations";
 
 interface IPageHeaderProps extends PropsWithChildren {
   title: string;
+  /** Small line above the title, like the category of a project. */
+  eyebrow?: ReactNode;
 }
 
-/** Title of an inner page with its intro text, the children. */
+/** Title of an inner page, followed by its intro (the children). */
 const PageHeader = (props: IPageHeaderProps) => {
-  const { title, children } = props;
+  const { title, eyebrow, children } = props;
 
   return (
     <header className="position-relative">
       <PageHeaderDecorations />
 
+      {eyebrow ? <div>{eyebrow}</div> : null}
       <h1 className="text-black position-relative d-inline-block">
         {title}
-        <DecorationIcon
-          iconId={"decoration-arrow"}
-          className="text-gray-300 d-none d-lg-block"
-          width="34px"
-          height="113px"
-          style={{ top: "calc(100% - 32px)", right: "calc(100% + 47px)" }}
-        />
+        <TitleArrow />
       </h1>
-      <p className="fs-6 text-gray-400 mw-1000 m-0">{children}</p>
+      {children}
     </header>
   );
 };

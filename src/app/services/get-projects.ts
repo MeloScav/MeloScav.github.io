@@ -1,6 +1,7 @@
-import { CategoryType, IProject } from "@/types";
+import { CategoryType, IProject, IProjectDetails } from "@/types";
 
 import { projects } from "@/data/projects";
+import { projectDetails } from "@/data/project-details";
 
 export const getProjects = ({
   limit,
@@ -88,3 +89,6 @@ const shuffle = <T>(items: Array<T>): Array<T> => {
 
 export const getProjectById = (id: string): IProject | undefined =>
   projects.find((project) => project.id === id);
+
+export const getProjectDetails = (id: string): IProjectDetails | undefined =>
+  projectDetails[id];

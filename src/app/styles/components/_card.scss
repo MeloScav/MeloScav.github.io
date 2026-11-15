@@ -1,5 +1,5 @@
 .card-project {
-  --card-project-tag-color: #{$gray-300};
+  --project-badges-color: #{$gray-300};
 
   .ratio {
     overflow: hidden;
@@ -15,14 +15,10 @@
     font-family: $font-family-sans-serif;
   }
 
-  &__tag {
-    color: var(--card-project-tag-color);
-  }
-
   &--light {
     --#{$prefix}card-title-color: #{$black};
     --#{$prefix}card-color: #{$gray-500};
-    --card-project-tag-color: #{$gray-500};
+    --project-badges-color: #{$gray-500};
 
     .ratio {
       box-shadow: 0 4px 16px rgba($black, 0.12);

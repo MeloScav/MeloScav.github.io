@@ -27,3 +27,7 @@
 .tag-pill {
   border-radius: 1.875em;
 }
+
+.project-badges__tag {
+  color: var(--project-badges-color, #{$gray-500});
+}

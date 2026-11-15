@@ -1,0 +1,316 @@
+.project-details {
+  isolation: isolate;
+
+  // Column lines behind the whole page, the dark section covers them.
+  &__columns {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    pointer-events: none;
+  }
+
+  &__header {
+    padding-top: var(--py-section);
+  }
+}
+
+.project-header__label {
+  font-family: $headings-font-family;
+  font-style: italic;
+}
+
+.project-section {
+  padding-top: 160px;
+  padding-bottom: 0;
+
+  &--dark {
+    margin-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 96px;
+
+    &--dark {
+      margin-top: 96px;
+      padding-bottom: 96px;
+    }
+  }
+
+  &__after-split {
+    margin-top: 160px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 96px;
+    }
+  }
+
+  // Same 64px gap as between blocks before the next part of the page.
+  &:last-child {
+    padding-bottom: map-get($spacers, 9);
+  }
+
+  // The section after a dark one starts at its edge, not 160px lower.
+  &--dark + & {
+    padding-top: 120px;
+  }
+}
+
+// Two columns side by side from lg, stacked below. No column gap, so the
+// second column starts on one of the background lines.
+.project-split {
+  display: grid;
+  gap: map-get($spacers, 5);
+
+  &--header {
+    gap: map-get($spacers, 4);
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 5fr 7fr;
+    column-gap: 0;
+
+    &--header {
+      grid-template-columns: 7fr 5fr;
+    }
+
+    &--title {
+      grid-template-columns: 4fr 8fr;
+    }
+
+    &--half {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// One image, or several of equal width side by side from md.
+.project-images {
+  display: grid;
+  gap: 24px;
+
+  @include media-breakpoint-up(md) {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+    // Side by side images end at the same height, the shorter one is cropped.
+    > .project-image {
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &--phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: map-get($spacers, 6);
+
+    .project-image {
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+
+  &--logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: map-get($spacers, 6);
+
+    .project-image {
+      width: auto;
+      max-width: 100%;
+      height: 96px;
+    }
+  }
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  &--framed {
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba($black, 0.12);
+  }
+}
+
+// Text alone on screen, then a 5 x 3 grid of screenshots around it.
+.project-gallery {
+  --gallery-gap: 16px;
+  --gallery-ratio: 1.27;
+
+  // Offset parent of the tiles, the animation measures from it.
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gallery-gap);
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: 16px;
+
+  &__text {
+    grid-column: 1 / -1;
+    margin-bottom: 24px;
+
+    color: $black;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &__tile {
+    aspect-ratio: var(--gallery-ratio);
+    overflow: hidden;
+
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba($black, 0.12);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: top;
+    }
+
+    // Three rows are enough on a phone (the text is the first child).
+    &:nth-child(n + 8) {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    --gallery-gap: 24px;
+    --gallery-pad: 32px;
+    // Room for the fixed navbar above the grid.
+    --gallery-pad-top: calc(var(--main-nav-height) + 16px);
+    // Five columns across, or less when three rows would be taller than the screen.
+    --gallery-tile: min(
+      calc((100vw - 2 * var(--gallery-pad) - 4 * var(--gallery-gap)) / 5),
+      calc(
+        (
+            100svh - var(--gallery-pad-top) - var(--gallery-pad) - 2 *
+              var(--gallery-gap)
+          ) / 3 * var(--gallery-ratio)
+      )
+    );
+
+    grid-template-columns: repeat(5, var(--gallery-tile));
+    place-content: center;
+    max-width: none;
+    min-height: 100svh;
+    padding: var(--gallery-pad-top) var(--gallery-pad) var(--gallery-pad);
+
+    &__text {
+      grid-row: 2;
+      grid-column: 3;
+      align-self: center;
+      margin: 0;
+
+      font-size: calc(var(--gallery-tile) * 0.058);
+    }
+
+    &__tile:nth-child(n + 8) {
+      display: block;
+    }
+  }
+}
+
+// Same layout as the exported specimen of Audit UX.
+.font-specimen {
+  display: flex;
+  flex-direction: column;
+  max-width: 345px;
+
+  &__glyphs {
+    color: $black;
+    font-size: 176px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__alphabet {
+    margin-top: 8px;
+
+    color: $gray-500;
+    font-size: 18px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  &__name {
+    margin-top: 4px;
+
+    color: $gray-700;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.project-font-specimen {
+  max-width: 345px;
+}
+
+.project-text {
+  p {
+    margin-bottom: 0.6em;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.project-colors {
+  &__row {
+    display: grid;
+    gap: 24px;
+
+    grid-template-columns: repeat(4, minmax(0, 80px));
+  }
+
+  &__swatch {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: 14px;
+  }
+
+  &__sample {
+    aspect-ratio: 1;
+    margin-bottom: 8px;
+
+    border: 1px solid rgba($white, 0.15);
+    border-radius: 4px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: $white;
+    white-space: nowrap;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &__hex {
+    padding-left: 16px;
+
+    color: $gray-400;
+  }
+}

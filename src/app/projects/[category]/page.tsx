@@ -45,7 +45,9 @@ const CategoryPage = (props: ICategoryPageProps) => {
             <DecorationColumns />
 
             <PageHeader title={category.name}>
-              {category.intro ?? category.description}
+              <p className="fs-6 text-gray-400 mw-1000 m-0">
+                {category.intro ?? category.description}
+              </p>
             </PageHeader>
 
             <Row className="g-5 position-relative">

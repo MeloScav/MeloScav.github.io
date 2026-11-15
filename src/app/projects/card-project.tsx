@@ -5,14 +5,13 @@ import {
   CardTitle,
   CardText,
   Ratio,
-  Stack,
 } from "react-bootstrap";
 
-import Tag from "../components/tag";
 import Image from "next/image";
+import Link from "next/link";
 import { IProject } from "@/types";
 import classNames from "@/utils/classNames";
-import { getCategoryById } from "../services/get-categories";
+import ProjectBadges from "./project-badges";
 
 interface ICardProjectProps {
   className?: string;
@@ -23,10 +22,6 @@ interface ICardProjectProps {
 
 const CardProject = (props: ICardProjectProps) => {
   const { className, project, variant = "dark" } = props;
-  const category = getCategoryById(project.category);
-  const badges = [...(project.tags ?? []), category?.name].filter(
-    (badge): badge is string => Boolean(badge)
-  );
 
   return (
     <Card
@@ -48,22 +43,17 @@ const CardProject = (props: ICardProjectProps) => {
         />
       </Ratio>
       <CardBody>
-        <CardTitle>{project.name}</CardTitle>
+        <CardTitle>
+          <Link
+            href={`/projects/${project.category.toLowerCase()}/${project.id}`}
+            className="stretched-link text-reset text-decoration-none"
+          >
+            {project.name}
+          </Link>
+        </CardTitle>
         <CardText className="fs-7 mb-3">{project.shortDescription}</CardText>
 
-        <Stack direction="horizontal" gap={2} className="flex-wrap">
-          {badges.map((badge) => (
-            <Tag
-              key={badge}
-              variant="gray-400"
-              className="card-project__tag"
-              outline
-              pill
-            >
-              {badge}
-            </Tag>
-          ))}
-        </Stack>
+        <ProjectBadges project={project} />
       </CardBody>
     </Card>
   );
