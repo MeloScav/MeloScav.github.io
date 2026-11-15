@@ -7,7 +7,7 @@ const ContactCta = () => {
   return (
     <div className="overflow-x-clip">
       <Container>
-        <div className="position-relative py-section text-center">
+        <div className="position-relative py-section py-section--1 text-center">
           <DecorationColumns />
           <ContactCtaDecorations />
 
